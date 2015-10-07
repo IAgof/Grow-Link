@@ -1,0 +1,24 @@
+cygnusagent.sources = http-source
+cygnusagent.sinks = test-sink
+cygnusagent.channels = test-channel
+
+cygnusagent.sources.http-source.channels = test-channel
+cygnusagent.sources.http-source.type = org.apache.flume.source.http.HTTPSource
+cygnusagent.sources.http-source.port = 5050
+cygnusagent.sources.http-source.handler = com.telefonica.iot.cygnus.handlers.OrionRestHandler
+cygnusagent.sources.http-source.handler.notification_target = /notify
+cygnusagent.sources.http-source.handler.default_service = def_serv
+cygnusagent.sources.http-source.handler.default_service_path = def_servpath
+cygnusagent.sources.http-source.handler.events_ttl = 2
+cygnusagent.sources.http-source.interceptors = ts gi
+cygnusagent.sources.http-source.interceptors.ts.type = timestamp
+cygnusagent.sources.http-source.interceptors.gi.type = com.telefonica.iot.cygnus.interceptors.GroupingInterceptor$Builder
+cygnusagent.sources.http-source.interceptors.gi.grouping_rules_conf_file = /usr/cygnus/conf/grouping_rules.conf
+
+
+cygnusagent.channels.test-channel.type = memory
+cygnusagent.channels.test-channel.capacity = 1000
+cygnusagent.channels.test-channel.transactionCapacity = 100
+
+cygnusagent.sinks.test-sink.channel = test-channel
+cygnusagent.sinks.test-sink.type = com.telefonica.iot.cygnus.sinks.OrionTestSink
