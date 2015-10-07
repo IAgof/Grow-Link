@@ -1,0 +1,13 @@
+To install Context broker: 
+
+chmod a+x setup.sh
+./setup.sh
+
+Programs that will be installed:
+Context Broker 0.24
+Cygnus   0.8
+Java  jdk1.7.0
+Mongo 2.6
+python 2.6
+virtualenv (python 2.7)
+
