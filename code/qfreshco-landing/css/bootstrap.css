@@ -116,14 +116,24 @@ select,
 textarea {
   margin: 0;
   font: inherit;
-  color: inherit;
+  /*color: inherit;*/
+    padding: 0;
+border: none;
+background: none;
+
 }
 button {
   overflow: visible;
+      padding: 0;
+border: none;
+background: none;
 }
 button,
 select {
   text-transform: none;
+      padding: 0;
+border: none;
+background: none;
 }
 button,
 html input[type="button"],
@@ -131,6 +141,9 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+      padding: 0;
+border: none;
+background: none;
 }
 button[disabled],
 html input[disabled] {
@@ -1099,6 +1112,9 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+    padding: 0;
+border: none;
+background: none; 
 }
 a {
   color: #337ab7;
@@ -1120,17 +1136,18 @@ figure {
 img {
   vertical-align: middle;
 }
+.img-centered2,
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: auto;  
 }
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 16px;
 }
 .img-thumbnail {
   display: inline-block;
@@ -1576,12 +1593,38 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+
+.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #cccccc;
+}
+@media (min-width: 768px) {
+  .container1 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container1 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container1 {
+    width: 1170px;
+  }
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+
+
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -3375,6 +3418,9 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+     padding: 0;
+border: none;
+background: none;
 }
 .fade {
   opacity: 0;
@@ -5708,13 +5754,16 @@ a.list-group-item-danger.active:focus {
   cursor: pointer;
   filter: alpha(opacity=50);
   opacity: .5;
+
 }
 button.close {
   -webkit-appearance: none;
   padding: 0;
   cursor: pointer;
-  background: transparent;
-  border: 0;
+  /*background: transparent;*/
+    padding: 0;
+border: none;
+background: none;
 }
 .modal-open {
   overflow: hidden;

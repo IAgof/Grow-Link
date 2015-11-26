@@ -172,6 +172,7 @@
             // ---------------------------------------------------------
             //                                                    NUMBER
             // ---------------------------------------------------------
+            /*
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "number") {
               message = settings.builtInValidators.number.message;
               if ($this.data("validationNumberMessage")) {
@@ -179,6 +180,7 @@
               }
               $this.data("validationNumberMessage", message);
             }
+            */
             // ---------------------------------------------------------
             //                                                     EMAIL
             // ---------------------------------------------------------
@@ -799,6 +801,7 @@
 				match: "password",
 				message: "Does not match the given password<!-- data-validator-paswordagain-message to override -->"
 			},
+    /*
 			positive: {
 				name: "Positive",
 				type: "shortcut",
@@ -833,6 +836,7 @@
 				max: 0,
 				message: "Must be a negative number<!-- data-validator-negativenumber-message to override -->"
 			},
+      */
 			required: {
 				name: "Required",
 				type: "required",

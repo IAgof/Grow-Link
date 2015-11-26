@@ -9,63 +9,14 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.formulario{
-    font-family: 'Balthazar', serif;
-     font-size: 16px;
-}
-
 .text-muted {
     color: #777;
-    font-family: 'Balthazar', serif;
-    font-size: 26px;
-    /*font-weight: 700; */
-    line-height: 30px;
-    text-align: justify;
-}
-
-/*input[type=submit] {
-    /*background:url(/img/message_1.png) none; 
-    background-image: url(../img/message_1.png) ;
-    background-position: 7px 7px;
-    background-repeat: no-repeat;
-}
-*/
-
-.text-muted1 {
-    color: #777;
-    font-family: 'Balthazar', serif;
-    font-style: bold;
-    font-size: 26px;
-    /*font-weight: 700; */
-    line-height: 30px;  
-
-}
-
-.text-mutedX {
-    color: #777;
-    font-family: 'Wellfleet';
-    font-style: bold;
+    font-family: 'Gloria Hallelujah';
     font-size: 20px;
-    /*font-weight: 700; */
-    line-height: 30px;  
-
+    font-weight: 700;
+    line-height: 30px;
 }
 
-.div-wrapper {
-    position: relative;
-    height: 300px;
-    width: 300px;
-}
-
-.div-wrapper img {
-    position: absolute;
-      margin: 0 auto;
-    bottom: 0;
-}
-.bajar{
-    margin-bottom: 50px;
-
-}
 .text-primary {
     color: #94d600;  /* color fondo figuras servicios*/
 }
@@ -109,32 +60,8 @@ h6 {
     font-weight: 700;
 }
 
-
-
-.img-centered {   
+.img-centered {
     margin: 0 auto;
-     margin-top: 25px;
-    margin-bottom: 50px;
-    /*margin: 0 auto;*/
-    
-    /*display: block;*/
-    width: 150px;
-    height: auto;
-
-    display:inline-block;
-    text-decoration:none;
-}
-
-.img-centered2 { 
-    display: block;     
-    margin-top: 40px;
-    margin-bottom: 5px;
-    text-align: center;    
-    width: 250px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto ;
-
 }
 
 .bg-light-gray {
@@ -199,20 +126,15 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-   /* padding: 20px 40px; */
-    /* margin-bottom: 0px;*/
-    /*border-color: #cccccc; */
-    /*border-radius: 3px; */
+    padding: 20px 40px;
+    border-color: #94d600;
+    border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    padding: 0;
-    border: none;
-    background: none;
-    /*background-color: #cccccc;
-    color: #cccccc; */
-   /* background-color: #000; */  /* boton del formulario contacto*/
+    color: #fff;
+    background-color: #94d600;   /* boton del formulario contacto*/
 }
 
 .btn-xl:hover,
@@ -220,26 +142,15 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    /*
-    border-color: #cccccc;
-    color: #cccccc;
-    /*background-color: #94d600;
-      background-color: #cccccc; */
-          padding: 0;
-    border: none;
-    background: none;
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #94d600;
 }
 
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    /*
     background-image: none;
-      background-color: #cccccc;
-      color: #cccccc; */
-          padding: 0;
-    border: none;
-    background: none;
 }
 
 .btn-xl.disabled,
@@ -257,20 +168,13 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  /*  border-color: #cccccc;
-    background-color: #cccccc;  */
-        padding: 0;
-border: none;
-background: none;
+    border-color: #94d600;
+    background-color: #94d600;
 }
 
 .btn-xl .badge {
-    /* color: #cccccc;    
-    background-color: #fff; 
-      background-color: #cccccc; */
-          padding: 0;
-border: none;
-background: none;
+    color: #94d600;    
+    background-color: #fff;
 }
 
 .navbar-default {
@@ -312,7 +216,6 @@ background: none;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-    font-size: 22px;   /* tamaño letra menu*/
     letter-spacing: 1px;
     color: #fff;
 }
@@ -326,7 +229,7 @@ background: none;
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #94d600;  /*color  de transicion de cuadro menu abajo*/
+    background-color: #434343;  /*color  de transicion de cuadro menu abajo*/
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -375,7 +278,7 @@ header {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: 100% 500px;
+    background-size: 1440px 420px;
     -o-background-size: cover;
 }
 
@@ -396,7 +299,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    /*text-transform: uppercase; */
+    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -406,7 +309,7 @@ header .intro-text .intro-heading {
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 150px;
-        padding-bottom: 100px;
+        padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
@@ -418,15 +321,12 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-top: 70px;
         margin-bottom: 50px;
-        /*text-transform: uppercase; */  
-        /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-        font-family: 'Wellfleet';
-        font-size: 50px;
-        /*font-weight: 700; */
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
         line-height: 75px;
-        /*text-shadow: 4px 4px 4px #aaa;*/
     }
 }
 
@@ -436,27 +336,14 @@ header .intro-text .intro-heading {
 
 }
 
-.separar {
-
-    margin-top: 0px;
-}
-.intro-text1 .intro-lead-in1 {    
-    color: #777;
-    margin-top: 90px;
+.intro-text1 .intro-lead-in1 {
+    color: #434343;
     margin-bottom: 0px;
-    font-family: 'Balthazar', serif;
-    font-size: 26px;
+    font-family: 'Gloria Hallelujah';
+    font-size: 45px;
     line-height: 50px;
 }
 
-.intro-text1 .intro-lead-in11 {    
-    color: #777;
-    margin-top: 90px;
-    margin-bottom: 0px;
-    font-family: 'Balthazar', serif;
-    font-size: 36px;
-    line-height: 50px;
-}
 .intro-text1 .intro-heading1 {
     color: #434343;
     margin-top: 15px ;
@@ -469,11 +356,7 @@ header .intro-text .intro-heading {
 
 .centered {
     display: block; 
-    margin: 0 auto; 
-    text-align: center; 
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
 }
 
 
@@ -482,18 +365,16 @@ section {
 }
 
 section h2.section-heading {
-    margin-top: 30px;    
+    margin-top: 0;
     margin-bottom: 15px;
-    font-family:  'Wellfleet';
     font-size: 40px;
 }
 
 section h3.section-subheading {
-    margin-top: 20px; 
     margin-bottom: 75px;
     text-transform: none;
-    font-family: 'Balthazar', serif;
-    font-size: 25px;
+    font-family: 'Gloria Hallelujah';
+    font-size: 15px;
     font-weight: 700;
     line-height: 30px
 }
@@ -506,9 +387,8 @@ section h3.section-subheading {
 
 .service-heading {
     margin: 15px 0;
-    margin-top: 25px; 
     text-transform: none;
-    font-family: 'Balthazar', serif;
+    font-family: 'Gloria Hallelujah';
     font-size: 30px;
     font-weight: 700;
     line-height: 40px;
@@ -823,7 +703,7 @@ section#contact {
 }
 
 section#contact .section-heading {
-   /* color: #666666; */
+    color: #666666;
 }
 
 section#contact .form-group {
@@ -881,8 +761,7 @@ section#contact .text-danger {
 }
 
 footer {
-
-    padding: 0px 0;
+    padding: 25px 0;
     text-align: center;
 }
 
@@ -914,7 +793,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #cccccc;;
+    background-color: #222;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
