@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>QFreshco</title>
+    <title>Qfresh.co</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,22 +24,61 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Gloria+Hallelujah" />
+    <link href="http://allfont.es/allfont.css?fonts=wellfleet" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/javascript.fullPage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script  src="/css/jquery.fullPage.js"></script>
+    <script  src="/css/examples.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({              
+                scrollingSpeed: 1000
+            });
+
+        });
+    </script>
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="/css/jquery.scrollify.js"></script>
+    <script src="/css/jquery.scrollify.min.js"></script>
+            <script>
+                $(function() {
+                    $.scrollify({
+                        section : "section",
+                    });
+                });
+            </script>
 
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+        
 </head>
 
 <body id="page-top" class="index">
-
+<div id="full-page">
     <!-- Navigation -->
+<div class = "section">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,125 +89,325 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="" class="img-responsive" alt="">
+                 <a href="#page-top" class="page-scroll" ><img src="" class="img-responsive" alt=""></a>
+               <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" class="img-responsive" alt="logo" ></a> --> 
             </div>
-            <img src="img/logo.png" alt="logo" width="20%" height="5%">
-            <!-- Collect the nav links, forms, and other content for toggling -->
+              <a class="page-scroll" href="#page-top"><img src="img/logo.png" alt="logo" width="20%" height="5%"></a>
+             <!--Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <!--li>
+                    <li>
                         <a class="page-scroll" href="#services">Servicios</a>
                     </li>
-
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Iniciativa</a>
+                    </li>                
                     <li>
                         <a class="page-scroll" href="#contact">Contacto</a>
-                    </li-->
+                    </li>
                 </ul>
+            <!--    <div class="navbar-left"><img src="img/logo.png" alt="logo" width="17%" height="3%"></div> -->
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+</div>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Bienvenido a QFresh.co!</div>
-                <div class="intro-heading">Encantados de conocerte.</div>
-
-
-<!---POPUP -->
-<div data-role="main" class="ui-content">
-  <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Quiero saber más.</a>
-
-  <div data-role="popup" id="myPopupDialog">
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-    min-width: 60%; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-    <form action="//qfresh.us11.list-manage.com/subscribe/post?u=eb9d1442abcb928f9ef532edd&amp;id=c634034cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <h1>WWW.QFRESH.CO</h1>
-      <!--<h2>Únete a nosotros</h2>-->
-
-    <div class="mc-field-group">
-      <label for="mce-EMAIL">Correo  <span class="asterisk">*</span>
-    </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-    </div>
-      <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_eb9d1442abcb928f9ef532edd_c634034cb2" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Suscríbete" name="subscribe" id="mc-embedded-subscribe" class="button" style="width:100%"></div>
-        </div>
-    </form>
-    </div>
-
-<!--End mc_embed_signup-->
-    </div>
-
-
-  </div>
-  <!-- END POPUP-->
+              <!--  <div class="intro-lead-in">Bienvenido!</div>  -->
+                <div class="intro-heading">La buena comida  <br> que hay  cerca de tí.</div>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
+                <br><br>
+                <div class="intro-text1">
+                <div class="intro-lead-in1">Reunimos al mejor comercio local para acercarte <br> productos frescos y caseros.</div>
+            <!--    <div class="intro-heading1"> Nos rodeamos de los mejores productores locales <br> para acercarte productos frescos y caseros.</div> -->            
+                </div>
+           
+            </div>
+   
 
         </div>
+                    <div class="row text-center bajar">
+                 
+                     <span class="fa-stack fa-4x">
+                  <a class=" page-scroll" href="#services"><img src="img/more_1.png" class="img-responsive" alt=""></a>
+                     </span>     
+                  
+                 </div>
+
     </header>
 
+    <!-- Services Section -->
+<div class = "section" id = "services">
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Qué te ofrecemos</h2>
+                   <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>  -->
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class = "separar">
+                 <div class="col-md-2"></div>
+                <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                         <a class="page-scroll" href="#page-top"><img src="img/cart_1.png" class="img-centered" alt=""></a>
+                     </span>
+                        <br><br>
+                    <h4 class="service-heading">Mercado Online</h4>
+                    <p class="text-muted1">Comercio electrónico de una forma fácil, segura y participativa.</p>
+                </div>
+                 <div class="col-md-2"></div>
+                <div class="col-md-3">
+                         <span class="fa-stack fa-4x">
+                         <a class="page-scroll" href="#page-top"><img src="img/agro_1.png" class="img-centered" alt=""></a>
+                     </span>
+                          <br><br>          
+                    <h4 class="service-heading">Soporte Agrícola</h4>
+                    <p class="text-muted1">Apoyo a agricultores para mejorar su productividad a través de tecnología especializada.</p>
+                </div>
+                <div class="col-md-2"></div>                
+            </div>
+ 
+        </div>
 
+    </div>
 
-    <!-- Begin MailChimp Signup Form -->
+    </section>
+         <div class="row text-center">               
+                     <span class="fa-stack fa-4x">
+                  <a class=" page-scroll" href="#portfolio"><img src="img/more_1.png" class="img-responsive" alt=""></a>
+                     </span>     
+        
+        </div>
+</div>
+    <!-- Portfolio Grid Section -->
+<div class = "section" id ="portfolio">
+    <section id="portfolio" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Iniciativa</h2>                    
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-2"></div>
+                    <div class="col-md-8"><p class="section-subheading text-muted">Tenemos el objetivo de impulsar el comercio de productos regionales frescos y caseros. Para ello, facilitamos los medios para que los productores y consumidores puedan encontrarse y comunicarse de una forma sencilla. <br> <br> La iniciativa cuenta con el apoyo de recursos europeos. En concreto, con el soporte de la aceleradora de negocio <a href="http://fractals-fp7.com/">FRACTALS</a>, dentro del programa europeo <a href="https://www.fiware.org/">FIWARE</a>.</p>
+                    <div class="col-md-4">
+                                     <span class="fa-stack fa-4x">
+                                     <a class=" page-scroll" href="http://fractals-fp7.com/"><img src="img/fractals_1.png"   class ="img-centered" alt=""></a>
+                                     
+                                     </span> 
+                                     <br><br>
+                        </div>                    
+                        <div class="col-md-4">
+                           <span class="fa-stack fa-4x"> 
+                                     <a class=" page-scroll" href="https://www.fiware.org/"><img src="img/fiware_1.png" class ="img-centered" alt=""></a>                                      
+                      </span> 
+                      <br><br>
+                        </div>
+                        <div class="col-md-4">
+                         <span class="fa-stack fa-4x">                             
+                                     <a class=" page-scroll" href="http://ec.europa.eu/"><img src="img/ec_1.png"  class ="img-centered" alt=""></a>
+                                    
+                         </span> 
+                          <br><br>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
 
+            </div>
+  
 
-    <!--End mc_embed_signup-->
-
+   
+        </div>
+    </section>
+         <div class="row text-center">             
+                    <span class="fa-stack fa-4x">
+                        <a class=" page-scroll" href="#contact"><img src="img/more_1.png" class="img-responsive" alt=""></a>
+                    </span>     
+                </div>
+</div>
+    <!-- About Section -->
+    
+    <!-- Team Section -->
+    
     <!-- Contact Section -->
+<div class = "section" id="contact">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contacto</h2>
+                    <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>                
+                </div>
+            </div>
+        <br>
+        
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-md-3"></div>
+                    
+                        <div class="col-md-6">     
+                            <div class="bg-darkest-gris">
+                                <form action="//qfresh.us11.list-manage.com/subscribe/post?u=eb9d1442abcb928f9ef532edd&amp;id=c634034cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">                                    
+                                 <div class="formulario"><div class="indicates-required"><span class="asterisk"></span></div></div> 
+
+                            <!--                  
+                                 <div class="form-group">
+                                    <label for="mce-FNAME"></label>
+                                     <div class="formulario"><input type="text" value="Nombre aqui" name="FNAME" class="" id="mce-FNAME"></div>
+                                </div>
+                            -->
+                                  <div class="form-group">
+                                    <label for="mce-EMAIL"><span class="asterisk"></span></label>
+                                    <input type="text" class="form-control" placeholder="Nombre *" name="FNAME" id="mce-FNAME" class="">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <!--
+                                <div class="form-group">
+                                    <label for="mce-EMAIL"><span class="asterisk"></span></label>
+                                    <div class="formulario"><input type="email" value="Email" name="EMAIL" class="required email" id="mce-EMAIL"></div>
+                                </div>
+                            -->
+                                <div class="form-group">
+                                    <label for="mce-EMAIL"><span class="asterisk"></span></label>
+                                    <input type="email" class="form-control" placeholder="Tu Email *" name="EMAIL" id="email" class="required email">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                     <label for="mce-LNAME"></label>
+                                    <textarea class="form-control" placeholder="Cuentanos lo FRESCO que eres ." name="LNAME" id="mce-LNAME"></textarea>                                    
+                                </div>
+
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eb9d1442abcb928f9ef532edd_c634034cb2" tabindex="-1" value="">
+                                    </div>
+                                 <!--   <div class="clear"><button type="submit" name="subscribe" class="centered"><img src="img/message_1.png" class="img-responsive" alt="Enviar"></button> -->
+                                 <div class="clear"><input type="image" name="subscribe" src="img/message_1.png" class="img-responsive centered">
+                                    </div>   
+                                    </div>                     
+                                </form>
+                            </div>
+                        
+                    </div>
+                    <div class="col-md-3"></div>
+
+                </div>
+            </div>
+        
+    </section>
 
 
+
+                             <!-- Begin MailChimp Signup Form -->
+
+                    <!-- <div id="mc_embed_signup"> 
+                    <form action="//qfresh.us11.list-manage.com/subscribe/post?u=eb9d1442abcb928f9ef532edd&amp;id=c634034cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        
+                    <div class="indicates-required"><span class="asterisk">*</span> campos obligatorios</div>
+                    <div class="mc-field-group">
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">Nombre </label>
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                    </div>
+                        <label for="mce-EMAIL">Email <span class="asterisk">*</span>
+                    </label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+
+                    <div class="mc-field-group">
+                        <label for="mce-LNAME">Cuentanos lo FRESCO que eres </label>
+                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                    </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <! - - real people should not fill this in and expect good things - do not remove this or risk form bot signups- ->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eb9d1442abcb928f9ef532edd_c634034cb2" tabindex="-1" value=""></div>
+                        <div class="clear"><button><type="submit" name="subscribe" class="centered"><img src="img/message_1.png" class="img-responsive" alt="Enviar"></button></div>
+                        </div>
+                    </form>
+                    </div> -->
+
+<!--
+
+
+                 <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <br>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Tu Nombre *" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Tu Email *" id="email" required data-validation-required-message="Por favor ingresa tu e-mail.">
+                                    <p class="help-block text-danger"></p>
+                                </div>            
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Cuentanos lo FRESCO que eres ." id="message" ></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <input type="submit" name="submit" value="Submit" class="btn btn-xl" ><img src="img/message_1.png" class="img-responsive" alt="Enviar">
+                            </div>
+                        </div>
+                    </form> -->
+
+
+</div>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; QFreshco 2015</span>
+                    <span class="copyright">Copyright &copy; Qfreshco 2015</span>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="http://twitter.com/QFreshco"><i class="fa fa-twitter"></i></a>
+                   <!-- <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <!--li><a href=""><i class="fa fa-facebook"></i></a>
-                        </li-->
-                        <li><a href="http://instagram.com/qfresh.co"><i class="fa fa-instagram"></i></a>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                    </ul>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul> -->                    
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <!--li><a href="#">Privacy Policy</a>
+                        <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
-                        </li-->
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
+</div>
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
@@ -350,8 +590,8 @@
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-
+  <!--  <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script> -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
@@ -359,3 +599,5 @@
 </body>
 
 </html>
+
+
