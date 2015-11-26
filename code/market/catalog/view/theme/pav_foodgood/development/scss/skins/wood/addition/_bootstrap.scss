@@ -1,0 +1,51 @@
+.nav-search{
+	.form-control{
+		background-color: $white;
+	}
+}
+.category{
+	.panel-heading{
+		background-color: $brand-primary;
+		border-color: $brand-primary;
+		&:after{
+			border-color: #7d4900;
+		}
+	}
+} 
+.panel-primary{
+	.panel-heading{
+		&:after{
+			border-color: #336600;
+		}
+	}
+}
+.nav-tabs{
+	background-color: $black;
+	> li{
+		&:before{
+			background-color: $theme-color-success;
+		}
+		&:after{
+			border-left: 5px solid #336600;
+		}
+		&.active {
+			> a {
+	        &,
+	        &:hover,
+	        &:focus {
+	          background-color: $nav-tabs-active-link-hover-bg;
+	        }
+	      }
+		}
+	} 
+} 
+.nav > li > a{
+	&:hover,
+      &:focus {
+        color: $nav-tabs-active-link-hover-bg;
+      }
+}
+.input-group-addon{
+	width: 40px;
+	height: 40px;
+}	

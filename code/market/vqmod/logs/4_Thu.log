@@ -1,0 +1,54 @@
+---------- Date: 2015-11-26 10:49:52 ~ IP : 192.168.1.1 ----------
+REQUEST URI : /index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/account/login.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <a href="<?php echo $register; ?>" class="button"><?php echo $button_continue; ?></a></div>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-11-26 14:14:00 ~ IP : 192.168.1.56 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-11-26 14:53:34 ~ IP : 192.168.1.1 ----------
+REQUEST URI : /index.php?route=product/product&product_id=50
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
+
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_xt_shipping_productpage.xml
+   id        : MultiMerch Shipping Edition - Product page
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+----------------------------------------------------------------------
+
+
