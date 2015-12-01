@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: market
+-- Host: localhost    Database: market_dev
 -- ------------------------------------------------------
 -- Server version	5.5.43-0+deb8u1
 
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `market`
+-- Current Database: `market_dev`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `market` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `market_dev` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `market`;
+USE `market_dev`;
 
 --
 -- Table structure for table `oc_address`
