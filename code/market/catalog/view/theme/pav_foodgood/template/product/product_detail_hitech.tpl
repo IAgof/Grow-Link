@@ -1,3 +1,4 @@
+
 <?php 
     
     $mode = 'default';
@@ -12,13 +13,14 @@
     <div class="row">
     <?php require( ThemeControlHelper::getLayoutPath( 'common/detail/'.$mode.'.tpl' ) );  ?> 
    
-    <!--div class="col-xs-12 col-sm-<?php echo $cols[1]; ?> col-md-<?php echo $cols[1]; ?> col-lg-<?php echo $cols[1]; ?>"-->
+	<!-- <div class="col-xs-12 col-sm-<?php echo $cols[1]; ?> col-md-<?php echo $cols[1]; ?> col-lg-<?php echo $cols[1]; ?> -->
+
 <div class="col-sm-6" style="max-width:750px; margin-left:0px; float:right; ">
         <div class="product-view">
             <div class="product-name">
                 <span><?php echo $heading_title; ?></span>
             </div>
-            
+	    <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>         
             <?php if ($price) { ?>
                 <div class="price">
                     <ul class="list-unstyled">
@@ -31,9 +33,28 @@
                             <li> <span class="text-price"> <?php echo $special; ?> </span> <span style="text-decoration: line-through;"><?php echo $price; ?></span> </li>
                         <?php } ?>
                         <?php if ($tax) { ?>
-                            <li class="other-price"><?php echo $text_tax; ?> <?php echo $tax; ?></li>
-                        <?php } ?>
+                            <li class="other-price"><!--<?php echo $text_tax; ?>--><?php echo $tax; ?>
+ /
 
+				<?php foreach ($attribute_groups as $attribute_group) { ?>
+
+<!--                                    <thead>
+                                        <tr>
+                                            <td colspan="2"><strong><?php echo $attribute_group['name']; ?></strong></td>    
+                                        </tr>
+                                    </thead>
+-->                                    <tbody>
+<!--                                        <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+-->                                            <tr>
+<!--                                                <td><?php echo $attribute['name']; ?></td>
+-->                                                <td><?php echo $attribute['text']; ?></td>
+                                            </tr>
+<!--                                        <?php } ?>
+-->                                    </tbody>
+				<?php } ?>
+
+			    </li>
+                        <?php } ?>
                         <?php if ($discounts) { ?>
                             <li>
                             </li>
@@ -42,10 +63,11 @@
                             <?php } ?>
                         <?php } ?>
                     </ul>
+		   
                 </div>
             <?php } ?> 
-
-            <?php if ($review_status) { ?>
+            
+<!--            <?php if ($review_status) { ?>
                 <div class="rating">
                     <p>
                         <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -69,7 +91,7 @@
                 <?php } ?>
                 <li><b class="availability"><?php echo $text_stock; ?></b> <?php echo $stock; ?></li>
             </ul>
-                   
+-->                   
             <div id="product" class="product-extra">
                 <?php if ($options) { ?>
                     <h3><?php echo $text_option; ?></h3>
@@ -89,7 +111,8 @@
                                 </select>
                             </div>
                         <?php } ?>
-                        <?php if ($option['type'] == 'radio') { ?>
+                        
+			<?php if ($option['type'] == 'radio') { ?>
                             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
                                 <label class="control-label"><?php echo $option['name']; ?></label>
                                 <div id="input-option<?php echo $option['product_option_id']; ?>">
@@ -220,11 +243,17 @@
                                 <span class="add-up add-action">+</span> 
                                 <span class="add-down add-action">-</span>
                             </div>
-                        </div>
-                    </div>
-                    <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-                </div>
 
+			<a id="button-cart"  class="btn btn-outline-inverse btn-shopping-cart" data-loading-text="<?php echo $text_loading; ?>">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span><?php echo $button_cart; ?></span>
+			</a>	
+                        
+			</div>
+                    </div>
+                    <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />	
+                </div>
+<!--
                 <div class="action">
                     <div class="cart">                      
                         <a id="button-cart"  class="btn btn-outline-inverse btn-shopping-cart" data-loading-text="<?php echo $text_loading; ?>">
@@ -245,25 +274,27 @@
                         </a>
                     </div>
                 </div>
-
+-->
             </div>
             <?php if ($minimum > 1) { ?>
                 <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
 
             <!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a>
+<!--<div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a>
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script> 
-	    <!-- AddThis Button END --> 
+-->	    <!-- AddThis Button END --> 
         
-
+<!--
             <div class="clearfix product-box-bottom tabs-group box">
                 <div id="tabs" class="tab-nav">
                     <ul class="nav nav-theme clearfix">
                         <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
+
                         <?php if ($attribute_groups) { ?>
                             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
                         <?php } ?>
+
                         <?php if ($review_status) { ?>
                             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
                         <?php } ?>
@@ -359,16 +390,10 @@
                         </div>
                     <?php } ?>
             </div>
-
+-->
         </div>
     </div>
 </div>
 </div>
 </div>
-
-
-
-
-
-
 

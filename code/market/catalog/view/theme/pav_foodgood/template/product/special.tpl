@@ -1,3 +1,4 @@
+
 <?php echo $header; ?>
 <div class="container">
     <?php require( PAVO_THEME_DIR."/template/common/config_layout.tpl" );  ?>
@@ -27,3 +28,4 @@
 <?php endif; ?></div>
 </div>
 <?php echo $footer; ?>
+

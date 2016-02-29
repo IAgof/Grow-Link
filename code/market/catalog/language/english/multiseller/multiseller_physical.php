@@ -14,18 +14,18 @@ $_['ms_digital_product'] = 'Delivery type: Digital product';
 $_['ms_shipping_destinations'] = 'Shipping to: %s';
 
 // Account
-$_['ms_account_shipping_settings'] = 'Shipping Settings';
-$_['ms_account_shipping_settings_breadcrumbs'] = 'Shipping Settings';
+$_['ms_account_shipping_settings'] = 'Configuración de envío';
+$_['ms_account_shipping_settings_breadcrumbs'] = 'Configuración de envío';
 
-$_['ms_account_dashboard_nav_shipping_settings'] = 'Shipping Settings';
+$_['ms_account_dashboard_nav_shipping_settings'] = 'Configuración de envío';
 
 // Account - Shipping Settings
-$_['ms_account_shipping_settings_heading'] = 'Shipping Settings';
+$_['ms_account_shipping_settings_heading'] = 'Configuración de envío';
 
-$_['ms_account_shipping_settings_type'] = 'Shipping type: ';
-$_['ms_account_shipping_settings_type_note'] = 'Select fixed to set shipping settings for each product separately. Select combined to allow combining shippings into one.';
-$_['ms_shipping_type_fixed'] = 'Fixed';
-$_['ms_shipping_type_combinable'] = 'Combined';
+$_['ms_account_shipping_settings_type'] = 'Tipo de envío';
+$_['ms_account_shipping_settings_type_note'] = 'Envío fraccionado para enviar los productos por separado directamente al consumidor. Combinado para enviar los productos a Qfresh para qu envíe un solo paquete al consumidor unificando el envío de varios markets en uno solo.';
+$_['ms_shipping_type_fixed'] = 'Fraccionado';
+$_['ms_shipping_type_combinable'] = 'Combinado';
 
 $_['ms_success_shipping_settings_saved'] = 'Settings saved';
 

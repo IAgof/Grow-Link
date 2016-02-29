@@ -1,3 +1,4 @@
+
 <?php echo $header; ?>
 <div class="container">
     <?php require( PAVO_THEME_DIR."/template/common/config_layout.tpl" );  ?>
@@ -15,7 +16,7 @@
 		<?php endif; ?> 
   
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
-      <div class="row">
+<!--      <div class="row">
         <div class="col-sm-6">
           <div class="well">
             <h2><?php echo $text_new_customer; ?></h2>
@@ -23,7 +24,7 @@
             <p><?php echo $text_register_account; ?></p>
             <a href="<?php echo $register; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
         </div>
-        <div class="col-sm-6">
+-->        <div class="col-sm-6">
           <div class="well">
             <h2><?php echo $text_returning_customer; ?></h2>
             <p><strong><?php echo $text_i_am_returning_customer; ?></strong></p>
@@ -37,7 +38,9 @@
                 <input type="password" name="password" value="<?php echo $password; ?>" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" />
                 <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a></div>
               <input type="submit" value="<?php echo $button_login; ?>" class="btn btn-primary" />
-              <?php if ($redirect) { ?>
+              <a href="<?php echo $register; ?>" class="btn btn-primary"><?php echo $text_register; ?></a></div>
+              <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+	      <?php if ($redirect) { ?>
               <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
               <?php } ?>
             </form>
@@ -53,3 +56,4 @@
 <?php endif; ?></div>
 </div>
 <?php echo $footer; ?>
+

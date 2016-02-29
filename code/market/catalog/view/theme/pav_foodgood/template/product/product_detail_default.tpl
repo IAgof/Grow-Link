@@ -28,6 +28,7 @@
         <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
         <?php } ?>
       </ul>
+
       <div class="tab-content">
         <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
         <?php if ($attribute_groups) { ?>
@@ -102,7 +103,8 @@
         </div>
         <?php } ?>
       </div>
-    </div>
+    
+     </div>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>

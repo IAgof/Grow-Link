@@ -1,3 +1,4 @@
+
 <?php echo $header; ?>
 <div class="container">
     <?php require( PAVO_THEME_DIR."/template/common/config_layout.tpl" );  ?>

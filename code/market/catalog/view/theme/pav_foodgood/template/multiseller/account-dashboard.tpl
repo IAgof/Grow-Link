@@ -26,7 +26,7 @@
 		<a href="<?php echo $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']); ?>"><img src="<?php echo $seller['avatar']; ?>" /></a><br />
 		<span class="nickname"><?php echo $seller['ms.nickname']; ?></span>
 		<p><span><?php echo $ms_date_created; ?>:</span> <span><?php echo $seller['date_created']; ?></span></p>
-		<p><span><?php echo $ms_account_dashboard_seller_group; ?>:</span> <span><?php echo $seller['seller_group']; ?></span></p>
+<!--		<p><span><?php echo $ms_account_dashboard_seller_group; ?>:</span> <span><?php echo $seller['seller_group']; ?></span></p>
 		<p>
 			<span><?php echo $ms_account_dashboard_listing; ?>:</span>
 			
@@ -53,9 +53,12 @@
 			<?php echo $this->currency->format(isset($seller['commission_rates'][MsCommission::RATE_SALE]['flat']) ? $seller['commission_rates'][MsCommission::RATE_SALE]['flat'] : 0, $this->config->get('config_currency')); ?>
 			</span>
 		</p>
+-->
+		<p><span><?php echo $ms_account_dashboard_total_sales; ?>:</span> <span><?php echo $seller['total_sales']; ?></span></p>
+		 <p><span><?php echo $ms_account_dashboard_sales_month; ?>:</span> <span><?php echo $seller['sales_month']; ?></span></p>  
 	</div>
 
-	<div class="stats col-md-2">
+<!--	<div class="stats col-md-2">
 		<h3><?php echo $ms_account_dashboard_stats; ?></h3>
 		<p><span><?php echo $ms_account_dashboard_balance; ?>:</span> <span><?php echo $seller['balance']; ?></span></p>
 		<p><span><?php echo $ms_account_dashboard_total_sales; ?>:</span> <span><?php echo $seller['total_sales']; ?></span></p>
@@ -63,7 +66,7 @@
 		<p><span><?php echo $ms_account_dashboard_sales_month; ?>:</span> <span><?php echo $seller['sales_month']; ?></span></p>
 		<p><span><?php echo $ms_account_dashboard_earnings_month; ?>:</span> <span><?php echo $seller['earnings_month']; ?></span></p>
 	</div>
-	<div class="nav col-md-5"></div>
+-->	<div class="nav col-md-5"></div>
 
 	<div class="nav col-md-3">
 		<h3><?php echo $ms_account_dashboard_nav; ?></h3>
@@ -92,7 +95,7 @@
 			<span><?php echo $ms_account_dashboard_nav_balance; ?></span>
 		</a>
 		
-		<?php if ($this->config->get('msconf_allow_withdrawal_requests')) { ?>
+<!--		<?php if ($this->config->get('msconf_allow_withdrawal_requests')) { ?>
 		<a href="<?php echo $this->url->link('seller/account-withdrawal', '', 'SSL'); ?>">
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-dollar.png" />
 			<span><?php echo $ms_account_dashboard_nav_payout; ?></span>
@@ -103,6 +106,7 @@
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-stats.png" />
 			<span><?php echo $ms_account_stats; ?></span>
 		</a>
+-->
 	</div>
     </div>
 

@@ -26,7 +26,7 @@
 		<input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>" />
 		<input type="hidden" name="action" id="ms_action" />
 		<input type="hidden" name="list_until" value="<?php echo isset($list_until) ? $list_until : '' ?>" />
-
+<!--
 		<ul id="general-tabs" class="nav nav-tabs">
 			<li class="active"><a href="#tab-general" data-toggle="tab"><?php echo $ms_account_product_tab_general; ?></a></li>
 
@@ -47,8 +47,7 @@
      		<li><a href="#tab-discounts" data-toggle="tab"><?php echo $ms_account_product_tab_discounts; ?></a></li>
      		<?php } ?>
 		</ul>
-
-     	<!-- general tab -->
+-->
 		<div class="tab-content ms-product">
      	<div id="tab-general" class="tab-pane active">
      		<?php if (count($languages) > 1) { ?>
@@ -156,6 +155,8 @@
 						<span class="vertical-align: auto"><?php echo $this->currency->getSymbolLeft($this->config->get('config_currency')); ?></span>
 						<input type="text" class="form-control inline" name="product_price" value="<?php echo $product['price']; ?>" <?php if (isset($seller['commissions']) && $seller['commissions'][MsCommission::RATE_LISTING]['percent'] > 0) { ?>class="ms-price-dynamic"<?php } ?> />
 						<span class="vertical-align: auto"><?php echo $this->currency->getSymbolRight($this->config->get('config_currency')); ?></span>
+						\unidad
+						
 						<p class="ms-note"><?php echo $ms_account_product_price_note; ?></p>
 						<p class="error" id="error_product_price"></p>
 					</div>
@@ -280,7 +281,6 @@
 							<br />
 						<?php } ?>
 						<?php } ?>
-
 						<?php if ($attr['attribute_type'] == MsAttribute::TYPE_TEXT) { ?>
 							<input type="text" class="form-control" name="product_attributes[<?php echo $attr['attribute_id']; ?>][value]" value="<?php if (isset($normal_attribute_values[$attr['attribute_id']])) { echo current(reset($normal_attribute_values[$attr['attribute_id']])); } ?>" />
 							<input type="hidden" name="product_attributes[<?php echo $attr['attribute_id']; ?>][value_id]" value="<?php if (isset($normal_attribute_values[$attr['attribute_id']])) { echo key($normal_attribute_values[$attr['attribute_id']]); } ?>" />
@@ -357,11 +357,10 @@
 						</div>
 					</div>
 				</div>
-
+<!--
 				<div class="form-group <?php if ($msconf_downloads_limits[0] > 0) { echo 'required'; } ?>">
 					<label class="col-sm-2 control-label"><?php echo $ms_account_product_download; ?></label>
 					<div class="col-sm-10">
-						<!--<input type="file" name="ms-file-addfiles" id="ms-file-addfiles" />-->
 						<a name="ms-file-addfiles" id="ms-file-addfiles" class="btn btn-primary"><span><?php echo $ms_button_select_files; ?></span></a>
 						<p class="ms-note"><?php echo $ms_account_product_download_note; ?></p>
 						<div class="error" id="error_product_download"></div>
@@ -376,7 +375,6 @@
 								<span class="ms-download-name"><?php echo $download['name']; ?></span>
 								<div class="ms-buttons">
 									<a href="<?php echo $download['href']; ?>" class="ms-button-download" title="<?php echo $ms_download; ?>"></a>
-										<!--<input id="ms-update-<?php echo $download['id']; ?>" name="ms-update-<?php echo $download['id']; ?>" class="ms-file-updatedownload" type="file" multiple="false" />-->
 									<a id="ms-update-<?php echo $download['id']; ?>" name="ms-update-<?php echo $download['id']; ?>" class="ms-file-updatedownload ms-button-update" title="<?php echo $ms_update; ?>"></a>
 									<a class="ms-button-delete" title="<?php echo $ms_delete; ?>"></a>
 								</div>
@@ -387,6 +385,7 @@
 						</div>
 					</div>
 				</div>
+-->
 			</fieldset>
 
 			<?php if ($seller['ms.product_validation'] == MsProduct::MS_PRODUCT_VALIDATION_APPROVAL) { ?>

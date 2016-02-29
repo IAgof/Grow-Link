@@ -6,9 +6,9 @@ $_['heading_title']                = 'Identifícate';
 $_['text_account']                 = 'Mi cuenta';
 $_['text_login']                   = 'Entrar';
 $_['text_new_customer']            = 'Nuevo';
-$_['text_register']                = 'Registrar cuenta';
+$_['text_register']                = 'Nueva cuenta';
 $_['text_register_account']        = 'Creando una cuenta podrás ver tu historial de compra, seguir el envío de tus pedido y mucho más.';
-$_['text_returning_customer']      = 'Ya soy cliente';
+$_['text_returning_customer']      = 'Registro';
 $_['text_i_am_returning_customer'] = 'Ya soy cliente';
 $_['text_forgotten']               = 'He olvidado mi contraseña';
 

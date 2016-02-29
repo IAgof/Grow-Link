@@ -1,0 +1,35 @@
+<?php
+// Text
+$_['text_new_subject']          = '%s - Pedido %s';
+$_['text_new_greeting']         = 'Gracias por tu interés en %s productos. Tu pedido se está procesando.';
+$_['text_new_received']         = 'Has recibido un pedido.';
+$_['text_new_link']             = 'Para ver tu pedido haz click:';
+$_['text_new_order_detail']     = 'Detalles';
+$_['text_new_instruction']      = 'instrucciones';
+$_['text_new_order_id']         = 'ID pedido:';
+$_['text_new_date_added']       = 'Fecha:';
+$_['text_new_order_status']     = 'Estado:';
+$_['text_new_payment_method']   = 'Método de pago:';
+$_['text_new_shipping_method']  = 'Método de envío:';
+$_['text_new_email']  			= 'Dirección de correo:';
+$_['text_new_telephone']  		= 'Teléfono:';
+$_['text_new_ip']  				= 'Dirección IP:';
+$_['text_new_payment_address']  = 'Dirección de facturación';
+$_['text_new_shipping_address'] = 'Dirección de envío';
+$_['text_new_products']         = 'Productos';
+$_['text_new_product']          = 'Producto';
+$_['text_new_model']            = 'Modelo';
+$_['text_new_quantity']         = 'Cantidad';
+$_['text_new_price']            = 'Precio';
+$_['text_new_order_total']      = 'Pedido total';
+$_['text_new_total']            = 'Total';
+$_['text_new_download']         = 'Cuando el pedido se haya procesado, puedes acceder a las descargas:';
+$_['text_new_comment']          = 'Los comentarios de tu pedido son:';
+$_['text_new_footer']           = 'Por favor, responde a este mail si tienes dudas.';
+$_['text_update_subject']       = '%s - Actualización de pedido %s';
+$_['text_update_order']         = 'ID pedido:';
+$_['text_update_date_added']    = 'Fecha del pedido:';
+$_['text_update_order_status']  = 'Tu pedido se ha actualizado de la siguiente manera:';
+$_['text_update_comment']       = 'Los comentarios de tu pedido son:';
+$_['text_update_link']          = 'para ver tu pedido haz click en el link:';
+$_['text_update_footer']        = 'Por favor, responde a este mail si tienes dudas';

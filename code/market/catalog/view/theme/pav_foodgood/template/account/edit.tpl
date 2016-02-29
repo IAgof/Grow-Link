@@ -52,13 +52,13 @@
               <?php } ?>
             </div>
           </div>
-          <div class="form-group">
+<!--         <div class="form-group">
             <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
             <div class="col-sm-10">
               <input type="text" name="fax" value="<?php echo $fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
             </div>
           </div>
-          <?php foreach ($custom_fields as $custom_field) { ?>
+-->          <?php foreach ($custom_fields as $custom_field) { ?>
           <?php if ($custom_field['location'] == 'account') { ?>
           <?php if ($custom_field['type'] == 'select') { ?>
           <div class="form-group<?php echo ($custom_field['required'] ? ' required' : ''); ?> custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">

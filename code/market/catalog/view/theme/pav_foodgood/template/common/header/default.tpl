@@ -4,7 +4,7 @@
 			<div class="container">				
 				<div class="show-desktop">
 					<div class="quick-access">
-						<div class="login links hidden-xs hidden-sm">
+<!--						<div class="login links hidden-xs hidden-sm">
 							<?php if ($logged) { ?>
 				            <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> -
 				            <a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a>
@@ -13,7 +13,6 @@
 				            <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
 				            <?php } ?>
 						</div>
-						<!-- Single button -->
 						<div class="btn-group">
 							<div class="dropdown-toggle btn-theme-normal" >
 								<i class="fa fa-cog"></i>
@@ -47,6 +46,33 @@
 								</ul>	
 							</div>
 						</div>
+-->						
+						<div class="btn-group">
+							<a href="<?php echo $account; ?>">
+								<img class="logo-account"></img>
+								<?php echo $text_account; ?>
+							</a>
+						</div>
+						<div class="btn-group">
+							
+							<a href="<?php echo $shopping_cart; ?>">
+								<img class="logo-cart">
+<!--									<div class="quick-action">
+		                        	                                <?php echo $cart; ?>
+		                	                                </div>
+			                                                <button data-toggle="offcanvas" class="btn canvas-menu hidden-lg hidden-md" type="button">
+			                                                        <span class="fa fa-bars"></span>
+XXXXXXXXXXX
+			                                                </button>
+-->									
+								</img>
+								<?php echo $text_shopping_cart; ?>
+
+							</a>
+						</div>
+
+
+
 					</div>
 				</div>	
 			</div>
@@ -54,7 +80,7 @@
 
 		<div class="main-menu header-bot">
 			<div class="container">
-				<div class="logo inner">
+				<div class="logo-inner">
 					<?php if( $logoType=='logo-theme'){ ?>
 						<div id="logo-theme" class="logo-store img-responsive pull-left">
 							<a href="<?php echo $home; ?>">
@@ -65,17 +91,18 @@
 						<div id="logo" class="logo-store img-responsive pull-left"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 					<?php } ?> 
 				</div>
+
 				<div id="pav-mainnav" class="mainnav-primary">
-					<div class="mainnav-wrap">						
+					<div class="mainnav-wrap">
+
 						<div class="quick-action">
 							<?php echo $cart; ?>
 						</div>
-						
 						<button data-toggle="offcanvas" class="btn canvas-menu hidden-lg hidden-md" type="button">
 							<span class="fa fa-bars"></span>
 						</button>
 						<?php
-						/**
+						/*
 						 * Main Menu modules: as default if do not put megamenu, the theme will use categories menu for main menu
 						 */
 						$modules = $helper->renderModule('pavmegamenu');
@@ -90,8 +117,8 @@
 						        <div id="mainmenutop" class="megamenu navbar-inner" role="navigation"> 
 						            <div class="navbar-header">
 						                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						                    <span class="sr-only">Toggle navigation</span>
-						                    <span class="fa fa-bars"></span>
+<!--						                    <span class="sr-only">Toggle navigation</span>
+-->						                    <span class="fa fa-bars"></span>
 						                </button>
 						            </div>
 

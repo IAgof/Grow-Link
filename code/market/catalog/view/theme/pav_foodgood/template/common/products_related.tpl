@@ -1,3 +1,4 @@
+
 <?php 
 
 	$config = $this->registry->get('config'); 
@@ -32,7 +33,6 @@
 	<div class="box-heading title-module">
 		<span><?php echo $heading_title; ?>(<?php echo count($products); ?>)</span>
 	</div>
-
 	<div class="box-content">
 		<div id="product-related" class="slide carousel products-rows" data-interval="0">
 			<?php if(count($products) > $span){ ?>
@@ -41,6 +41,7 @@
 				<a class="carousel-control right" href="#product-related"  data-slide="next"><i class="fa fa-angle-right"></i></a>
 			</div>
 			<?php } ?>
+
 			<div class="carousel-inner">
 				<?php foreach ($products as $i => $product) { $i=$i+1; ?>
 				<?php if( $i%$cols == 1 && $cols > 1 ) { ?>
@@ -56,6 +57,7 @@
 				<?php } ?>
 				<?php } ?>
 			</div>
+
 		</div>
 	</div>
 </div>

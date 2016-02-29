@@ -38,6 +38,7 @@
 	}
  
 ?>	
+
 <div id="products" class="product-<?php echo $DISPLAY_MODE; ?>"> 
 	<div class="products-block">
 		<?php
@@ -62,4 +63,5 @@
 		<?php } ?>
 	</div>
 </div>
+
 <div class="links"><?php echo $pagination; ?></div>

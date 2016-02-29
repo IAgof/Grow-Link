@@ -1,3 +1,4 @@
+
 <div class="buttons clearfix">
   <div class="pull-right">
     <?php foreach ($buttons as $button) { ?>
@@ -5,3 +6,4 @@
     <?php } ?>
   </div>
 </div>
+

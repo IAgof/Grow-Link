@@ -88,14 +88,14 @@
 			</div>
 		</div>
 
-		<div class="form-group">
+<!--		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_paypal; ?></label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control"  name="seller[paypal]" value="<?php echo $seller['ms.paypal']; ?>" />
 				<p class="ms-note"><?php echo $ms_account_sellerinfo_paypal_note; ?></p>
 			</div>
 		</div>
-
+-->
 		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_avatar; ?></label>
 			<div class="col-sm-10">

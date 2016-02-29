@@ -26,9 +26,17 @@
 	$productLayout = DIR_TEMPLATE.$config->get('config_template').'/template/common/product/'.$listingConfig['product_layout'].'.tpl';	
 	$ourl = $this->registry->get('url');  
 ?>
+
 <div class="panel-heading">
-	<span><?php echo $heading_title; ?></span>
+	<span><?php echo $heading_title; ?>
+
+<!--<?php file_put_contents("/var/www/market-dev/catalog/view/theme/pav_foodgood/template/common/test.txt","Product  ". print_r($heading_title, true)); ?>
+-->
+
+
+</span>
 	<em class="line"></em>
+
 </div>   
 
 <div class="box-content">		
@@ -44,3 +52,4 @@
 	<?php } ?>			
 	<?php } ?>		
 </div>	
+

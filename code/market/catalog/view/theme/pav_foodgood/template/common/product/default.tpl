@@ -10,21 +10,16 @@
 				</div>
 			</div>
 	    	<?php } ?>
-			<a class="img" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="img-responsive" />
+			<a class="img" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="img-responsive" >
+			<?php if( !isset($listingConfig['catalog_mode']) || !$listingConfig['catalog_mode'] ) { ?>
+				<button onclick="cart.addcart('<?php echo $product['product_id']; ?>');" class="btn btn-shopping-cart btn-outline-inverse">
+                                	<i class="fa fa-shopping-cart"></i>
+                                </button>
+			<?php } ?>
+			</img>
+			</a>
 
-
-<?php if( !isset($listingConfig['catalog_mode']) || !$listingConfig['catalog_mode'] ) { ?>
-						<div class="cart">						
-							<div class="content-cart">
-								<span><?php echo $objlang->get('button_cart'); ?></span>
-							</div>
-							<button onclick="cart.addcart('<?php echo $product['product_id']; ?>');" class="btn btn-shopping-cart btn-outline-inverse">
-								<i class="fa fa-shopping-cart"></i>
-							</button>
-						</div>
-					<?php } ?>
-</a>
-			
+<!--			
 			<div class="">
 				<div class="action">
 					<div class="btn-action">
@@ -49,17 +44,24 @@
 					<?php } ?> 
 				</div>
 			</div>
+-->
 		</div>
 	<?php } ?>
 	
 	<div class="product-meta">	
-		<div class="product-name-tab">
+		<div class="">
 			<table>
 				<tbody>
 					<tr>
+
 						<td class="names">
 							<h3 class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>
 						</td>
+						<td >
+
+<!--
+
+
 						<td>
 							<?php if ( isset( $product['rating']) ) { ?>
 				              <div class="rating">
@@ -73,18 +75,31 @@
 				              </div>
 				            <?php } ?>
 						</td>
+-->
 					</tr>
+
 				</tbody>
-			</table>
-			
+			</table>	
+
 			<div class="clearfix"></div>
-			<?php if( isset($product['description']) ){ ?> 
-			<p class="description" itemprop="description"><?php echo utf8_substr( strip_tags($product['description']),0,220);?>...</p>
-			<?php } ?>	
+			<?php if( isset($product['description']) ){ ?><?php echo $product['description']; ?>
+
+			<p class="description" itemprop="description"><?php echo utf8_substr( strip_tags($product['description']),0,80);?>....</p>
+			<?php } ?>
+	
 			<div class="bottom">
 				<div class="wrap-hover">
-					
-	
+					<?php if( !isset($listingConfig['catalog_mode']) || !$listingConfig['catalog_mode'] ) { ?>
+						<div class="cart">						
+							<div class="content-cart">
+								<span><?php echo $objlang->get('button_cart'); ?></span>
+							</div>
+							<button onclick="cart.addcart('<?php echo $product['product_id']; ?>');" class="btn btn-shopping-cart btn-outline-inverse">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+						</div>
+					<?php } ?>
+
 					<div class="price" itemtype="http://schema.org/Offer" itemscope itemprop="offers">
 						<?php if (!$product['special']) { ?>
 							<span class="special-price"><?php echo $product['price']; ?></span>
@@ -98,9 +113,14 @@
 							<meta content="<?php echo $p[0]; ?>" itemprop="price">
 							<?php } ?>
 						<?php } ?>
+
 					</div>
 				</div>	
 			</div>
+
 		</div>	
 	</div>	
+
 </div>
+
+

@@ -2,9 +2,9 @@
 // Text
 $_['text_home']          = 'Inicio';
 $_['text_wishlist']      = 'Lista de deseados (%s)';
-$_['text_shopping_cart'] = 'Carrito';
+$_['text_shopping_cart'] = 'Tu Carro';
 $_['text_category']      = 'Categorías';
-$_['text_account']       = 'Mi cuenta';
+$_['text_account']       = 'Tu cuenta';
 $_['text_register']      = 'Registro';
 $_['text_login']         = 'Identifícate';
 $_['text_order']         = 'Historial de pedidos';

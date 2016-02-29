@@ -85,12 +85,14 @@
 								<?php } ?>
 							<?php } //endforeach; ?>
 						</div>
+
 				  <?php } ?>
 				</div>  
 			</div>
 		<?php } // endforeach of tabs ?>	
 	
 	</div>
+
 </div>
 
 <script type="text/javascript">
@@ -99,3 +101,4 @@ $('#producttabs<?php echo $id;?> a:first').tab('show');
 })
 $('.tabcarousel<?php echo $id;?>').carousel({interval:false,auto:false,pause:'hover'});
 </script>
+

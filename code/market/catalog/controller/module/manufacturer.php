@@ -1,8 +1,8 @@
 <?php
-define("log_file","/var/www/market/file.log");
+
 class ControllerModuleManufaturer extends Controller {
 
-	error_log("Entra en controller",3,log_file);
+	file_put_contents("/var/www/market-dev/logmodule.log","Entra en controller");
 	public function index() {
 		$this->load->language('module/manufacturer');
 
@@ -34,7 +34,6 @@ class ControllerModuleManufaturer extends Controller {
 
 		$manufacturers = $this->model_catalog_manufacturer->getManufacturer(0);
 
-		error_log("manufacturers ".$manufacturers,3, log_file);
 
 		foreach ($manufacturers as $manufacturer) {
 			$children_data = array();
