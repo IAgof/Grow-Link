@@ -1,0 +1,288 @@
+Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [title] => 3
+            [parent_id] => 0
+            [group_id] => 1
+            [params] => Array
+                (
+                    [id] => 0
+                    [slider_group_id] => 1
+                    [slider_title] => 3
+                    [slider_language_id] => 1
+                    [slider_status] => 1
+                    [slider_transition] => random
+                    [slider_slot] => 7
+                    [slider_rotation] => 0
+                    [slider_duration] => 300
+                    [slider_delay] => 0
+                    [slider_link] => 
+                    [slider_thumbnail] => 
+                    [slider_usevideo] => 0
+                    [slider_videoid] => 
+                    [slider_videoplay] => 0
+                    [slider_id] => 0
+                    [slider_image] => data/slide_image.jpg
+                )
+
+            [layersparams] => stdClass Object
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layer_video_type] => youtube
+                                    [layer_video_id] => 
+                                    [layer_video_height] => 200
+                                    [layer_video_width] => 300
+                                    [layer_video_thumb] => 
+                                    [layer_id] => 1
+                                    [layer_content] => catalog/4.jpg
+                                    [layer_type] => image
+                                    [layer_class] => 
+                                    [layer_caption] => Your Image Here 1
+                                    [layer_animation] => fade
+                                    [layer_easing] => easeOutExpo
+                                    [layer_speed] => 350
+                                    [layer_top] => 0
+                                    [layer_left] => 0
+                                    [layer_endtime] => 0
+                                    [layer_endspeed] => 300
+                                    [layer_endanimation] => auto
+                                    [layer_endeasing] => nothing
+                                    [time_start] => 400
+                                )
+
+                        )
+
+                )
+
+            [image] => data/slide_image.jpg
+            [status] => 1
+            [position] => 0
+            [language_id] => 1
+            [layers] => Array
+                (
+                )
+
+            [main_image] => http://217.125.140.200:8080/image/data/slide_image.jpg
+            [thumbnail] => http://217.125.140.200:8080/image/data/slide_image.jpg
+        )
+
+    [1] => Array
+        (
+            [id] => 15
+            [title] => 1
+            [parent_id] => 0
+            [group_id] => 1
+            [params] => Array
+                (
+                    [id] => 0
+                    [slider_group_id] => 1
+                    [slider_title] => 1
+                    [slider_language_id] => 1
+                    [slider_status] => 1
+                    [slider_transition] => random
+                    [slider_slot] => 7
+                    [slider_rotation] => 0
+                    [slider_duration] => 300
+                    [slider_delay] => 0
+                    [slider_link] => 
+                    [slider_thumbnail] => 
+                    [slider_usevideo] => 0
+                    [slider_videoid] => 
+                    [slider_videoplay] => 0
+                    [slider_id] => 0
+                    [slider_image] => data/slide_image.jpg
+                )
+
+            [layersparams] => stdClass Object
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layer_video_type] => youtube
+                                    [layer_video_id] => 
+                                    [layer_video_height] => 200
+                                    [layer_video_width] => 300
+                                    [layer_video_thumb] => 
+                                    [layer_id] => 1
+                                    [layer_content] => catalog/1.jpg
+                                    [layer_type] => image
+                                    [layer_class] => 
+                                    [layer_caption] => Your Image Here 1
+                                    [layer_animation] => fade
+                                    [layer_easing] => easeOutExpo
+                                    [layer_speed] => 350
+                                    [layer_top] => 0
+                                    [layer_left] => 0
+                                    [layer_endtime] => 0
+                                    [layer_endspeed] => 300
+                                    [layer_endanimation] => auto
+                                    [layer_endeasing] => nothing
+                                    [time_start] => 400
+                                )
+
+                        )
+
+                )
+
+            [image] => data/slide_image.jpg
+            [status] => 1
+            [position] => 0
+            [language_id] => 1
+            [layers] => Array
+                (
+                )
+
+            [main_image] => http://217.125.140.200:8080/image/data/slide_image.jpg
+            [thumbnail] => http://217.125.140.200:8080/image/data/slide_image.jpg
+        )
+
+    [2] => Array
+        (
+            [id] => 16
+            [title] => 2
+            [parent_id] => 0
+            [group_id] => 1
+            [params] => Array
+                (
+                    [id] => 0
+                    [slider_group_id] => 1
+                    [slider_title] => 2
+                    [slider_language_id] => 1
+                    [slider_status] => 1
+                    [slider_transition] => random
+                    [slider_slot] => 7
+                    [slider_rotation] => 0
+                    [slider_duration] => 300
+                    [slider_delay] => 0
+                    [slider_link] => 
+                    [slider_thumbnail] => 
+                    [slider_usevideo] => 0
+                    [slider_videoid] => 
+                    [slider_videoplay] => 0
+                    [slider_id] => 0
+                    [slider_image] => data/slide_image.jpg
+                )
+
+            [layersparams] => stdClass Object
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layer_video_type] => youtube
+                                    [layer_video_id] => 
+                                    [layer_video_height] => 200
+                                    [layer_video_width] => 300
+                                    [layer_video_thumb] => 
+                                    [layer_id] => 1
+                                    [layer_content] => catalog/2.jpg
+                                    [layer_type] => image
+                                    [layer_class] => 
+                                    [layer_caption] => Your Image Here 1
+                                    [layer_animation] => fade
+                                    [layer_easing] => easeOutExpo
+                                    [layer_speed] => 350
+                                    [layer_top] => 0
+                                    [layer_left] => 0
+                                    [layer_endtime] => 0
+                                    [layer_endspeed] => 300
+                                    [layer_endanimation] => auto
+                                    [layer_endeasing] => nothing
+                                    [time_start] => 400
+                                )
+
+                        )
+
+                )
+
+            [image] => data/slide_image.jpg
+            [status] => 1
+            [position] => 0
+            [language_id] => 1
+            [layers] => Array
+                (
+                )
+
+            [main_image] => http://217.125.140.200:8080/image/data/slide_image.jpg
+            [thumbnail] => http://217.125.140.200:8080/image/data/slide_image.jpg
+        )
+
+    [3] => Array
+        (
+            [id] => 18
+            [title] => 4
+            [parent_id] => 0
+            [group_id] => 1
+            [params] => Array
+                (
+                    [id] => 0
+                    [slider_group_id] => 1
+                    [slider_title] => 4
+                    [slider_language_id] => 1
+                    [slider_status] => 1
+                    [slider_transition] => random
+                    [slider_slot] => 7
+                    [slider_rotation] => 0
+                    [slider_duration] => 300
+                    [slider_delay] => 0
+                    [slider_link] => 
+                    [slider_thumbnail] => 
+                    [slider_usevideo] => 0
+                    [slider_videoid] => 
+                    [slider_videoplay] => 0
+                    [slider_id] => 0
+                    [slider_image] => data/slide_image.jpg
+                )
+
+            [layersparams] => stdClass Object
+                (
+                    [layers] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [layer_video_type] => youtube
+                                    [layer_video_id] => 
+                                    [layer_video_height] => 200
+                                    [layer_video_width] => 300
+                                    [layer_video_thumb] => 
+                                    [layer_id] => 1
+                                    [layer_content] => catalog/5.jpg
+                                    [layer_type] => image
+                                    [layer_class] => 
+                                    [layer_caption] => Your Image Here 1
+                                    [layer_animation] => fade
+                                    [layer_easing] => easeOutExpo
+                                    [layer_speed] => 350
+                                    [layer_top] => 0
+                                    [layer_left] => 0
+                                    [layer_endtime] => 0
+                                    [layer_endspeed] => 300
+                                    [layer_endanimation] => auto
+                                    [layer_endeasing] => nothing
+                                    [time_start] => 400
+                                )
+
+                        )
+
+                )
+
+            [image] => data/slide_image.jpg
+            [status] => 1
+            [position] => 0
+            [language_id] => 1
+            [layers] => Array
+                (
+                )
+
+            [main_image] => http://217.125.140.200:8080/image/data/slide_image.jpg
+            [thumbnail] => http://217.125.140.200:8080/image/data/slide_image.jpg
+        )
+
+)
+

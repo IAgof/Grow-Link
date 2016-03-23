@@ -84,7 +84,7 @@
                             </li>
                         <?php } ?>
 
-<!--                        <li>
+                        <li>
                             <a href="<?php echo $this->url->link('seller/account-profile', '', 'SSL'); ?>">
                                 <?php if($this->config->get('msconf_graphical_sellermenu')) { ?>
                                     <?php if ($ms_seller_created) { ?>
@@ -96,7 +96,7 @@
                                 <?php echo $ms_seller_created ? $ms_account_sellerinfo : $ms_account_sellerinfo_new; ?>
                             </a>
                         </li>
-
+<!--
                         <?php if ( ($ms_seller_created) && ( ($this->MsLoader->MsSeller->getStatus($this->customer->getId()) == MsSeller::STATUS_ACTIVE) || ($this->config->get('msconf_allow_inactive_seller_products')) ) ) { ?>
                             <li>
                                 <a href="<?php echo $this->url->link('seller/account-product/create', '', 'SSL'); ?>">
@@ -112,7 +112,8 @@
                                         <img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-bag-96.png" />
                                     <?php } ?>
                                     <?php echo $ms_account_products; ?>
-                                </a>                            </li>
+                                </a>
+                            </li>
                         <?php } ?>
                         <?php if ($ms_seller_created && $this->MsLoader->MsSeller->getStatus($this->customer->getId()) == MsSeller::STATUS_ACTIVE) { ?>
                             <li>
@@ -150,8 +151,8 @@
                                     </a>
                                 </li>
                         <?php } ?>
-					</ul>
--->			]]></add>
+-->					</ul>
+			]]></add>
 		</operation>
 	</file>
 
@@ -189,7 +190,9 @@
                     <?php if ($this->MsLoader->MsSeller->getStatus($this->customer->getId()) == MsSeller::STATUS_ACTIVE) { ?>
                         <a class="list-group-item" href="<?php echo $this->url->link('seller/account-dashboard', '', 'SSL'); ?>"><?php echo $ms_account_dashboard; ?></a>
                     <?php } ?>
- 			    <a class="list-group-item" href= "<?php echo $this->url->link('seller/account-profile', '', 'SSL'); ?>"><?php echo $ms_account_sellerinfo; ?></a>	
+
+				    <a class="list-group-item" href= "<?php echo $this->url->link('seller/account-profile', '', 'SSL'); ?>"><?php echo $ms_account_sellerinfo; ?></a>
+				
                     <?php if ($this->MsLoader->MsSeller->getStatus($this->customer->getId()) == MsSeller::STATUS_ACTIVE) { ?>
                         <a class="list-group-item" href= "<?php echo $this->url->link('seller/account-product/create', '', 'SSL'); ?>"><?php echo $ms_account_newproduct; ?></a>
                         <a class="list-group-item" href= "<?php echo $this->url->link('seller/account-product', '', 'SSL'); ?>"><?php echo $ms_account_products; ?></a>

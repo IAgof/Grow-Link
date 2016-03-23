@@ -1,0 +1,25 @@
+.productdeals{
+	.title-module span{
+		background-color: $brand-primary !important;
+		&:before {
+		    background:$brand-primary !important;
+		}
+	}
+} 
+.latest_blog{
+	.title-module span{
+		background-color: $brand-primary !important;
+		&:before {
+		    background:$brand-primary !important;
+		}
+	}
+}
+.pavtestimonial{
+	.name{
+		color: $theme-color-primary !important;
+	}
+} 
+
+.pav-titleproduct span{
+	color: $theme-color-primary !important;
+}

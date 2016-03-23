@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!DOCTYPE modification [
+<!ENTITY themeFolder "default">
+]>
+<modification>
+	<id>MultiMerch Core Product Page Mods</id>
+
+  <file name="catalog/view/theme/&themeFolder;/template/product/product11.tpl">
+            <operation info="Before ABC, add 123">
+                <search position="after"><![CDATA[
+									<span><?php echo $heading_title; ?></span>
+								]]></search>
+                <add><![CDATA[
+                456
+                ]]></add>
+            </operation>
+        </file>
+
+
+
+</modification>

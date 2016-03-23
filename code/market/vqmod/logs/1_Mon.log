@@ -1,0 +1,64 @@
+---------- Date: 2016-03-21 08:59:47 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&product_id=106
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
+   id        : MultiMerch Shipping Edition - Product page
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
+   id        : MultiMerch Social Links
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-21 09:12:29 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=checkout/confirm
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_ordercomments.xml
+   id        : MultiMerch Core Order Comments per Seller
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/checkout/confirm.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $data['comment'] = $this->session->data['comment'];
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-21 10:04:22 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-order
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_sellerarea.xml
+   id        : MultiMerch Shipping Edition - Seller Areas
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/controller/seller/account-order.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): 'view_order' => '<a href="' . $this->url->link('seller/account-order/viewOrder', 'order_id=' . $order['order_id']) . '" class="ms-button ms-button-view" title="' . $this->language->get('ms_view_modify') . '"></a>'
+
+----------------------------------------------------------------------
+
+
