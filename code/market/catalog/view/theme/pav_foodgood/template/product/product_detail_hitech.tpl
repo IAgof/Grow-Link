@@ -246,7 +246,7 @@
                             <span><?php echo $button_cart; ?></span>
                         </a>
                     </div>
--->                    <div class="wishlist">
+                    <div class="wishlist">
                         <a class="btn btn-outline-inverse" data-toggle="tooltip" onclick="wishlist.addwishlist('<?php echo $product_id; ?>');" title="<?php echo $button_wishlist; ?>">
                             <i class="fa fa-heart"></i>
                             <span><?php echo $button_wishlist; ?></span>
@@ -259,7 +259,7 @@
                         </a>
                     </div>
                 </div>
-
+-->
             </div>
 
 	    <?php if ($minimum > 1) { ?>

@@ -53,11 +53,11 @@ $_['ms_transaction_listing'] = 'Listado de productos: %s (%s)';
 $_['ms_transaction_signup']      = 'Cuota de inscripción %s';
 $_['ms_request_submitted'] = 'Tu petición ha sido enviada';
 
-$_['ms_totals_line'] = 'Actualmente %s Productores y %s productos de rebajas';
+$_['ms_totals_line'] = 'Actualmente %s Tiendas y %s productos de rebajas';
 
-$_['ms_text_welcome'] = '<a href="%s">Entrar</a> | <a href="%s">Registrar</a> | <a href="%s">Registrar cuenta de Productor</a>.';
-$_['ms_button_register_seller'] = 'Registrar como Productor';
-$_['ms_register_seller_account'] = 'Registrar cuenta de Productor';
+$_['ms_text_welcome'] = '<a href="%s">Entrar</a> | <a href="%s">Registrar</a> | <a href="%s">Registrar cuenta de Tienda</a>.';
+$_['ms_button_register_seller'] = 'Registrar como Tienda';
+$_['ms_register_seller_account'] = 'Registrar cuenta de Tienda';
 
 // Mails
 
@@ -67,9 +67,9 @@ $_['ms_mail_greeting_no_name'] = "Hola,\n\n";
 $_['ms_mail_ending'] = "\n\nSaludos,\n%s";
 $_['ms_mail_message'] = "\n\nMensaje:\n%s";
 
-$_['ms_mail_subject_seller_account_created'] = 'Cuenta de Productor creada';
+$_['ms_mail_subject_seller_account_created'] = 'Cuenta de Tienda creada';
 $_['ms_mail_seller_account_created'] = <<<EOT
-Tu cuenta de Productor %s se ha creado!
+Tu cuenta de Tienda %s se ha creado!
 
 Puedes empezar a añadir productos.
 EOT;
@@ -177,20 +177,20 @@ EOT;
 // *********
 // * Admin *
 // *********
-$_['ms_mail_admin_subject_seller_account_created'] = 'Nueva cuenta de Productor creada';
+$_['ms_mail_admin_subject_seller_account_created'] = 'Nueva cuenta de Tienda creada';
 $_['ms_mail_admin_seller_account_created'] = <<<EOT
-NNueva cuenta de Productor %s creada
+NNueva cuenta de Tienda %s creada
 Nombre: %s (%s)
 Correo: %s
 EOT;
 
-$_['ms_mail_admin_subject_seller_account_awaiting_moderation'] = 'Cuenta de Productor pendiente de aprobación';
+$_['ms_mail_admin_subject_seller_account_awaiting_moderation'] = 'Cuenta de Tienda pendiente de aprobación';
 $_['ms_mail_admin_seller_account_awaiting_moderation'] = <<<EOT
-la nueva cuenta de Productor en %s se ha creado y está pendiente de aprobación.
-Productor: %s (%s)
+la nueva cuenta de Tienda en %s se ha creado y está pendiente de aprobación.
+Tienda: %s (%s)
 Correo: %s
 
-La puedes procesar en la sección de multiProductores.
+La puedes procesar en la sección de multiTiendas.
 EOT;
 
 $_['ms_mail_admin_subject_product_created'] = 'Nueov producto añadido';
@@ -229,12 +229,12 @@ $_['ms_success_product_updated'] = 'producto actualizado';
 $_['ms_success_product_deleted'] = 'Producto eliminado';
 
 // Errors
-$_['ms_error_sellerinfo_nickname_empty'] = 'Nombre de productor no puede estar vacío';
-$_['ms_error_sellerinfo_nickname_alphanumeric'] = 'nombre de productor solo puede tener caracteres alfanuméricos';
-$_['ms_error_sellerinfo_nickname_utf8'] = 'Nombre de productor roductor solo puede tener caracteres UTF-8 ';
+$_['ms_error_sellerinfo_nickname_empty'] = 'Nombre de Tienda no puede estar vacío';
+$_['ms_error_sellerinfo_nickname_alphanumeric'] = 'nombre de Tienda solo puede tener caracteres alfanuméricos';
+$_['ms_error_sellerinfo_nickname_utf8'] = 'Nombre de Tienda roductor solo puede tener caracteres UTF-8 ';
 $_['ms_error_sellerinfo_nickname_latin'] = 'nombre de roductor sólo puede contener símbolos y signos diacríticos alfanuméricos';
-$_['ms_error_sellerinfo_nickname_length'] = 'Nombre de productor debe tener entre 4 y 50 caracteres';
-$_['ms_error_sellerinfo_nickname_taken'] = 'Ese Nombre de productor ya está cogido';
+$_['ms_error_sellerinfo_nickname_length'] = 'Nombre de Tienda debe tener entre 4 y 50 caracteres';
+$_['ms_error_sellerinfo_nickname_taken'] = 'Ese Nombre de Tienda ya está cogido';
 $_['ms_error_sellerinfo_company_length'] = 'El nombre de la compañía no debe tener más de 50 caracteres';
 $_['ms_error_sellerinfo_description_length'] = 'La descripción no puede tener más de 1000 caracteres';
 $_['ms_error_sellerinfo_paypal'] = 'Cuenta PayPal inválida';
@@ -285,21 +285,21 @@ $_['ms_error_seller_product'] = 'No puedes comprar tu propio producto';
 // Account - General
 $_['ms_account_unread_pm'] = 'Tienes nuevos mensjaes privados';
 $_['ms_account_unread_pms'] = 'Tienes %s mensajes privados nuevos';
-$_['ms_account_register_new'] = 'Nuevo Productor';
-$_['ms_account_register_seller'] = 'Registrar cuetna de Productor';
+$_['ms_account_register_new'] = 'Nueva Tienda';
+$_['ms_account_register_seller'] = 'Registrar cuenta de Tienda';
 $_['ms_account_register_seller_note'] = 'Crea tu cuenta y empieza a vender con nosotros';
 $_['ms_account_register_details'] = 'Paso 1: Tus detalles';
-$_['ms_account_register_seller_success_heading'] = 'Tu cuenta de Productor se ha creado';
+$_['ms_account_register_seller_success_heading'] = 'Tu cuenta de Tienda se ha creado';
 $_['ms_account_register_seller_success_message']  = '<p>Bienvenido a  %s!</p> <p>Felicidades,  Tu nueva cuenta se ha creado.</p> <p>Ahora puedes empezar a subir productos.</p> <p>Si tienes dudas, <a href="%s">contáctanos</a>.</p>';
 $_['ms_account_register_seller_success_approval'] = '<p>Bienvenido a %s!</p> <p>Felicidades,  Tu nueva cuenta se ha creado y está pendiente de aprobación. Serás notificado por correo.</p><p>Si tienes dudas, <a href="%s">contáctanos</a>.</p>';
 
-$_['ms_seller'] = 'Productor';
-$_['ms_seller_forseller'] = 'Para Productor';
-$_['ms_account_dashboard'] = 'Tablero';
-$_['ms_account_seller_account'] = 'Cuenta de Productor';
+$_['ms_seller'] = 'Tienda';
+$_['ms_seller_forseller'] = 'Para Tienda';
+$_['ms_account_dashboard'] = 'Menú principal';
+$_['ms_account_seller_account'] = 'Cuenta de Tienda';
 $_['ms_account_customer_account'] = 'Cuenta de cliente';
-$_['ms_account_sellerinfo'] = 'Perfil de Productor';
-$_['ms_account_sellerinfo_new'] = 'Nueva cuenta de Productor';
+$_['ms_account_sellerinfo'] = 'Perfil de Tienda';
+$_['ms_account_sellerinfo_new'] = 'Nueva cuenta de Tienda';
 $_['ms_account_newproduct'] = 'Nuevo producto';
 $_['ms_account_products'] = 'Productos';
 $_['ms_account_transactions'] = 'Transacciones';
@@ -330,7 +330,7 @@ $_['ms_account_product_price'] = 'Precio';
 $_['ms_account_product_price_note'] = 'Seleccionar precio para el producto';
 $_['ms_account_product_listing_flat'] = 'Tarifa de producto para este producto es <span>%s</span>';
 $_['ms_account_product_listing_percent'] = 'Tarifa de producto se basa en el precio del producto. Tarifa de producto actual: <span>%s</span>.';
-$_['ms_account_product_listing_balance'] = 'Esta cantidad se deducirá de tu cuenta de Productor.';
+$_['ms_account_product_listing_balance'] = 'Esta cantidad se deducirá de tu cuenta de Tienda.';
 $_['ms_account_product_listing_paypal'] = 'Serás redirigido a PayPal después de completar la petición.';
 $_['ms_account_product_listing_itemname'] = 'Tarifa de venta de producto %s';
 $_['ms_account_product_listing_until'] = 'Este producto estará disponible hasta %s';
@@ -413,10 +413,10 @@ $_['ms_account_relist_product_heading'] = 'Volver a poner producto';
 $_['ms_account_relist_product_breadcrumbs'] = 'Volver a poner producto';
 
 // Account - Seller
-$_['ms_account_sellerinfo_heading'] = 'Perfil del Productor';
-$_['ms_account_sellerinfo_breadcrumbs'] = 'perfil del Productor';
-$_['ms_account_sellerinfo_nickname'] = 'Nombre de productor';
-$_['ms_account_sellerinfo_nickname_note'] = 'Especificar Nombre de productor';
+$_['ms_account_sellerinfo_heading'] = 'Perfil de Tienda';
+$_['ms_account_sellerinfo_breadcrumbs'] = 'perfil de Tienda';
+$_['ms_account_sellerinfo_nickname'] = 'Nombre de Tienda';
+$_['ms_account_sellerinfo_nickname_note'] = 'Especificar Nombre de Tienda';
 $_['ms_account_sellerinfo_description'] = 'Descripción';
 $_['ms_account_sellerinfo_description_note'] = 'Descripción de ti';
 $_['ms_account_sellerinfo_company'] = 'Empresa';
@@ -438,15 +438,15 @@ $_['ms_account_sellerinfo_reviewer_message'] = 'Mensaje para el autor';
 $_['ms_account_sellerinfo_reviewer_message_note'] = 'Mi mensaje para el autor';
 $_['ms_account_sellerinfo_terms'] = 'Aceptar términos';
 $_['ms_account_sellerinfo_terms_note'] = 'He leído y aceptado <a class="agree" href="%s" alt="%s"><b>%s</b></a>';
-$_['ms_account_sellerinfo_fee_flat'] = 'Hay una tarifa <span>%s</span> para convertirse en un Productor %s.';
+$_['ms_account_sellerinfo_fee_flat'] = 'Hay una tarifa <span>%s</span> para convertirse en un Tienda %s.';
 $_['ms_account_sellerinfo_fee_balance'] = 'Esta cantidad será deducida de tu balance.';
 $_['ms_account_sellerinfo_fee_paypal'] = 'Serás redirigido a PayPal después de completar el formulario.';
 $_['ms_account_sellerinfo_signup_itemname'] = 'Registro de cuenta en %s';
 $_['ms_account_sellerinfo_saved'] = 'Datos de cuenta guardados.';
 
-$_['ms_account_status'] = 'El estado de tu cuenta de Productor es: ';
+$_['ms_account_status'] = 'El estado de tu cuenta de Tienda es: ';
 $_['ms_account_status_tobeapproved'] = '<br />You will be able to use your account as soon as it is approved by the store owner.';
-$_['ms_account_status_please_fill_in'] = 'Complete el formulario para darse de alta como Productor.';
+$_['ms_account_status_please_fill_in'] = 'Complete el formulario para darse de alta como Tienda.';
 
 $_['ms_seller_status_' . MsSeller::STATUS_ACTIVE] = 'Activo';
 $_['ms_seller_status_' . MsSeller::STATUS_INACTIVE] = 'Inactivo';
@@ -531,8 +531,8 @@ Comentario:
 
 EOT;
 
-$_['ms_mail_subject_seller_vote'] = 'Votar por el Productor';
-$_['ms_mail_seller_vote_message'] = 'Votar por el Productor';
+$_['ms_mail_subject_seller_vote'] = 'Votar por el la Tienda';
+$_['ms_mail_seller_vote_message'] = 'Votar por la Tienda';
 
 // Account - Transactions
 $_['ms_account_transactions_heading'] = 'Financias';
@@ -576,13 +576,13 @@ $_['ms_account_orders_add_history']    = 'Añadir historial';
 $_['ms_account_order_information'] = 'Información de pedidos';
 
 // Account - Dashboard
-$_['ms_account_dashboard_heading'] = 'Productor';
-$_['ms_account_dashboard_breadcrumbs'] = 'Productor';
+$_['ms_account_dashboard_heading'] = 'Tienda';
+$_['ms_account_dashboard_breadcrumbs'] = 'Tienda';
 $_['ms_account_dashboard_orders'] = 'Últimos pedidos';
 $_['ms_account_dashboard_overview'] = 'Información general';
-$_['ms_account_dashboard_seller_group'] = 'Grupo de Productores';
+$_['ms_account_dashboard_seller_group'] = 'Grupo de Tiendas';
 $_['ms_account_dashboard_listing'] = 'tarifa de venta';
-$_['ms_account_dashboard_sale'] = 'TCargo de venta';
+$_['ms_account_dashboard_sale'] = 'Cargo de venta';
 $_['ms_account_dashboard_royalty'] = 'Regalías';
 $_['ms_account_dashboard_stats'] = 'Estadísticas';
 $_['ms_account_dashboard_balance'] = 'Saldo actual';
@@ -590,11 +590,11 @@ $_['ms_account_dashboard_total_sales'] = 'Ventas totales';
 $_['ms_account_dashboard_total_earnings'] = 'Ganancias totales';
 $_['ms_account_dashboard_sales_month'] = 'Ventas este mes';
 $_['ms_account_dashboard_earnings_month'] = 'Ganancias este mes';
-$_['ms_account_dashboard_nav'] = 'navegación rápida';
-$_['ms_account_dashboard_nav_profile'] = 'Modificar tu perfil de Productor';
-$_['ms_account_dashboard_nav_product'] = 'Crear producto';
+$_['ms_account_dashboard_nav'] = 'Gestión de prefil de Tienda';
+$_['ms_account_dashboard_nav_profile'] = 'Modificar tu perfil de Tienda';
+$_['ms_account_dashboard_nav_product'] = 'Nuevo producto';
 $_['ms_account_dashboard_nav_products'] = 'Gestionar tus productos';
-$_['ms_account_dashboard_nav_orders'] = 'Ver tus pedidos';
+$_['ms_account_dashboard_nav_orders'] = 'Gestionar tus pedidos';
 $_['ms_account_dashboard_nav_balance'] = 'Ver registros financieros';
 $_['ms_account_dashboard_nav_payout'] = 'Solicitar pago';
 
@@ -648,13 +648,13 @@ $_['ms_account_stats_projected_totals'] = 'Totales para ';
 $_['ms_account_stats_grand_total_sales'] = 'Ventas totales';
 
 // Product page - Seller information
-$_['ms_catalog_product_sellerinfo'] = 'Información del Productor';
-$_['ms_catalog_product_contact'] = 'Contactar con el Productor';
+$_['ms_catalog_product_sellerinfo'] = 'Información de la Tienda';
+$_['ms_catalog_product_contact'] = 'Contactar con la Tienda';
 
 $_['ms_footer'] = '<br>MultiMerch Marketplace by <a href="http://multimerch.com/">multimerch.com</a>';
 
 // Catalog - Sellers list
-$_['ms_catalog_sellers_heading'] = 'Productores';
+$_['ms_catalog_sellers_heading'] = 'Tiendas';
 $_['ms_catalog_sellers_country'] = 'País:';
 $_['ms_catalog_sellers_website'] = 'Web:';
 $_['ms_catalog_sellers_company'] = 'Compañía:';
@@ -666,12 +666,12 @@ $_['ms_sort_nickname_desc'] = 'Nombre (Z - A)';
 $_['ms_sort_nickname_asc'] = 'Nombre (A - Z)';
 
 // Catalog - Seller profile page
-$_['ms_catalog_sellers'] = 'Productores';
-$_['ms_catalog_sellers_empty'] = 'No hay Productores todavía.';
+$_['ms_catalog_sellers'] = 'Tiendas';
+$_['ms_catalog_sellers_empty'] = 'No hay Tiendas todavía.';
 $_['ms_catalog_seller_profile'] = 'Ver perfil';
 $_['ms_catalog_seller_profile_heading'] = 'Perfil de %s';
 $_['ms_catalog_seller_profile_breadcrumbs'] = 'Perfil de %s';
-$_['ms_catalog_seller_profile_about_seller'] = 'Sobre el Productor';
+$_['ms_catalog_seller_profile_about_seller'] = 'Sobre la Tienda';
 $_['ms_catalog_seller_profile_products'] = 'Algunos de sus productos';
 $_['ms_catalog_seller_profile_tab_products'] = 'Productos';
 

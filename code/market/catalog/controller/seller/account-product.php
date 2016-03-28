@@ -10,10 +10,10 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			'number_sold' => 'mp.number_sold',
 			'product_price' => 'p.price',
 		);
-		
+
 		$sorts = array('product_name', 'product_price', 'date_created', 'list_until', 'product_status', 'product_earnings', 'number_sold');
 		$filters = array_diff($sorts, array('product_status'));
-		
+
 		list($sortCol, $sortDir) = $this->MsLoader->MsHelper->getSortParams($sorts, $colMap);
 		$filterParams = $this->MsLoader->MsHelper->getFilterParams($filters, $colMap);
 
@@ -35,7 +35,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				'product_earnings' => 1
 			)
 		);
-		
+
 		$total = isset($products[0]) ? $products[0]['total_rows'] : 0;
 
 		$columns = array();
@@ -67,21 +67,21 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else {
 				$image = $this->MsLoader->MsFile->resizeImage('no_image.png', $this->config->get('msconf_product_seller_product_list_seller_area_image_width'), $this->config->get('msconf_product_seller_product_list_seller_area_image_height'));
 			}
-			
+
 			// actions
 			$actions = "";
 			if ($product['mp.product_status'] != MsProduct::STATUS_DISABLED) {
 				if ($product['mp.product_status'] == MsProduct::STATUS_ACTIVE)
 					$actions .= "<a href='" . $this->url->link('product/product', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-view' title='" . $this->language->get('ms_viewinstore') . "'></a>";
-	
+
 				if ($product['mp.product_approved']) {
 					if ($product['mp.product_status'] == MsProduct::STATUS_INACTIVE)
 						$actions .= "<a href='" . $this->url->link('seller/account-product/publish', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-publish' title='" . $this->language->get('ms_publish') . "'></a>";
-		
+
 					if ($product['mp.product_status'] == MsProduct::STATUS_ACTIVE)
 						$actions .= "<a href='" . $this->url->link('seller/account-product/unpublish', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-unpublish' title='" . $this->language->get('ms_unpublish') . "'></a>";
 				}
-				
+
 				$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-edit' title='" . $this->language->get('ms_edit') . "'></a>";
 				$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'] . "&clone=1", 'SSL') ."' class='ms-button ms-button-clone' title='" . $this->language->get('ms_clone') . "'></a>";
 				$actions .= "<a href='" . $this->url->link('seller/account-product/delete', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-delete' title='" . $this->language->get('ms_delete') . "'></a>";
@@ -90,7 +90,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 					$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'] . "&relist=1", 'SSL') ."' class='ms-button ms-button-relist' title='" . $this->language->get('ms_relist') . "'></a>";
 				}
 			}
-			
+
 			// product status
 			$status = "";
 			if ($product['mp.product_status'] == MsProduct::STATUS_ACTIVE) {
@@ -98,18 +98,18 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else {
 				$status = "<span class='inactive' style='color: #b00;'>" . $this->language->get('ms_product_status_' . $product['mp.product_status']) . "</td></span>";
 			}
-			
+
 			// List until
 			if (isset($product['mp.list_until']) && $product['mp.list_until'] != NULL) {
 				$list_until = date($this->language->get('date_format_short'), strtotime($product['mp.list_until']));
 			} else {
 				$list_until = $this->language->get('ms_not_defined');
 			}
-			
+
 			$columns[] = array_merge(
 				$product,
 				array(
-					'image' => "<img src='$image' style='padding: 0px; border: 0px solid #DDDDDD' />",
+					'image' => "<img src='$image' style='padding: 1px; border: 1px solid #DDDDDD' />",
 					'product_name' => $product['pd.name'],
 					'product_price' => $price,
 					'number_sold' => $product['mp.number_sold'],
@@ -121,12 +121,14 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				)
 			);
 		}
+
 		$this->response->setOutput(json_encode(array(
 			'iTotalRecords' => $total,
 			'iTotalDisplayRecords' => $total,
 			'aaData' => $columns
 		)));
 	}
+
 	public function jxUpdateFile() {
 		$json = array();
 		$json['errors'] = $this->MsLoader->MsFile->checkPostMax($_POST, $_FILES);
@@ -134,6 +136,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		if ($json['errors']) {
 			return $this->response->setOutput(json_encode($json));
 		}
+
 		if (isset($this->request->post['file_id']) && isset($this->request->post['product_id'])) {
 			$download_id = (int)substr($this->request->post['file_id'], strrpos($this->request->post['file_id'], '-')+1);
 			$product_id = (int)$this->request->post['product_id'];
@@ -141,6 +144,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			if  ($this->MsLoader->MsProduct->productOwnedBySeller($product_id,$seller_id) && $this->MsLoader->MsProduct->hasDownload($product_id,$download_id)) {
 				$file = array_shift($_FILES);
 				$errors = $this->MsLoader->MsFile->checkDownload($file);
+
 				if ($errors) {
 					$json['errors'] = array_merge($json['errors'], $errors);
 				} else {
@@ -150,11 +154,14 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				}
 			}
 		}
+
 		return $this->response->setOutput(json_encode($json));
 	}
+
 	public function jxUploadSellerAvatar() {
 		$json = array();
 		$file = array();
+
 		$json['errors'] = $this->MsLoader->MsFile->checkPostMax($_POST, $_FILES);
 
 		if ($json['errors']) {
@@ -163,6 +170,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 
 		foreach ($_FILES as $file) {
 			$errors = $this->MsLoader->MsFile->checkImage($file);
+
 			if ($errors) {
 				$json['errors'] = array_merge($json['errors'], $errors);
 			} else {
@@ -174,8 +182,10 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				);
 			}
 		}
+
 		return $this->response->setOutput(json_encode($json));
 	}
+
 	public function jxUploadImages() {
 		$json = array();
 		$file = array();
@@ -195,6 +205,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				return;
 			} else {
 				$errors = $this->MsLoader->MsFile->checkImage($file);
+
 				if ($errors) {
 					$json['errors'] = array_merge($json['errors'], $errors);
 				} else {
@@ -208,12 +219,14 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				}
 			}
 		}
+
 		return $this->response->setOutput(json_encode($json));
 	}
+
 	public function jxUploadDownloads() {
 		$json = array();
 		$file = array();
-		
+
 		$json['errors'] = $this->MsLoader->MsFile->checkPostMax($_POST, $_FILES);
 
 		if ($json['errors']) {
@@ -230,7 +243,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				return;
 			} else {
 				$errors = $this->MsLoader->MsFile->checkDownload($file);
-				
+
 				if ($errors) {
 					$json['errors'] = array_merge($json['errors'], $errors);
 				} else {
@@ -244,20 +257,20 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				}
 			}
 		}
-		
+
 		return $this->response->setOutput(json_encode($json));
 	}
-	
+
 	public function jxGetFee() {
 		$data = $this->request->get;
-		
-		if (!isset($data['price']) && !is_numeric($data['price'])) 
+
+		if (!isset($data['price']) && !is_numeric($data['price']))
 			$data['price'] = 0;
 
 		$rates = $this->MsLoader->MsCommission->calculateCommission(array('seller_id' => $this->customer->getId()));
 		echo $this->currency->format((float)$rates[MsCommission::RATE_LISTING]['flat'] + ((float)$rates[MsCommission::RATE_LISTING]['percent'] * $data['price'] / 100), $this->config->get('config_currency'));
 	}
-	
+
 	public function jxSubmitProduct()
 	{
 		//ob_start();
@@ -331,6 +344,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else if (empty($language['product_tags']) && $i != 0) {
 				$data['languages'][$language_id]['product_tags'] = $data['languages'][$default]['product_tags'];
 			}
+
 			// strip disallowed tags in description
 			if ($this->config->get('msconf_enable_rte')) {
 				if ($this->config->get('msconf_rte_whitelist') != '') {
@@ -490,7 +504,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			}
 		}
 
-		// uncomment to enable RTE for message field 
+		// uncomment to enable RTE for message field
 		/*
 		if(isset($data['product_message'])) {
 			$data['product_message'] = strip_tags(html_entity_decode($data['product_message']), $allowed_tags_ready);
@@ -609,8 +623,8 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		}
 
 		// options
-		//unset($data['product_option'][0]); // Remove sample row		
-
+		//unset($data['product_option'][0]); // Remove sample row
+/*
 		if ($this->config->get('msconf_enable_shipping') == 1) { // enable shipping
 			$data['product_enable_shipping'] = 1;
 		} else if ($this->config->get('msconf_enable_shipping') == 2) { // seller select
@@ -631,7 +645,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		} else {
 			$data['product_quantity'] = isset($data['product_quantity']) ? (int)$data['product_quantity'] : 0;
 		}
-
+*/
 		// Disable quantities for digital products and if selected by seller
 		if ($this->config->get('msconf_enable_quantities') == 2) {
 			if ($this->config->get('msconf_enable_shipping') == 2) {
@@ -660,7 +674,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				$data['keyword'] = implode("-", str_replace("-", "", explode(" ", preg_replace("/[^A-Za-z0-9 ]/", '', strtolower($product_name)))));
 			}
 		}
-		
+
 		// Listing until
 		if (!isset($data['listing_until']) || $data['listing_until'] == "") {
 			$data['listing_until'] = NULL;
@@ -669,14 +683,14 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		// post-validation
 		if (empty($json['errors'])) {
 			$mails = array();
-			
+
 			// Relist the product
 			if ($this->config->get('msconf_allow_relisting')) {
 				if ((isset($data['product_id']) && !empty($data['product_id'])) && $this->MsLoader->MsProduct->getStatus((int)$data['product_id']) == MsProduct::STATUS_DISABLED) {
 					$this->MsLoader->MsProduct->changeStatus((int)$data['product_id'], MsProduct::STATUS_ACTIVE);
 				}
 			}
-			
+
 			// If it is allowed for inactive seller to list new products
 			if ($this->config->get('msconf_allow_inactive_seller_products') && $this->MsLoader->MsSeller->getStatus() == MsSeller::STATUS_INACTIVE) {
 				$data['enabled'] = 0;
@@ -690,12 +704,12 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 						$data['enabled'] = 0;
 						$data['product_status'] = MsProduct::STATUS_INACTIVE;
 						$data['product_approved'] = 0;
-						/*if (isset($data['product_id']) && !empty($data['product_id'])) {
-							//$request_type = MsRequestProduct::TYPE_PRODUCT_UPDATE;
+						if (isset($data['product_id']) && !empty($data['product_id'])) {
+							$request_type = MsRequestProduct::TYPE_PRODUCT_UPDATE;
 						} else {
 							//$request_type = MsRequestProduct::TYPE_PRODUCT_CREATE;
-						}*/
-						
+						}
+
 						if (!isset($data['product_id']) || empty($data['product_id'])) {
 							$mails[] = array(
 								'type' => MsMail::SMT_PRODUCT_AWAITING_MODERATION
@@ -715,16 +729,16 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 								'data' => array(
 									'message' => isset($data['product_message']) ? $data['product_message'] : ''
 								)
-							);						
+							);
 						}
 						break;
-						
+
 					case MsProduct::MS_PRODUCT_VALIDATION_NONE:
 					default:
 						$data['enabled'] = 1;
 						$data['product_status'] = MsProduct::STATUS_ACTIVE;
 						$data['product_approved'] = 1;
-						
+
 						if (!isset($data['product_id']) || empty($data['product_id'])) {
 							$mails[] = array(
 								'type' => MsMail::AMT_PRODUCT_CREATED
@@ -735,7 +749,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 						break;
 				}
 			}
-			
+
 			if (isset($data['product_id']) && !empty($data['product_id'])) {
 				$product_id = $this->MsLoader->MsProduct->editProduct($data);
 				if ($product['product_status'] == MsProduct::STATUS_UNPAID) {
@@ -745,10 +759,10 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 						switch($commissions[MsCommission::RATE_LISTING]['payment_method']) {
 							case MsPayment::METHOD_PAYPAL:
 								// initiate paypal payment
-								
+
 								// change status to unpaid
 								$this->MsLoader->MsProduct->changeStatus($product_id, MsProduct::STATUS_UNPAID);
-								
+
 								// unset seller email
 								foreach ($mails as $key => $value) {
 									if ($value['type'] == SMT_PRODUCT_AWAITING_MODERATION) unset($mails[$key]);
@@ -758,7 +772,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 									$mail['data']['product_id'] = $product_id;
 								}
 								$this->MsLoader->MsMail->sendMails($mails);
-								
+
 								// check if payment exists
 								$payment = $this->MsLoader->MsPayment->getPayments(array(
 									'seller_id' => $this->customer->getId(),
@@ -768,7 +782,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 									'payment_method' => array(MsPayment::METHOD_PAYPAL),
 									'single' => 1
 								));
-								
+
 								if (!$payment) {
 									// create new payment
 									$payment_id = $this->MsLoader->MsPayment->createPayment(array(
@@ -784,7 +798,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 									));
 								} else {
 									$payment_id = $payment['payment_id'];
-									
+
 									// edit payment
 									$this->MsLoader->MsPayment->updatePayment($payment_id, array(
 										'amount' => $fee,
@@ -795,10 +809,10 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 								// assign payment variables
 								$json['data']['amount'] = $this->currency->format($fee, $this->config->get('config_currency'), '', FALSE);
 								$json['data']['custom'] = $payment_id;
-			
+
 								return $this->response->setOutput(json_encode($json));
 								break;
-	
+
 							case MsPayment::METHOD_BALANCE:
 							default:
 								// deduct from balance
@@ -810,12 +824,12 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 										'description' => sprintf($this->language->get('ms_transaction_listing'), $data['languages'][$default]['product_name'], $this->currency->format(-$fee, $this->config->get('config_currency')))
 									)
 								);
-								
+
 								break;
 						}
 					}
 				}
-				
+
 				$this->session->data['success'] = $this->language->get('ms_success_product_updated');
 			} else {
 				//$data['list_until'] = date('Y-m-d', strtotime($data['list_until']));
@@ -827,16 +841,16 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				foreach ($mails as &$mail) {
 					$mail['data']['product_id'] = $product_id;
 				}
-				$this->MsLoader->MsMail->sendMails($mails);				
-				
+				$this->MsLoader->MsMail->sendMails($mails);
+
 				if ($fee > 0) {
 					switch($commissions[MsCommission::RATE_LISTING]['payment_method']) {
 						case MsPayment::METHOD_PAYPAL:
 							// initiate paypal payment
-							
+
 							// set product status to unpaid
 							$this->MsLoader->MsProduct->changeStatus($product_id, MsProduct::STATUS_UNPAID);
-							
+
 							// add payment details
 							$payment_id = $this->MsLoader->MsPayment->createPayment(array(
 								'seller_id' => $this->customer->getId(),
@@ -847,13 +861,13 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 								'amount' => $fee,
 								'currency_id' => $this->currency->getId($this->config->get('config_currency')),
 								'currency_code' => $this->currency->getCode($this->config->get('config_currency')),
-								'description' => sprintf($this->language->get('ms_transaction_listing'), $data['languages'][$default]['product_name'], $this->currency->format(-$fee, $this->config->get('config_currency')))								
+								'description' => sprintf($this->language->get('ms_transaction_listing'), $data['languages'][$default]['product_name'], $this->currency->format(-$fee, $this->config->get('config_currency')))
 							));
-							
+
 							// assign payment variables
 							$json['data']['amount'] = $this->currency->format($fee, $this->config->get('config_currency'), '', FALSE);
 							$json['data']['custom'] = $payment_id;
-		
+
 							return $this->response->setOutput(json_encode($json));
 							break;
 
@@ -868,17 +882,17 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 									'description' => sprintf($this->language->get('ms_transaction_listing'), $data['languages'][$default]['product_name'], $this->currency->format(-$fee, $this->config->get('config_currency')))
 								)
 							);
-							
+
 							break;
 					}
 				}
-				
+
 				$this->session->data['success'] = $this->language->get('ms_success_product_created');
 			}
-			
+
 			$json['redirect'] = $this->url->link('seller/account-product', '', 'SSL');
 		}
-		
+
 		/*
 		$output = ob_get_clean();
 		if ($output) {
@@ -894,7 +908,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		foreach ($this->data['options'] as &$option) {
 			$option['values'] = $this->MsLoader->MsOption->getOptionValues($option['option_id']);
 		}
-		
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/multiseller/account-product-form-options.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/multiseller/account-product-form-options.tpl';
 		} else {
@@ -903,7 +917,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 
 		$this->response->setOutput($this->load->view($this->template, $this->data));
 	}
-	
+
 	public function jxRenderOptionValues() {
 		$this->data['option'] = $this->MsLoader->MsOption->getOptions(
 			array(
@@ -911,23 +925,23 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				'single' => 1
 			)
 		);
-		
+
 		$this->data['values'] = $this->MsLoader->MsOption->getOptionValues($this->request->get['option_id']);
 		$this->data['option_index'] = 0;
-		
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/multiseller/account-product-form-options-values.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/multiseller/account-product-form-options-values.tpl';
 		} else {
 			$this->template = 'default/template/multiseller/account-product-form-options-values.tpl';
 		}
-	
+
 		$this->response->setOutput($this->load->view($this->template, $this->data));
 	}
-	
+
 	public function jxRenderProductOptions() {
 		$this->load->model('catalog/product');
 		$options = $this->model_catalog_product->getProductOptions($this->request->get['product_id']);
-		
+
 		$output = '';
 		if ($options) {
 			$this->data['option_index'] = 0;
@@ -935,21 +949,21 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				$this->data['option'] = $o;
 				$this->data['product_option_values'] = $o['product_option_value'];
 				$this->data['values'] = $this->MsLoader->MsOption->getOptionValues($o['option_id']);
-				
+
 				if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/multiseller/account-product-form-options-values.tpl')) {
 					$this->template = $this->config->get('config_template') . '/template/multiseller/account-product-form-options-values.tpl';
 				} else {
 					$this->template = 'default/template/multiseller/account-product-form-options-values.tpl';
 				}
-				
+
 				$output .= $this->load->view($this->template, $this->data);
 				$this->data['option_index']++;
 			}
 		}
-	
+
 		$this->response->setOutput($output);
-	}	
-	
+	}
+
 	public function jxAutocomplete() {
 		$json = array();
 
@@ -1021,13 +1035,13 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		if (isset($this->request->post['payment_status']) && strtolower($this->request->post['payment_status']) == 'completed') {
 			$this->data['success'] = $this->language->get('ms_success_product_published');
 		}
-		
+
 		// Links
-		$this->data['link_back'] = $this->url->link('account/account', '', 'SSL');
+		$this->data['link_back'] = $this->url->link('seller/account-dashboard', '', 'SSL');
 		$this->data['link_create_product'] = $this->url->link('seller/account-product/create', '', 'SSL');
 
 		// Title and friends
-		$this->document->setTitle($this->language->get('ms_account_products_heading'));		
+		$this->document->setTitle($this->language->get('ms_account_products_heading'));
 		$this->data['breadcrumbs'] = $this->MsLoader->MsHelper->setBreadcrumbs(array(
 			array(
 				'text' => $this->language->get('text_account'),
@@ -1042,11 +1056,11 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				'href' => $this->url->link('seller/account-product', '', 'SSL'),
 			)
 		));
-		
+
 		list($template, $children) = $this->MsLoader->MsHelper->loadTemplate('account-product');
 		$this->response->setOutput($this->load->view($template, array_merge($this->data, $children)));
 	}
-	
+
 	private function _initForm()
 	{
 		$this->load->model('catalog/category');
@@ -1166,7 +1180,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		$this->data['ms_account_product_image_note'] = sprintf($this->language->get('ms_account_product_image_note'), $this->config->get('msconf_allowed_image_types'));
 		$this->data['back'] = $this->url->link('seller/account-product', '', 'SSL');
 	}
-	
+
 	public function create() {
 		$this->_initForm();
 		$this->data['product_attributes'] = FALSE;
@@ -1182,7 +1196,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			array(
 				'text' => $this->language->get('ms_account_dashboard_breadcrumbs'),
 				'href' => $this->url->link('seller/account-dashboard', '', 'SSL'),
-			),			
+			),
 			array(
 				'text' => $this->language->get('ms_account_products_breadcrumbs'),
 				'href' => $this->url->link('seller/account-product', '', 'SSL'),
@@ -1192,24 +1206,24 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				'href' => $this->url->link('seller/account-product/create', '', 'SSL'),
 			)
 		));
-		
+
 		// Product listing period
 		if ($this->data['seller_group']['product_period'] > 0) {
 			$this->data['list_until'] = date('Y-m-d', strtotime(date('Y-m-d')) + (24 * 3600 * $this->data['seller_group']['product_period']));
 		} else {
 			$this->data['list_until'] = NULL;
 		}
-		
+
 		list($template, $children) = $this->MsLoader->MsHelper->loadTemplate('account-product-form');
 		$this->response->setOutput($this->load->view($template, array_merge($this->data, $children)));
 	}
-	
+
 	public function update() {
 		$product_id = isset($this->request->get['product_id']) ? (int)$this->request->get['product_id'] : 0;
 		$clone = isset($this->request->get['clone']) ? (int)$this->request->get['clone'] : 0;
 		$relist = isset($this->request->get['relist']) ? (int)$this->request->get['relist'] : 0;
 		$seller_id = $this->customer->getId();
-		
+
 		if  ($this->MsLoader->MsProduct->productOwnedBySeller($product_id, $seller_id)) {
     		$product = $this->MsLoader->MsProduct->getProduct($product_id);
 		} else {
@@ -1218,23 +1232,23 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 
 		if (!$product)
 			return $this->response->redirect($this->url->link('seller/account-product', '', 'SSL'));
-			
+
 		// Fees for re-listing
 		if ($relist) {
 			$commissions = $this->MsLoader->MsCommission->calculateCommission(array('seller_id' => $this->customer->getId()));
 			$fee = (float)$commissions[MsCommission::RATE_LISTING]['flat'] + $commissions[MsCommission::RATE_LISTING]['percent'] * $product['price'] / 100;
-			
+
 			if ($fee > 0) {
 				$this->MsLoader->MsProduct->changeStatus($product_id, MsProduct::STATUS_UNPAID);
 			}
 		}
-			
+
 		$this->_initForm();
 
 		if (!empty($this->data['normal_attributes']) || !empty($this->data['multilang_attributes'])) {
 			$a = $this->MsLoader->MsAttribute->getProductAttributeValues($product_id);
 			$this->data['multilang_attribute_values'] = $a[1];
-			$this->data['normal_attribute_values'] = $a[0]; 
+			$this->data['normal_attribute_values'] = $a[0];
 		}
 
 		// enable quantities for shippable products
@@ -1244,36 +1258,36 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		$product['discounts'] = $this->MsLoader->MsProduct->getProductDiscounts($product_id);
 
 		if (!empty($product['thumbnail'])) {
-		
+
 			if ($clone){
 				$oldPath				= DIR_IMAGE . $product['thumbnail'];
 				$product['thumbnail']	= $this->config->get('msconf_temp_image_path') .basename($product['thumbnail']);
 				copy($oldPath, DIR_IMAGE . $product['thumbnail']);
 			}
-			
+
 			$product['images'][] = array(
 				'name' => $product['thumbnail'],
 				'thumb' => $this->MsLoader->MsFile->resizeImage($product['thumbnail'], $this->config->get('msconf_preview_product_image_width'), $this->config->get('msconf_preview_product_image_height'))
 			);
-			
+
 			if (!in_array($product['thumbnail'], $this->session->data['multiseller']['files']))
 				$this->session->data['multiseller']['files'][] = $product['thumbnail'];
 		}
-		
+
 		$images = $this->MsLoader->MsProduct->getProductImages($product_id);
 		foreach ($images as $image) {
-			
+
 			if ($clone){
 				$oldPath		= DIR_IMAGE . $image['image'];
 				$image['image'] = $this->config->get('msconf_temp_image_path') .basename($image['image']);
 				copy($oldPath, DIR_IMAGE . $image['image']);
 			}
-			
+
 			$product['images'][] = array(
 				'name' => $image['image'],
 				'thumb' => $this->MsLoader->MsFile->resizeImage($image['image'], $this->config->get('msconf_preview_product_image_width'), $this->config->get('msconf_preview_product_image_height'))
 			);
-			
+
 			if (!in_array($image['image'], $this->session->data['multiseller']['files']))
 				$this->session->data['multiseller']['files'][] = $image['image'];
 		}
@@ -1281,16 +1295,16 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		$downloads = $this->MsLoader->MsProduct->getProductDownloads($product_id);
 		$product['downloads'] = array();
 		foreach ($downloads as $download) {
-			
+
 			//$download_seller = $this->MsLoader->MsSeller->getSeller($this->MsLoader->MsProduct->getSellerId($download['product_id']));
-			
+
 			if ($clone){
 				$oldPath				= DIR_DOWNLOAD . $download['filename'];
 				//$download['filename']	= time() . '_' . md5(rand()) . '.' . $this->MsLoader->MsSeller->getNickname() . substr($download['mask'], strlen($download_seller['ms.nickname']));
 				$download['filename']	= time() . '_' . md5(rand()) . '.' . $download['mask'];
 				copy($oldPath, DIR_DOWNLOAD . $this->config->get('msconf_temp_download_path') . $download['filename']);
 			}
-			
+
 			//$ext = explode('.', $download['mask']); $ext = end($ext);
 			$product['downloads'][] = array(
 				'name' => $download['mask'],
@@ -1299,7 +1313,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				'href' => $this->url->link('seller/account-product/download', 'download_id=' . $download['download_id'] . '&product_id=' . $product_id, 'SSL'),
 				'id' => $download['download_id'],
 			);
-			
+
 			if (!in_array($download['filename'], $this->session->data['multiseller']['files']))
 				$this->session->data['multiseller']['files'][] = $download['filename'];
 		}
@@ -1343,7 +1357,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 
         $this->data['product'] = $product;
 		$this->data['product']['category_id'] = $this->MsLoader->MsProduct->getProductCategories($product_id);
-		
+
 		$breadcrumbs = array(
 			array(
 				'text' => $this->language->get('text_account'),
@@ -1358,7 +1372,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				'href' => $this->url->link('seller/account-product', '', 'SSL'),
 			)
 		);
-		
+
 		if ($clone) {
 			$this->data['product']['product_id'] = 0;
 			$this->data['product']['cloned_product_id'] = $product_id;
@@ -1369,7 +1383,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else {
 				$this->data['list_until'] = NULL;
 			}
-			
+
 			$breadcrumbs[] = array(
 				'text' => $this->language->get('ms_account_cloneproduct_breadcrumbs'),
 				'href' => $this->url->link('seller/account-product/update', '', 'SSL'),
@@ -1383,7 +1397,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else {
 				$this->data['list_until'] = NULL;
 			}
-			
+
 			$breadcrumbs[] = array(
 				'text' => $this->language->get('ms_account_relist_product_breadcrumbs'),
 				'href' => $this->url->link('seller/account-product/update', '', 'SSL'),
@@ -1398,51 +1412,51 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			$this->data['heading'] = $this->language->get('ms_account_editproduct_heading');
 			$this->document->setTitle($this->language->get('ms_account_editproduct_heading'));
 		}
-		
+
 		$this->data['breadcrumbs'] = $this->MsLoader->MsHelper->setBreadcrumbs($breadcrumbs);
-	
+
 		list($template, $children) = $this->MsLoader->MsHelper->loadTemplate('account-product-form');
 		$this->response->setOutput($this->load->view($template, array_merge($this->data, $children)));
 	}
-	
+
 	public function delete() {
 		$product_id = (int)$this->request->get['product_id'];
 		$seller_id = (int)$this->customer->getId();
-		
+
 		if ($this->MsLoader->MsProduct->productOwnedBySeller($product_id, $seller_id)) {
 			$this->MsLoader->MsProduct->changeStatus($product_id, MsProduct::STATUS_DELETED);
-			$this->session->data['success'] = $this->language->get('ms_success_product_deleted');			
+			$this->session->data['success'] = $this->language->get('ms_success_product_deleted');
 		}
-		
+
 		$this->response->redirect($this->url->link('seller/account-product', '', 'SSL'));
 	}
-	
+
 	public function publish() {
 		$product_id = (int)$this->request->get['product_id'];
 		$seller_id = (int)$this->customer->getId();
-		
+
 		if ($this->MsLoader->MsProduct->productOwnedBySeller($product_id, $seller_id)
 			&& $this->MsLoader->MsProduct->getStatus($product_id) == MsProduct::STATUS_INACTIVE) {
 			$this->MsLoader->MsProduct->changeStatus($product_id, MsProduct::STATUS_ACTIVE);
 			$this->session->data['success'] = $this->language->get('ms_success_product_published');
 		}
-		
+
 		$this->response->redirect($this->url->link('seller/account-product', '', 'SSL'));
-	}	
-	
+	}
+
 	public function unpublish() {
 		$product_id = (int)$this->request->get['product_id'];
 		$seller_id = (int)$this->customer->getId();
-		
+
 		if ($this->MsLoader->MsProduct->productOwnedBySeller($product_id, $seller_id)
 			&& $this->MsLoader->MsProduct->getStatus($product_id) == MsProduct::STATUS_ACTIVE) {
 			$this->MsLoader->MsProduct->changeStatus($product_id, MsProduct::STATUS_INACTIVE);
 			$this->session->data['success'] = $this->language->get('ms_success_product_unpublished');
 		}
-		
+
 		$this->response->redirect($this->url->link('seller/account-product', '', 'SSL'));
-	}	
-	
+	}
+
 	public function download() {
 		if (!$this->customer->isLogged()) {
 			$this->response->redirect($this->url->link('account/login', '', 'SSL'));
@@ -1453,18 +1467,18 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		} else {
 			$download_id = 0;
 		}
-		
+
 		if (isset($this->request->get['product_id'])) {
 			$product_id = $this->request->get['product_id'];
 		} else {
 			$product_id = 0;
 		}
-		
+
 		if (!$this->MsLoader->MsProduct->hasDownload($product_id,$download_id) || !$this->MsLoader->MsProduct->productOwnedBySeller($product_id,$this->customer->getId()))
 			$this->response->redirect($this->url->link('seller/account-product', '', 'SSL'));
-			
+
 		$download_info = $this->MsLoader->MsProduct->getDownload($download_id);
-		
+
 		if ($download_info) {
 			$file = DIR_DOWNLOAD . $download_info['filename'];
 			$mask = basename($download_info['mask']);
@@ -1479,7 +1493,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 					header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
 					header('Pragma: public');
 					header('Content-Length: ' . filesize($file));
-					
+
 					readfile($file, 'rb');
 					exit;
 				} else {
@@ -1491,6 +1505,6 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 		} else {
 			$this->response->redirect($this->url->link('seller/account-product', '', 'SSL'));
 		}
-	}	
+	}
 }
 ?>

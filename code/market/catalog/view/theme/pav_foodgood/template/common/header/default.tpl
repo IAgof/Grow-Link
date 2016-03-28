@@ -50,12 +50,13 @@
 						<div class="btn-group">
 							<a href="<?php echo $account; ?>">
 								<img class="logo-account"></img>
+
 								<?php if ($logged) { ?>
-																										<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> -
-																										<a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a>
-																									<?php } else { ?>
-									<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
-																									<?php } ?>
+<!--							<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> -
+-->								<a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a>
+								<?php } else { ?>
+<!--									<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
+-->								<?php } ?>
 
 
 
@@ -63,21 +64,24 @@
 							</a>
 						</div>
 						<div class="btn-group">
-
 							<a href="<?php echo $shopping_cart; ?>">
-								<img class="logo-cart"></img>
-								<?php echo $text_shopping_cart; ?>
+								<img class="logo-cart">
+
+									<div class="quick-action">
+										<?php echo $cart; ?>
+									</div>
+									<button data-toggle="offcanvas" class="btn canvas-menu hidden-lg hidden-md" type="button">
+										<span class="fa fa-bars"></span>
+									</button>
+<!--									<?php echo $text_shopping_cart; ?>
+-->								</img>
 
 							</a>
 						</div>
-
-
-
 					</div>
 				</div>
 			</div>
 		</div>
-
 
 		<div class="main-menu header-bot">
 			<div class="container">
@@ -95,13 +99,7 @@
 
 				<div id="pav-mainnav" class="mainnav-primary">
 					<div class="mainnav-wrap">
-						<div class="quick-action">
-							<?php echo $cart; ?>
-						</div>
 
-						<button data-toggle="offcanvas" class="btn canvas-menu hidden-lg hidden-md" type="button">
-							<span class="fa fa-bars"></span>
-						</button>
 						<?php
 						/**
 						 * Main Menu modules: as default if do not put megamenu, the theme will use categories menu for main menu

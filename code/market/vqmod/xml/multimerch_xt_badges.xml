@@ -7,7 +7,7 @@
 	<id>MultiMerch Badges</id>
 	<version>2.0</version>
 	<author>http://multimerch.com/</author>
-	
+
 	<!-- create / edit / delete seller w/ badges -->
 	<!-- view -->
 	<file name="&adminFolder;/view/template/multiseller/seller-form.tpl">
@@ -19,7 +19,7 @@
 			    <li><a href="#tab-badge" data-toggle="tab"><?php echo $ms_catalog_badges_breadcrumbs; ?></a></li>
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
 				<!--  end commission tab -->
@@ -45,7 +45,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- controller -->
 	<file name="&adminFolder;/controller/multiseller/seller.php">
 		<operation>
@@ -56,7 +56,7 @@
 				$this->data = array_merge($this->data, $this->load->language('multiseller/multiseller'), $this->load->language('module/multimerch_badges'));
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
 				$this->data['seller'] = FALSE;
@@ -70,7 +70,7 @@
 				$this->data['badges'] = $badges;
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
 				$this->data['seller']['commission_rates'] = $rates;
@@ -92,7 +92,7 @@
 			]]></add>
 		</operation>
 	</file>
-		
+
 	<!-- model -->
 	<file name="system/library/msseller.php">
 		<operation>
@@ -108,7 +108,7 @@
 				}
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after" offset="1"><![CDATA[
 				public function adminEditSeller($data) {
@@ -136,7 +136,7 @@
 			    <li><a href="#tab-badge" data-toggle="tab"><?php echo $ms_catalog_badges_breadcrumbs; ?></a></li>
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
 				<!--  end commission tab -->
@@ -162,7 +162,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- controller -->
 	<file name="&adminFolder;/controller/multiseller/seller-group.php">
 		<operation>
@@ -173,7 +173,7 @@
 				$this->data = array_merge($this->data, $this->load->language('multiseller/multiseller'), $this->load->language('module/multimerch_badges'));
 			]]></add>
 		</operation>
-			
+
 		<!-- create seller group -->
 		<operation>
 			<search position="before"><![CDATA[
@@ -188,7 +188,7 @@
 				$this->data['badges'] = $badges;
 			]]></add>
 		</operation>
-		
+
 		<!-- update seller group -->
 		<operation>
 			<search position="before" index="3"><![CDATA[
@@ -201,7 +201,7 @@
 					$badge['image'] = $this->model_tool_image->resize($badge['image'], 30, 30);
 				}
 				$this->data['badges'] = $badges;
-				
+
 				$seller_group_badges = $this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $this->request->get['seller_group_id']));
 				$this->data['seller_group']['badges'] = array();
 				foreach($seller_group_badges as $b) {
@@ -227,7 +227,7 @@
 				}
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
 				public function editSellerGroup($seller_group_id, $data) {
@@ -255,7 +255,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<file name="&adminFolder;/controller/common/menu.php">
 		<operation>
 			<search position="after"><![CDATA[
@@ -266,8 +266,8 @@
 			]]></add>
 		</operation>
 	</file>
-	
-	
+
+
 	<!-- display badges on product page -->
 	<file name="catalog/view/theme/&themeFolder;/template/product/product.tpl">
 		<operation>
@@ -283,7 +283,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<file name="catalog/controller/product/product.php">
 		<operation>
 			<search position="after"><![CDATA[
@@ -295,7 +295,7 @@
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $seller['ms.seller_group'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $this->config->get('msconf_default_seller_group_id'), 'language_id' => $this->config->get('config_language_id')))
 				), SORT_REGULAR);
-				
+
 				foreach ($badges as &$badge) {
 					$badge['image'] = $this->model_tool_image->resize($badge['image'], $this->config->get('msconf_badge_width'), $this->config->get('msconf_badge_height'));
 				}
@@ -303,7 +303,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- display badges on seller profile page -->
 	<file name="catalog/controller/seller/catalog-seller.php">
 		<operation>
@@ -316,15 +316,15 @@
 						$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_id' => $seller['seller_id'], 'language_id' => $this->config->get('config_language_id'))),
 						$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $seller['ms.seller_group'], 'language_id' => $this->config->get('config_language_id'))),
 						$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $this->config->get('msconf_default_seller_group_id'), 'language_id' => $this->config->get('config_language_id')))
-					), SORT_REGULAR);		
-			
+					), SORT_REGULAR);
+
 					foreach ($badges as &$badge) {
 						$badge['image'] = $this->model_tool_image->resize($badge['image'], $this->config->get('msconf_badge_width'), $this->config->get('msconf_badge_height'));
 					}
 					$this->data['seller']['badges'] = $badges;
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="before"><![CDATA[
 				/* seller products part */
@@ -335,8 +335,8 @@
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_id' => $seller['seller_id'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $seller['ms.seller_group'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $this->config->get('msconf_default_seller_group_id'), 'language_id' => $this->config->get('config_language_id')))
-				), SORT_REGULAR);		
-		
+				), SORT_REGULAR);
+
 				foreach ($badges as &$badge) {
 					$badge['image'] = $this->model_tool_image->resize($badge['image'], $this->config->get('msconf_badge_width'), $this->config->get('msconf_badge_height'));
 				}
@@ -344,13 +344,14 @@
 			]]></add>
 		</operation>
 	</file>
-
+<!--
 	<file name="catalog/view/theme/&themeFolder;/template/multiseller/catalog-seller-profile.tpl">
 		<operation>
 			<search position="after"><![CDATA[
 				<li><?php echo $ms_catalog_seller_profile_totalproducts; ?> <?php echo $seller['total_products']; ?></li>
 			]]></search>
 			<add><![CDATA[
+
 				<li>
 				<?php foreach($seller['badges'] as $badge) { ?>
 					<img src="<?php echo $badge['image']; ?>" title="<?php echo $badge['description']; ?>" />
@@ -359,7 +360,7 @@
 			]]></add>
 		</operation>
 	</file>
-
+-->
 	<!-- display badges in seller dashboard -->
 	<file name="catalog/controller/seller/account-dashboard.php">
 		<operation>
@@ -368,13 +369,13 @@
 			]]></search>
 			<add><![CDATA[
 				$this->data = array_merge($this->data, $this->load->language('module/multimerch_badges'));
-			
+
 				$badges = array_unique(array_merge(
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_id' => $seller['seller_id'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $seller['ms.seller_group'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $this->config->get('msconf_default_seller_group_id'), 'language_id' => $this->config->get('config_language_id')))
 				), SORT_REGULAR);
-		
+
 				foreach ($badges as &$badge) {
 					$badge['image'] = $this->model_tool_image->resize($badge['image'], $this->config->get('msconf_badge_width'), $this->config->get('msconf_badge_height'));
 				}

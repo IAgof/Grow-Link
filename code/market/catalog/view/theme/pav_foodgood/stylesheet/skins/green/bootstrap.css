@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  line-height: 1.1;
+  line-height: 0;
   color: inherit;
 }
 h1 small,
@@ -449,9 +449,9 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 0px;
+/*  margin-top: 0px;
   margin-bottom: 0px;
-}
+*/}
 h1 small,
 h1 .small, .h1 small,
 .h1 .small,
@@ -1349,7 +1349,7 @@ pre code {
   }
 
   .col-md-9 {
-    width: 75%;
+    width: 100%;
   }
 
   .col-md-10 {
@@ -2386,7 +2386,7 @@ select[multiple].input-lg,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
- background-color: #a9d532;
+
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
   outline: thin dotted;
@@ -4032,8 +4032,8 @@ input[type="button"].btn-block {
   font-weight: 800;
 }
 .nav-tabs > li:before {
-  background: none repeat scroll 0 0 #000;
-  bottom: -5px;
+/*  background: none repeat scroll 0 0 #000;
+*/  bottom: -5px;
   content: "";
   height: 5px;
   left: 0;
@@ -5511,6 +5511,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-group {
   margin-bottom: 20px;
+  padding: 0 10% 0;
 }
 .panel-group .panel {
   margin-bottom: 0;

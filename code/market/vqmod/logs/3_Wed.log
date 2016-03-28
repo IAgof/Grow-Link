@@ -1,356 +1,14 @@
----------- Date: 2016-03-16 00:15:25 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:15:31 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:27:16 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:29:25 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:31:46 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:35:00 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="product-name">
-											<span><?php echo $heading_title; ?></span>
-									</div>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:36:13 ~ IP : 127.0.0.1 ----------
+---------- Date: 2016-03-23 12:13:20 ~ IP : 127.0.0.1 ----------
 REQUEST URI : /index.php?route=common/home
 MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
    version   : 
    vqmver    : 
    author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
 
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:36:14 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:37:01 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="product-name">
-											<span><?php echo $heading_title; ?></span>
-									</div>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:37:42 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=common/home
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:37:44 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:43:37 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:45:24 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:47:05 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:47:37 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
    id        : MultiMerch Core Product Page Mods
@@ -368,603 +26,35 @@ MOD DETAILS:
 File Name    : catalog/controller/common/header.php(0)
 VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
 
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
+----------------------------------------------------------------------
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+
+---------- Date: 2016-03-23 12:13:35 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
 MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
    version   : 
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 00:48:29 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
+---------- Date: 2016-03-23 12:13:49 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
 MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
    version   : 
    vqmver    : 
    author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 00:49:43 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=88_90&product_id=103
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:43:44 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:44:43 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:45:22 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:45:33 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:47:03 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:47:16 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:53:06 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:53:17 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:53:35 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:54:11 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:54:21 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:54:41 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:54:52 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 09:56:14 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&path=85&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:02:05 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=105
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:02:53 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=105
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_badges.xml
-   id        : MultiMerch Badges
-   version   : 2.0
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:03:07 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=105
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:03:26 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=105
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:03:40 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=105
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:08:24 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=105
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:11:45 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
    id        : MultiMerch Core Product Page Mods
@@ -989,67 +79,23 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 10:12:18 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
+---------- Date: 2016-03-23 12:14:24 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
 MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
    version   : 
    vqmver    : 
    author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:12:53 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
    id        : MultiMerch Core Product Page Mods
@@ -1074,241 +120,23 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 10:13:14 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
+---------- Date: 2016-03-23 12:14:54 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=account/account
 MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
    version   : 
    vqmver    : 
    author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:14:34 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:16:47 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:18:44 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:19:18 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:19:53 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:20:15 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 10:23:11 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
    id        : MultiMerch Core Product Page Mods
@@ -1316,7 +144,6 @@ MOD DETAILS:
    vqmver    : 
    author    : 
 VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
    id        : MultiMerch Core One Page Registration
@@ -1327,16 +154,11 @@ MOD DETAILS:
 File Name    : catalog/controller/common/header.php(0)
 VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
 
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_badges.xml
-   id        : MultiMerch Badges
-   version   : 2.0
-   vqmver    : 
-   author    : http://multimerch.com/
+----------------------------------------------------------------------
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
 
+---------- Date: 2016-03-23 12:15:32 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
    id        : MultiMerch Comments
@@ -1344,210 +166,13 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 11:10:15 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=checkout/cart
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_sellerinfos.xml
-   id        : MultiMerch Core seller information in various places
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/common/cart.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 11:30:36 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=common/home
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 13:53:19 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=95
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_badges.xml
-   id        : MultiMerch Badges
-   version   : 2.0
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 15:20:03 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/category&path=85
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 15:22:48 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/category&path=85
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 15:23:12 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/category&path=85
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 15:25:37 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=91
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_badges.xml
-   id        : MultiMerch Badges
-   version   : 2.0
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 16:12:56 ~ IP : 127.0.0.1 ----------
+---------- Date: 2016-03-23 14:37:56 ~ IP : 127.0.0.1 ----------
 REQUEST URI : /index.php?route=account/login
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
@@ -1562,8 +187,93 @@ VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <a href="<?php echo $registe
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 17:12:20 ~ IP : 127.0.0.1 ----------
+---------- Date: 2016-03-23 15:03:55 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-product/jxsubmitproduct
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 15:13:17 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-product
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 15:15:48 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 15:15:57 ~ IP : 127.0.0.1 ----------
 REQUEST URI : /index.php?route=product/product&product_id=89
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
+   id        : MultiMerch Shipping Edition - Product page
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
+   id        : MultiMerch Social Links
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 15:55:22 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_badges.xml
    id        : MultiMerch Badges
@@ -1571,43 +281,23 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/catalog-seller-profile.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $ms_catalog_seller_profile_totalproducts; ?> <?php echo $seller['total_products']; ?></li>
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 17:12:39 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
+---------- Date: 2016-03-23 16:03:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
    id        : MultiMerch Core Product Page Mods
@@ -1625,6 +315,135 @@ MOD DETAILS:
 File Name    : catalog/controller/common/header.php(0)
 VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
 
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 16:03:27 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 16:03:36 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 16:03:49 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 16:04:16 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-03-23 16:13:37 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&product_id=101
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
    id        : MultiMerch Comments
@@ -1657,44 +476,8 @@ VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 17:16:02 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+---------- Date: 2016-03-23 16:15:48 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
    id        : MultiMerch Social Links
@@ -1702,50 +485,14 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/catalog-seller-profile.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->config->get('mmess_conf_enable')
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 17:16:51 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=89
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
-   id        : MultiMerch Comments
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+---------- Date: 2016-03-23 16:17:36 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/catalog-seller/profile&seller_id=19
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
    id        : MultiMerch Social Links
@@ -1753,31 +500,14 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/catalog-seller-profile.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->config->get('mmess_conf_enable')
 
 ----------------------------------------------------------------------
 
 
----------- Date: 2016-03-16 17:37:12 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&product_id=103
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
-   id        : MultiMerch Core Product Page Mods
-   version   : 
-   vqmver    : 
-   author    : 
-VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/controller/common/header.php(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
-
+---------- Date: 2016-03-23 16:59:13 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
 MOD DETAILS:
    modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
    id        : MultiMerch Comments
@@ -1785,42 +515,8 @@ MOD DETAILS:
    vqmver    : 
    author    : http://multimerch.com/
 
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_productpage.xml
-   id        : MultiMerch Shipping Edition - Product page
-   version   : 
-   vqmver    : 
-   author    : 
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_social_links.xml
-   id        : MultiMerch Social Links
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/product/product.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <!-- end seller block -->
-
-----------------------------------------------------------------------
-
-
----------- Date: 2016-03-16 17:42:22 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=account/login
-MOD DETAILS:
-   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
-   id        : MultiMerch Core One Page Registration
-   version   : 
-   vqmver    : 
-   author    : http://multimerch.com/
-
-File Name    : catalog/view/theme/pav_foodgood/template/account/login.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <a href="<?php echo $register; ?>" class="button"><?php echo $button_continue; ?></a></div>
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
 
 ----------------------------------------------------------------------
 

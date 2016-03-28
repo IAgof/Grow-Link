@@ -51,7 +51,7 @@ $_['ms_account_product_shipping_way_reminder'] = 'Make sure to complete the "Shi
 
 $_['ms_account_product_tab_shipping'] = 'Shipping';
 
-$_['ms_product_shipping_dimensions'] = 'Dimensions and weight';
+$_['ms_product_shipping_dimensions'] = 'Dimensión y peso del producto';
 $_['ms_product_shipping_methods'] = 'Shipping methods';
 
 $_['ms_product_shipping_length'] = 'Length';

@@ -37,7 +37,9 @@ Stripe
 </p>
 
 <div class="pull-right">
+
 <input type="checkbox" name="agree" value="1" checked="checked" />
+
 <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />
 </div>
 

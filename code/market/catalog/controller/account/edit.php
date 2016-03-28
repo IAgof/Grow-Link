@@ -71,6 +71,9 @@ class ControllerAccountEdit extends Controller {
 		$data['button_back'] = $this->language->get('button_back');
 		$data['button_upload'] = $this->language->get('button_upload');
 
+		$data['customer_id'] = $this->customer->getId();
+		$data['customer_name'] = $this->customer->getFirstName() . ' ' . $this->customer->getLastName();
+
 		if (isset($this->error['warning'])) {
 			$data['error_warning'] = $this->error['warning'];
 		} else {

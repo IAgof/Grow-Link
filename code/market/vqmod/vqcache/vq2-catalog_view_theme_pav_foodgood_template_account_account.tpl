@@ -9,9 +9,9 @@
   <div class="row"><?php if( $SPAN[0] ): ?>
 			<aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
 				<?php echo $column_left; ?>
-			</aside>	
-		<?php endif; ?> 
-  
+			</aside>
+		<?php endif; ?>
+
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
 <!--      <h2><?php echo $text_my_account; ?></h2>
 
@@ -48,12 +48,9 @@
 <!--        <li><a href="<?php echo $reward; ?>"><?php echo $text_reward; ?></a></li>
 -->        <?php } ?>
         <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-<!--        <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-        <li><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>
--->      </ul>
 
-			    <h2><?php echo $ms_account_seller_account; ?></h2>
-					<ul class="list-unstyled ms-sellermenu <?php if ($this->config->get('msconf_graphical_sellermenu')) { ?>graphical<?php } ?>">
+<!--			    <h2><?php echo $ms_account_seller_account; ?></h2>
+-->					<ul class="list-unstyled ms-sellermenu <?php if ($this->config->get('msconf_graphical_sellermenu')) { ?>graphical<?php } ?>">
                         <?php if ($ms_seller_created && $this->MsLoader->MsSeller->getStatus($this->customer->getId()) == MsSeller::STATUS_ACTIVE) { ?>
                             <li>
                                 <a href="<?php echo $this->url->link('seller/account-dashboard', '', 'SSL'); ?>">
@@ -63,8 +60,7 @@
                                     <?php echo $ms_account_dashboard; ?>
                                 </a>
                             </li>
-                        <?php } ?>
-
+                        <?php } else { ?>
                         <li>
                             <a href="<?php echo $this->url->link('seller/account-profile', '', 'SSL'); ?>">
                                 <?php if($this->config->get('msconf_graphical_sellermenu')) { ?>
@@ -77,6 +73,8 @@
                                 <?php echo $ms_seller_created ? $ms_account_sellerinfo : $ms_account_sellerinfo_new; ?>
                             </a>
                         </li>
+												<?php } ?>
+
 <!--
                         <?php if ( ($ms_seller_created) && ( ($this->MsLoader->MsSeller->getStatus($this->customer->getId()) == MsSeller::STATUS_ACTIVE) || ($this->config->get('msconf_allow_inactive_seller_products')) ) ) { ?>
                             <li>
@@ -162,17 +160,19 @@
 			
 -->					</ul>
 			
+<!--        <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
+        <li><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>
+-->      </ul>
 <!--      <h2><?php echo $text_my_newsletter; ?></h2>
       <ul class="list-unstyled">
         <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
       </ul>
       <?php echo $content_bottom; ?></div>
--->   </section> 
+-->   </section>
 <?php if( $SPAN[2] ): ?>
-	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">	
+	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
 		<?php echo $column_right; ?>
 	</aside>
 <?php endif; ?></div>
 </div>
 <?php echo $footer; ?>
-

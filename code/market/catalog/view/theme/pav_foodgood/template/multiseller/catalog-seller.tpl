@@ -14,7 +14,8 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-	<h1><?php echo $ms_catalog_sellers_heading; ?></h1>
+<!--      <h1><?php echo $ms_catalog_sellers_heading; ?></h1>
+-->
 
 	<?php if (isset($sellers) && $sellers) { ?>
       <div class="row">

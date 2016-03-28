@@ -5,7 +5,7 @@
 <modification>
 	<id>MultiMerch Core Product Page Mods</id>
 	<author>http://multimerch.com/</author>
-	<file name="catalog/view/theme/&themeFolder;/template/product/product.tpl">
+	<file name="catalog/view/theme/&themeFolder;/template/product/product1.tpl">
 
 		<operation>
 			<search position="before" offset="1" index="1"><![CDATA[

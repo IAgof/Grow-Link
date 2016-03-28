@@ -33,7 +33,7 @@ $_['ms_message_fixed_shipping_enabled'] = 'You have fixed shipping type enabled.
 
 // Account - Shipping Settings - Seller shipping methods table
 $_['ms_seller_shipping_method_name'] = 'Shipping Method';
-$_['ms_seller_shipping_method_comment'] = 'Comments';
+$_['ms_seller_shipping_method_comment'] = 'comentario';
 $_['ms_seller_shipping_method_geo_zone'] = 'Geo Zone';
 $_['ms_seller_shipping_method_weight_step'] = 'Weight Step';
 $_['ms_seller_shipping_method_weight_unit'] = 'Weight Unit';
@@ -51,7 +51,7 @@ $_['ms_account_product_shipping_way_reminder'] = 'Make sure to complete the "Shi
 
 $_['ms_account_product_tab_shipping'] = 'Shipping';
 
-$_['ms_product_shipping_dimensions'] = 'Dimensions and weight';
+$_['ms_product_shipping_dimensions'] = 'Dimension y peso del producto';
 $_['ms_product_shipping_methods'] = 'Shipping methods';
 
 $_['ms_product_shipping_length'] = 'Length';

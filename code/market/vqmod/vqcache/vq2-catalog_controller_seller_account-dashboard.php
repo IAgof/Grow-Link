@@ -19,13 +19,13 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
 		
 
 				$this->data = array_merge($this->data, $this->load->language('module/multimerch_badges'));
-			
+
 				$badges = array_unique(array_merge(
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_id' => $seller['seller_id'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $seller['ms.seller_group'], 'language_id' => $this->config->get('config_language_id'))),
 					$this->MsLoader->MsBadge->getSellerGroupBadges(array('seller_group_id' => $this->config->get('msconf_default_seller_group_id'), 'language_id' => $this->config->get('config_language_id')))
 				), SORT_REGULAR);
-		
+
 				foreach ($badges as &$badge) {
 					$badge['image'] = $this->model_tool_image->resize($badge['image'], $this->config->get('msconf_badge_width'), $this->config->get('msconf_badge_height'));
 				}
@@ -87,7 +87,7 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
 				$total = 0.0;
 				$products = $this->MsLoader->MsOrderData->getOrderProducts(array('order_id' => $order['order_id'], 'seller_id' => $seller_id));
 				$sellerShipping = $this->MsLoader->MsShipping->getOrderSellerShipping($order['order_id'], $seller_id, 0);
-			
+
 				$shippings = array();
 				$atLeastOneShippable = false;
 				if (empty($sellerShipping)) {
@@ -120,7 +120,7 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
 					);
 					$total += $sellerShipping['shipping_cost'];
 				}
-			
+
 				$shipped = 0;
 				$orderShipping = $this->MsLoader->MsShipping->getOrderShippingTracking($order['order_id'], $seller_id);
 				if ($orderShipping) {

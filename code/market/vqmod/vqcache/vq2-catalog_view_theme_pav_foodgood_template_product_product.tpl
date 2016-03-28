@@ -176,7 +176,7 @@
 														<span><?php echo $button_cart; ?></span>
 												</a>
 										</div>
--->                    <div class="wishlist">
+                    <div class="wishlist">
 												<a class="btn btn-outline-inverse" data-toggle="tooltip" onclick="wishlist.addwishlist('<?php echo $product_id; ?>');" title="<?php echo $button_wishlist; ?>">
 														<i class="fa fa-heart"></i>
 														<span><?php echo $button_wishlist; ?></span>
@@ -189,7 +189,7 @@
 												</a>
 										</div>
 								</div>
-
+-->
 						</div>
 
 			<?php if ($minimum > 1) { ?>
@@ -232,8 +232,8 @@
 												<div class="tab-pane" id="tab-review">
 
 														<div id="review"></div>
-														<p> <a href="#review-form"  class="popup-with-form btn btn-sm btn-danger" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
-
+<!--														<p> <a href="#review-form"  class="popup-with-form btn btn-sm btn-danger" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
+-->
 													 <div class="hide"> <div id="review-form" class="panel review-form-width"><div class="panel-body">
 														<form class="form-horizontal" id="form-review">
 
@@ -556,74 +556,4 @@ $(document).ready(function() {
 <?php } ?>
 <div class"seller-box"></div>
 
-			<div class="container">
-			<div class="row">
-			<section id="sidebar-main" class="col-md-9">
-			<div class="product-info">
-			<div class="seller-box">
-			<?php if (isset($seller) && !empty($seller)) { ?>
-			<hr />
-			<div class="ms-sellerprofile description">
-				<h3><?php echo $ms_catalog_product_sellerinfo; ?></h3>
-				<div class="seller-data">
-					<div class="avatar-box">
-						<a href="<?php echo $seller['href']; ?>"><img src="<?php echo $seller['thumb']; ?>" /></a>
-					</div>
-					<div class="info-box">
-					<ul class="list-unstyled">
-					    <li><a class="nickname" style="text-decoration: none" href="<?php echo $seller['href']; ?>"><b><?php echo $seller['nickname']; ?></b></a></li>
-						<?php if ($seller['country']) { ?>
-							<li><?php echo $ms_catalog_seller_profile_country; ?></b> <?php echo $seller['country']; ?></li>
-						<?php } ?>
-
-						<?php if ($seller['zone']) { ?>
-							<li><?php echo $ms_catalog_seller_profile_zone; ?></b> <?php echo $seller['zone']; ?></li>
-						<?php } ?>
-
-						<?php if ($seller['company']) { ?>
-							<li><?php echo $ms_catalog_seller_profile_company; ?></b> <?php echo $seller['company']; ?></li>
-						<?php } ?>
-
-						<?php if ($seller['website']) { ?>
-							<li><?php echo $ms_catalog_seller_profile_website; ?></b> <?php echo $seller['website']; ?></li>
-						<?php } ?>
-
-						<li><?php echo $ms_catalog_seller_profile_totalsales; ?></b> <?php echo $seller['total_sales']; ?></li>
-						<li><?php echo $ms_catalog_seller_profile_totalproducts; ?></b> <?php echo $seller['total_products']; ?></li>
-
-			    <li class="ms-badges">
-                    <?php foreach($seller['badges'] as $badge) { ?>
-                        <img src="<?php echo $badge['image']; ?>" title="<?php echo $badge['description']; ?>" />
-                    <?php } ?>
-				</li>
-			
-                        <?php if ($this->config->get('mmess_conf_enable') || $this->config->get('msconf_enable_private_messaging') == 2) { ?>
-                            <?php if ((!$this->customer->getId()) || ($this->customer->getId() != $seller['seller_id'])) { ?>
-                                <?php echo $contactForm; ?>
-                                <div class="contact">
-                                    <?php if ($this->customer->getId()) { ?>
-                                      <div class="button-group">
-                                        <button type="button" class="btn btn-default btn-block ms-sellercontact" data-toggle="modal" data-target="#contactDialog"><span><?php echo $ms_catalog_product_contact; ?></span></button>
-                                      </div>
-                                    <?php } else { ?>
-                                        <?php echo sprintf($this->language->get('ms_sellercontact_signin'), $this->url->link('account/login', '', 'SSL'), $seller['nickname']); ?>
-                                    <?php } ?>
-                                </div>
-                            <?php } ?>
-                        <?php } ?>
-					</ul>
-					</div>
-				</div>
-
-			</div>
-			<hr />
-
-			<?php } ?>
-			</div>
-			</div>
-			</section>
-			</div>
-			</div>
-			
-<div class"seller-box-test">123</div>
 <?php echo $footer; ?>

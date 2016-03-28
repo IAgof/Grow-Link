@@ -62,13 +62,13 @@
 				{ "mData": "product_price" },
 				{ "mData": "number_sold" },
 				{ "mData": "product_earnings" },
-<!--				{ "mData": "product_status" },
+				{ "mData": "product_status" },
 				{ "mData": "date_created" },
-<!--				{ "mData": "list_until" },
+				{ "mData": "list_until" },
 				{ "mData": "actions", "bSortable": false, "sClass": "text-right" }
 			]
 		});
-	
+
 		$(document).on('click', '.ms-button-delete', function() {
 			if (!confirm('<?php echo $ms_account_products_confirmdelete; ?>')) return false;
 		});

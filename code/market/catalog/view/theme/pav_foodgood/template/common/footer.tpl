@@ -142,7 +142,7 @@
   </div>
 -->
 </footer>
-<!--
+
 <div id="top"><a class="scrollup" href="#"><i class="fa fa-angle-up"></i>Top</a></div>
 
 <?php if( $helper->getConfig('enable_paneltool',0) ){  ?>
@@ -161,8 +161,5 @@
   ?>
 
 </div>
--->
-
-<script type="text/javascript">$(document).ready(function() { display('grid'); });</script>
 
 </body></html>

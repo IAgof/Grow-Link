@@ -39,7 +39,7 @@
 			<?php if (!$this->config->get('msconf_change_seller_nickname') && !empty($seller['ms.nickname'])) { ?>
 				<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_nickname; ?></label>
 				<div class="col-sm-10">
-					<b><?php echo $seller['ms.nickname']; ?></b>
+AAAA					<b><?php echo $seller['ms.nickname']; ?></b>
 				</div>
 			<?php } else { ?>
 				<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_nickname; ?></label>
@@ -58,6 +58,7 @@
 				<p class="ms-note"><?php echo $ms_account_sellerinfo_description_note; ?></p>
 			</div>
 		</div>
+
 <!--
 		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_company; ?></label>
@@ -67,6 +68,7 @@
 			</div>
 		</div>
 -->
+<!--
 		<div class="form-group required">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_country; ?></label>
 			<div class="col-sm-10">
@@ -87,7 +89,7 @@
 				<p class="ms-note"><?php echo $ms_account_sellerinfo_zone_note; ?></p>
 			</div>
 		</div>
-
+-->
 <!--		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_paypal; ?></label>
 			<div class="col-sm-10">
@@ -156,7 +158,7 @@
 			</div>
 		</div>
 		<?php } ?>
-
+<!--
 		<?php if ((!isset($seller['seller_id']) || $seller['ms.seller_status'] == MsSeller::STATUS_INCOMPLETE) && $seller_validation != MsSeller::MS_SELLER_VALIDATION_NONE) { ?>
 		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_reviewer_message; ?></label>
@@ -166,6 +168,9 @@
 			</div>
 		</div>
 		<?php } ?>
+-->
+
+
 	</form>
 
 		<?php if (isset($group_commissions) && $group_commissions[MsCommission::RATE_SIGNUP]['flat'] > 0) { ?>

@@ -503,7 +503,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 						'amount' => '',
 						'currency_code' => $this->config->get('config_currency'),
 						'return' => $this->url->link('seller/account-dashboard'),
-						'cancel_return' => $this->url->link('account/account'),
+						'cancel_return' => $this->url->link('seller/account-dashboard'),
 						'notify_url' => $this->url->link('payment/multimerch-paypal/signupIPN'),
 						'custom' => 'custom'
 					);
@@ -521,7 +521,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 		}
 
 		$this->data['seller_validation'] = $this->config->get('msconf_seller_validation');
-		$this->data['link_back'] = $this->url->link('account/account', '', 'SSL');
+		$this->data['link_back'] = $this->url->link('seller/account-dashboard', '', 'SSL');
 		$this->document->setTitle($this->language->get('ms_account_sellerinfo_heading'));
 
 		$this->data['breadcrumbs'] = $this->MsLoader->MsHelper->setBreadcrumbs(array(

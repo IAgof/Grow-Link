@@ -27,10 +27,11 @@ echo $header; ?>
 
       <?php if( true &&  $categories = $helper->getCategoriesById() ){   ?>
      <div class="subcategories refine-search">
+<!--
        <h2 class="panel-title">
         <?php echo $text_refine; ?>
        </h2>
-
+-->
           <?php $col=6; $i=0; $ncol = floor(12/$col); foreach( $categories as $category ){  $i++; ?>
             <?php if($i%$col==1) { ?>
             <div class="clearfix">
@@ -77,6 +78,7 @@ echo $header; ?>
             <?php } ?>
          </div>
       <?php } ?>
+
       <?php if ($products) { ?>
      </div>
       <?php require( ThemeControlHelper::getLayoutPath( 'common/product_collection.tpl' ) );  ?>
@@ -98,5 +100,4 @@ echo $header; ?>
   </aside>
 <?php endif; ?></div>
 </div>
-
 <?php echo $footer; ?>

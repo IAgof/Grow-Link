@@ -6,12 +6,12 @@ final class MsSeller extends Model {
 	const STATUS_DELETED = 4;
 	const STATUS_UNPAID = 5;
 	const STATUS_INCOMPLETE = 6;
-		
+
 	const MS_SELLER_VALIDATION_NONE = 1;
 	const MS_SELLER_VALIDATION_ACTIVATION = 2;
 	const MS_SELLER_VALIDATION_APPROVAL = 3;
 
-	private $isSeller = FALSE; 
+	private $isSeller = FALSE;
 	private $nickname;
 	private $description;
 	private $company;
@@ -19,16 +19,16 @@ final class MsSeller extends Model {
 	private $avatar;
 	private $seller_status;
 	private $paypal;
-	
+
   	public function __construct($registry) {
   		parent::__construct($registry);
-  		
+
   		//$this->log->write('creating seller object: ' . $this->session->data['customer_id']);
 		if (isset($this->session->data['customer_id'])) {
-			//TODO 
+			//TODO
 			//$seller_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "ms_seller WHERE seller_id = '" . (int)$this->session->data['customer_id'] . "' AND seller_status = '1'");
-			$seller_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "ms_seller WHERE seller_id = '" . (int)$this->session->data['customer_id'] . "'");			
-			
+			$seller_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "ms_seller WHERE seller_id = '" . (int)$this->session->data['customer_id'] . "'");
+
 			if ($seller_query->num_rows) {
 				$this->isSeller = TRUE;
 				$this->nickname = $seller_query->row['nickname'];
@@ -51,42 +51,42 @@ final class MsSeller extends Model {
 		$sql = "SELECT COUNT(*) as 'total'
 				FROM `" . DB_PREFIX . "ms_seller`
 				WHERE seller_id = " . (int)$customer_id;
-		
+
 		$res = $this->db->query($sql);
-		
+
 		if ($res->row['total'] == 0)
 			return FALSE;
 		else
-			return TRUE;	  		
+			return TRUE;
   	}
-  	
+
 	public function getSellerName($seller_id) {
 		$sql = "SELECT firstname as 'firstname'
 				FROM `" . DB_PREFIX . "customer`
 				WHERE customer_id = " . (int)$seller_id;
-		
+
 		$res = $this->db->query($sql);
-		
+
 		return $res->row['firstname'];
-	}	
-	
+	}
+
 	public function getSellerEmail($seller_id) {
-		$sql = "SELECT email as 'email' 
+		$sql = "SELECT email as 'email'
 				FROM `" . DB_PREFIX . "customer`
 				WHERE customer_id = " . (int)$seller_id;
-		
+
 		$res = $this->db->query($sql);
-		
+
 		return $res->row['email'];
 	}
-		
+
 	public function createSeller($data) {
 		$avatar = isset($data['avatar_name']) ? $this->MsLoader->MsFile->moveImage($data['avatar_name']) : '';
 		$banner = isset($data['banner_name']) ? $this->MsLoader->MsFile->moveImage($data['banner_name']) : '';
 
 		if (isset($data['commission']))
 			$commission_id = $this->MsLoader->MsCommission->createCommission($data['commission']);
-		
+
 		$sql = "INSERT INTO " . DB_PREFIX . "ms_seller
 				SET seller_id = " . (int)$data['seller_id'] . ",
 					seller_status = " . (isset($data['status']) ? (int)$data['status'] : self::STATUS_INACTIVE) . ",
@@ -111,28 +111,28 @@ final class MsSeller extends Model {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'seller_id=" . (int)$seller_id . "', keyword = '" . $this->db->escape($this->_dupeSlug($data['keyword'])) . "'");
 		}
 	}
-	
+
 	public function nicknameTaken($nickname) {
 		$sql = "SELECT nickname
 				FROM `" . DB_PREFIX . "ms_seller` p
 				WHERE p.nickname = '" . $this->db->escape($nickname) . "'";
-		
+
 		$res = $this->db->query($sql);
 
 		return $res->num_rows;
 	}
-	
+
 	public function editSeller($data) {
 		$seller_id = (int)$data['seller_id'];
 
 		$old_avatar = $this->getSellerAvatar($seller_id);
-		
+
 		if (!isset($data['avatar_name']) || ($old_avatar['avatar'] != $data['avatar_name'])) {
 			$this->MsLoader->MsFile->deleteImage($old_avatar['avatar']);
 		}
-		
+
 		if (isset($data['avatar_name'])) {
-			if ($old_avatar['avatar'] != $data['avatar_name']) {			
+			if ($old_avatar['avatar'] != $data['avatar_name']) {
 				$avatar = $this->MsLoader->MsFile->moveImage($data['avatar_name']);
 			} else {
 				$avatar = $old_avatar['avatar'];
@@ -169,18 +169,18 @@ final class MsSeller extends Model {
 					banner = '" . $this->db->escape($banner) . "',
 					avatar = '" . $this->db->escape($avatar) . "'
 				WHERE seller_id = " . (int)$seller_id;
-		
+
 		$this->db->query($sql);
-		
+
 		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'seller_id=" . (int)$seller_id. "'");
 		if (isset($data['keyword'])) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'seller_id=" . (int)$seller_id . "', keyword = '" . $this->db->escape($this->_dupeSlug($data['keyword'])) . "'");
 		}
-	}		
-		
+	}
+
 	public function getSellerAvatar($seller_id) {
 		$query = $this->db->query("SELECT avatar as avatar FROM " . DB_PREFIX . "ms_seller WHERE seller_id = '" . (int)$seller_id . "'");
-		
+
 		return $query->row;
 	}
 
@@ -189,7 +189,7 @@ final class MsSeller extends Model {
 
 		return $query->row;
 	}
-		
+
   	public function getNickname() {
   		return $this->nickname;
   	}
@@ -197,7 +197,7 @@ final class MsSeller extends Model {
   	public function getCompany() {
   		return $this->company;
   	}
-  	
+
   	public function getCountryId() {
   		return $this->country_id;
   	}
@@ -205,7 +205,7 @@ final class MsSeller extends Model {
   	public function getDescription() {
   		return $this->description;
   	}
-  	
+
   	public function getStatus() {
   		return $this->seller_status;
   	}
@@ -213,32 +213,32 @@ final class MsSeller extends Model {
   	public function getPaypal() {
   		return $this->paypal;
   	}
-  	
+
   	public function isSeller() {
   		return $this->isSeller;
   	}
-  	
+
 	public function getSalesForSeller($seller_id) {
 		$sql = "SELECT IFNULL(SUM(number_sold),0) as total
 				FROM `" . DB_PREFIX . "ms_product`
 				WHERE seller_id = " . (int)$seller_id;
-		
+
 		$res = $this->db->query($sql);
-		
+
 		return $res->row['total'];
 	}
-	
+
 	public function getSalt($seller_id) {
 		$sql = "SELECT salt
 				FROM `" . DB_PREFIX . "customer`
 				WHERE customer_id = " . (int)$seller_id;
-		
+
 		$res = $this->db->query($sql);
-		
-		return $res->row['salt'];		
+
+		return $res->row['salt'];
 	}
-	
-	
+
+
 	public function adminEditSeller($data) {
 		$seller_id = (int)$data['seller_id'];
 
@@ -248,9 +248,9 @@ final class MsSeller extends Model {
 		} else {
 			$commission_id = $this->MsLoader->MsCommission->editCommission($data['commission_id'], $data['commission']);
 		}
-		
+
 		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'seller_id=" . (int)$seller_id. "'");
-		
+
 		if (isset($data['keyword'])) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'seller_id=" . (int)$seller_id . "', keyword = '" . $this->db->escape($this->_dupeSlug($data['keyword'])) . "'");
 		}
@@ -267,13 +267,13 @@ final class MsSeller extends Model {
 					commission_id = " . (!is_null($commission_id) ? (int)$commission_id : 'NULL' ) . ",
 					seller_group = '" .  (int)$data['seller_group'] .  "'
 				WHERE seller_id = " . (int)$seller_id;
-		
-		$this->db->query($sql);	
+
+		$this->db->query($sql);
 	}
-	
+
 	/********************************************************/
-	
-	
+
+
 	public function getTotalSellers($data = array()) {
 		$sql = "
 			SELECT COUNT(*) as total
@@ -285,7 +285,7 @@ final class MsSeller extends Model {
 
 		return $res->row['total'];
 	}
-	
+
 	public function getSeller($seller_id, $data = array()) {
 		$sql = "SELECT	CONCAT(c.firstname, ' ', c.lastname) as name,
 						c.email as 'c.email',
@@ -317,15 +317,15 @@ final class MsSeller extends Model {
 				. (isset($data['seller_status']) ? " AND seller_status IN  (" .  $this->db->escape(implode(',', $data['seller_status'])) . ")" : '')
 				. " GROUP BY ms.seller_id
 				LIMIT 1";
-				
+
 		$res = $this->db->query($sql);
 
 		if (!isset($res->row['seller_id']) || !$res->row['seller_id'])
 			return FALSE;
 		else
 			return $res->row;
-	}	
-	
+	}
+
 	public function getSellers($data = array(), $sort = array(), $cols = array()) {
 		$hFilters = $wFilters = '';
 		if(isset($sort['filters'])) {
@@ -338,7 +338,7 @@ final class MsSeller extends Model {
 				}
 			}
 		}
-		
+
 		$sql = "SELECT
 					SQL_CALC_FOUND_ROWS"
 					// additional columns
@@ -360,18 +360,18 @@ final class MsSeller extends Model {
 						WHERE seller_id = ms.seller_id
 						AND balance_type = ". MsBalance::MS_BALANCE_TYPE_SALE . ") as total_earnings,
 					" : "")
-					
+
 					. (isset($cols['current_balance']) ? "
 						(SELECT COALESCE(
 							(SELECT balance FROM " . DB_PREFIX . "ms_balance
-								WHERE seller_id = ms.seller_id  
+								WHERE seller_id = ms.seller_id
 								ORDER BY balance_id DESC
 								LIMIT 1
 							),
 							0
 						)) as current_balance,
-					" : "")	
-					
+					" : "")
+
 					// default columns
 					." CONCAT(c.firstname, ' ', c.lastname) as 'c.name',
 					c.email as 'c.email',
@@ -397,23 +397,23 @@ final class MsSeller extends Model {
 				WHERE 1 = 1 "
 				. (isset($data['seller_id']) ? " AND ms.seller_id =  " .  (int)$data['seller_id'] : '')
 				. (isset($data['seller_status']) ? " AND seller_status IN  (" .  $this->db->escape(implode(',', $data['seller_status'])) . ")" : '')
-				
+
 				. $wFilters
-				
+
 				. " GROUP BY ms.seller_id HAVING 1 = 1 "
-				
+
 				. $hFilters
-				
+
 				. (isset($sort['order_by']) ? " ORDER BY {$sort['order_by']} {$sort['order_way']}" : '')
 				. (isset($sort['limit']) ? " LIMIT ".(int)$sort['offset'].', '.(int)($sort['limit']) : '');
 
 		$res = $this->db->query($sql);
 		$total = $this->db->query("SELECT FOUND_ROWS() as total");
 		if ($res->rows) $res->rows[0]['total_rows'] = $total->row['total'];
-		
+
 		return $res->rows;
 	}
-	
+
 	public function getCustomers($sort = array()) {
 		$sql = "SELECT  CONCAT(c.firstname, ' ', c.lastname) as 'c.name',
 						c.email as 'c.email',
@@ -427,10 +427,10 @@ final class MsSeller extends Model {
     			. (isset($sort['limit']) ? " LIMIT ".(int)$sort['offset'].', '.(int)($sort['limit']) : '');
 
 		$res = $this->db->query($sql);
-		
+
 		return $res->rows;
 	}
-	
+
 	public function getTotalEarnings($seller_id, $data = array()) {
 		// note: update getSellers() if updating this
 		$sql = "SELECT COALESCE(SUM(amount),0)
@@ -448,30 +448,30 @@ final class MsSeller extends Model {
 		$res = $this->db->query($sql);
 		return $res->row['total'];
 	}
-	
+
 	public function changeStatus($seller_id, $seller_status) {
 		$sql = "UPDATE " . DB_PREFIX . "ms_seller
 				SET	seller_status =  " .  (int)$seller_status . "
 				WHERE seller_id = " . (int)$seller_id;
-		
+
 		$res = $this->db->query($sql);
 	}
-	
+
 	public function changeApproval($seller_id, $approved) {
 		$sql = "UPDATE " . DB_PREFIX . "ms_seller
 				SET	approved =  " .  (int)$approved . "
 				WHERE seller_id = " . (int)$seller_id;
-		
+
 		$res = $this->db->query($sql);
 	}
-	
+
 	public function deleteSeller($seller_id) {
 		$products = $this->MsLoader->MsProduct->getProducts(array('seller_id' => $seller_id));
 
 		foreach ($products as $product) {
 			$this->MsLoader->MsProduct->changeStatus($product['product_id'], MsProduct::STATUS_DELETED);
 		}
-	
+
 		$this->db->query("DELETE FROM " . DB_PREFIX . "ms_seller WHERE seller_id = '" . (int)$seller_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "ms_balance WHERE seller_id = '" . (int)$seller_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "ms_payment WHERE seller_id = '" . (int)$seller_id . "'");

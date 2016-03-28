@@ -86,7 +86,8 @@
         </select>
       </div>
     </div>
-
+-->
+<!--
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
       <div class="col-sm-10">

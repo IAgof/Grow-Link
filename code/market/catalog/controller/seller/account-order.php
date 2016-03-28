@@ -6,13 +6,13 @@ class ControllerSellerAccountOrder extends ControllerSellerAccount {
 			'customer_name' => 'firstname',
 			'date_created' => 'o.date_added',
 		);
-		
+
 		$sorts = array('order_id', 'customer_name', 'date_created', 'total_amount');
 		$filters = array_merge($sorts, array('products'));
-		
+
 		list($sortCol, $sortDir) = $this->MsLoader->MsHelper->getSortParams($sorts, $colMap);
 		$filterParams = $this->MsLoader->MsHelper->getFilterParams($filters, $colMap);
-		
+
 		$seller_id = $this->customer->getId();
 		$this->load->model('account/order');
 
@@ -39,13 +39,13 @@ class ControllerSellerAccountOrder extends ControllerSellerAccount {
 		$columns = array();
 		foreach ($orders as $order) {
 			$order_products = $this->MsLoader->MsOrderData->getOrderProducts(array('order_id' => $order['order_id'], 'seller_id' => $seller_id));
-			
+
 			if ($this->config->get('msconf_hide_customer_email')) {
 				$customer_name = "{$order['firstname']} {$order['lastname']}";
 			} else {
 				$customer_name = "{$order['firstname']} {$order['lastname']} ({$order['email']})";
 			}
-			
+
 			$products = "";
 			foreach ($order_products as $p) {
                 $products .= "<p style='text-align:left'>";
@@ -96,7 +96,7 @@ class ControllerSellerAccountOrder extends ControllerSellerAccount {
 				)
 			);
 		}
-		
+
 		$this->response->setOutput(json_encode(array(
 			'iTotalRecords' => $total_orders,
 			'iTotalDisplayRecords' => $total_orders,
@@ -230,12 +230,12 @@ class ControllerSellerAccountOrder extends ControllerSellerAccount {
 		list($template, $children) = $this->MsLoader->MsHelper->loadTemplate('account-order-info');
 		$this->response->setOutput($this->load->view($template, array_merge($this->data, $children)));
 	}
-		
+
 	public function index() {
-		$this->data['link_back'] = $this->url->link('account/account', '', 'SSL');
-		
+		$this->data['link_back'] = $this->url->link('seller/account-dashboard', '', 'SSL');
+
 		$this->document->setTitle($this->language->get('ms_account_order_information'));
-		
+
 		$this->data['breadcrumbs'] = $this->MsLoader->MsHelper->setBreadcrumbs(array(
 			array(
 				'text' => $this->language->get('text_account'),
@@ -244,20 +244,20 @@ class ControllerSellerAccountOrder extends ControllerSellerAccount {
 			array(
 				'text' => $this->language->get('ms_account_dashboard_breadcrumbs'),
 				'href' => $this->url->link('seller/account-dashboard', '', 'SSL'),
-			),			
+			),
 			array(
 				'text' => $this->language->get('ms_account_orders_breadcrumbs'),
 				'href' => $this->url->link('seller/account-order', '', 'SSL'),
 			)
 		));
-		
+
 		list($template, $children) = $this->MsLoader->MsHelper->loadTemplate('account-order');
 		$this->response->setOutput($this->load->view($template, array_merge($this->data, $children)));
 	}
 
 	public function jxAddHistory() {
-	  $json = array();	 
-	  
+	  $json = array();
+
 	  if(!isset($this->request->post['order_comment']) || !isset($this->request->post['order_status']) || !isset($this->request->post['suborder_id'])) return false;
 		if(empty($this->request->post['order_comment']) && !$this->request->post['order_status']) return false;
 
@@ -300,7 +300,7 @@ class ControllerSellerAccountOrder extends ControllerSellerAccount {
 		);
 
 		$this->MsLoader->MsMail->sendMails($mails);
-		
+
 		$json['success'] = "ok";
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));

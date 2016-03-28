@@ -176,7 +176,7 @@
 														<span><?php echo $button_cart; ?></span>
 												</a>
 										</div>
--->                    <div class="wishlist">
+                    <div class="wishlist">
 												<a class="btn btn-outline-inverse" data-toggle="tooltip" onclick="wishlist.addwishlist('<?php echo $product_id; ?>');" title="<?php echo $button_wishlist; ?>">
 														<i class="fa fa-heart"></i>
 														<span><?php echo $button_wishlist; ?></span>
@@ -189,7 +189,7 @@
 												</a>
 										</div>
 								</div>
-
+-->
 						</div>
 
 			<?php if ($minimum > 1) { ?>
@@ -232,8 +232,8 @@
 												<div class="tab-pane" id="tab-review">
 
 														<div id="review"></div>
-														<p> <a href="#review-form"  class="popup-with-form btn btn-sm btn-danger" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
-
+<!--														<p> <a href="#review-form"  class="popup-with-form btn btn-sm btn-danger" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
+-->
 													 <div class="hide"> <div id="review-form" class="panel review-form-width"><div class="panel-body">
 														<form class="form-horizontal" id="form-review">
 
@@ -534,5 +534,5 @@ $(document).ready(function() {
 </script>
 <?php } ?>
 <div class"seller-box"></div>
-<div class"seller-box-test">123</div>
+
 <?php echo $footer; ?>
