@@ -206,7 +206,10 @@
 <div class="buttons">
 	<div class="right pull-right">
 		<a id="button-confirm" onclick="confirmOrder()" class="<?php echo $settings['button_class']; ?>" style="<?php echo $settings['button_styling']; ?>">
+			Confirmar Pedido
+<!--
 			<?php echo $settings['button_text_' . $language]; ?>
+-->
 		</a>
 	</div>
 </div>

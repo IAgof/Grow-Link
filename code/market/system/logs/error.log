@@ -1000,3 +1000,316 @@
 2016-03-28 15:49:01 - PHP Notice:  Undefined index: country_id in /var/www/market-dev/catalog/model/account/customer.php on line 20
 2016-03-28 15:49:01 - PHP Notice:  Undefined index: zone_id in /var/www/market-dev/catalog/model/account/customer.php on line 20
 2016-03-28 15:49:01 - PHP Warning:  sprintf(): Too few arguments in /var/www/market-dev/catalog/controller/account/success.php on line 32
+2016-03-28 22:46:12 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:46:12 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:46:19 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:46:19 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:51:09 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:51:09 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:51:11 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:51:11 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:51:23 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:51:23 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:51:36 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:51:36 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:51:47 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:51:47 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:51:47 - PHP Notice:  Undefined offset: 1 in /var/www/market-dev/admin/view/template/module/pavcustom.tpl on line 138
+2016-03-28 22:51:47 - PHP Notice:  Undefined offset: 1 in /var/www/market-dev/admin/view/template/module/pavcustom.tpl on line 143
+2016-03-28 22:52:38 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:52:38 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:52:43 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:52:43 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:52:47 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:52:47 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:53:00 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:53:00 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:53:00 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:53:00 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:53:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:53:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:53:11 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:53:11 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:53:37 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:53:37 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:54:07 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:54:07 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:54:12 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:54:12 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:54:39 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:54:39 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:54:45 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:54:45 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:55:39 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:55:39 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:55:42 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:55:42 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:55:42 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:55:42 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:55:56 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:55:56 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:56:00 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:56:00 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:56:14 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:56:14 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:56:32 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:56:32 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:56:40 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:56:40 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:56:43 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:56:43 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:56:58 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:56:58 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:57:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:57:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:57:15 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:57:15 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:58:01 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:58:01 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:58:12 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:58:12 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:58:12 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:58:12 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 22:58:33 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 22:58:33 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:05:29 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:05:29 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:05:42 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:05:42 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:05:49 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:05:49 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:06:07 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:06:07 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:06:09 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:06:09 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:06:40 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:06:40 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:06:55 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:06:55 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:06:59 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:06:59 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:07:43 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:07:43 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:08:23 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:08:23 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:08:32 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:08:32 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:08:46 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:08:46 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:09:00 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:09:00 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:09:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:09:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:09:28 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:09:28 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:09:35 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:09:35 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:09:55 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:09:55 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:10:04 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:10:04 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:10:20 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:10:20 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:10:25 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:10:25 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:10:29 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:10:29 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:10:33 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:10:33 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:11:31 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:11:31 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:11:33 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:11:33 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:12:40 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:12:40 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:12:42 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:12:42 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:14:34 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:14:34 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:14:42 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:14:42 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:14:45 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:14:45 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:15:21 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:15:21 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:15:30 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:15:30 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:15:33 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:15:33 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:04 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:04 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:07 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:07 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:13 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:13 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:15 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:15 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:22 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:22 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:24 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:24 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:16:31 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:16:31 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:19:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:19:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:19:10 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:19:10 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:19:13 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:19:13 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:19:32 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:19:32 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:19:43 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:19:43 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:20:12 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:20:12 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:31:36 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:31:36 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:31:47 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:31:47 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:31:58 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:31:58 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:32:27 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:32:27 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:32:49 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:32:49 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:32:54 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:32:54 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:33:40 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:33:40 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:33:59 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:33:59 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:34:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:34:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:34:11 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:34:11 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:34:13 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:34:13 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:34:19 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:34:19 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:34:21 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:34:21 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:05 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:05 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:08 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:08 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:18 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:18 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:21 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:21 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:28 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:28 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:32 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:32 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:38 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:38 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:35:55 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:35:55 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:36:08 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:36:08 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:36:14 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:36:14 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:36:30 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:36:30 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:36:36 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-28 23:36:36 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-28 23:39:52 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:39:55 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 46
+2016-03-28 23:39:55 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:42:12 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:42:12 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:42:15 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 46
+2016-03-28 23:42:15 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:44:39 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:44:39 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:47:20 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:47:20 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:47:25 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:47:25 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:47:27 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:47:27 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:48:23 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:48:23 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:48:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:48:25 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:48:48 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:48:48 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:48:49 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:48:49 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:50:21 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:50:21 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:50:23 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:50:23 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:50:49 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:50:49 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:50:51 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:50:51 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:51:13 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:51:13 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:51:15 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:51:15 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:53:32 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:53:32 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:53:34 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:53:34 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:55:43 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:55:43 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:55:45 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:55:45 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:56:20 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:56:20 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:56:23 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:56:23 - PHP Notice:  Undefined index: button_text_ in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:57:34 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:57:34 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:57:35 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:57:36 - PHP Notice:  Undefined index: button_text in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:59:04 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:59:04 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:59:06 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-28 23:59:06 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 209
+2016-03-28 23:59:35 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-28 23:59:35 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-28 23:59:37 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-29 0:00:26 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-29 0:00:26 - PHP Notice:  Array to string conversion in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 33
+2016-03-29 0:00:28 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-29 0:00:28 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 211
+2016-03-29 0:02:24 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:02:24 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:08:42 - PHP Notice:  Undefined index: product_enable_shipping in /var/www/market-dev/vqmod/vqcache/vq2-catalog_controller_seller_account-product.php on line 677
+2016-03-29 0:08:42 - PHP Notice:  Undefined index: product_subtract in /var/www/market-dev/vqmod/vqcache/vq2-system_library_msproduct.php on line 202
+2016-03-29 0:08:42 - PHP Notice:  Undefined index: product_enable_shipping in /var/www/market-dev/vqmod/vqcache/vq2-system_library_msproduct.php on line 207
+2016-03-29 0:10:37 - PHP Notice:  Undefined index: product_enable_shipping in /var/www/market-dev/vqmod/vqcache/vq2-catalog_controller_seller_account-product.php on line 677
+2016-03-29 0:10:37 - PHP Notice:  Undefined index: product_subtract in /var/www/market-dev/vqmod/vqcache/vq2-system_library_msproduct.php on line 202
+2016-03-29 0:10:37 - PHP Notice:  Undefined index: product_enable_shipping in /var/www/market-dev/vqmod/vqcache/vq2-system_library_msproduct.php on line 207
+2016-03-29 0:10:56 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:10:56 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:11:00 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:11:00 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:11:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:11:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:11:13 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:11:13 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:11:20 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:11:20 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:11:28 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:11:28 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:13:17 - PHP Notice:  Undefined index: title in /var/www/market-dev/vqmod/vqcache/vq2-catalog_view_theme_pav_foodgood_template_checkout_payment_method.tpl on line 16
+2016-03-29 0:13:22 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in /var/www/market-dev/system/library/db/mysqli.php on line 45
+2016-03-29 0:13:22 - PHP Notice:  Undefined index: button_text_es in /var/www/market-dev/catalog/view/theme/pav_foodgood/template/payment/stripe.tpl on line 211
+2016-03-29 0:18:28 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:18:28 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:18:38 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:18:38 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:18:46 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:18:46 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:18:48 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:18:48 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 0:19:19 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 0:19:19 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 7:04:29 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 7:04:29 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 7:06:03 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 7:06:03 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85
+2016-03-29 7:06:26 - PHP Notice:  Undefined variable: pavo_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 84
+2016-03-29 7:06:26 - PHP Notice:  Undefined variable: megamenu_link in /var/www/market-dev/vqmod/vqcache/vq2-admin_view_template_common_menu.tpl on line 85

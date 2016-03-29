@@ -1,12 +1,12 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:8080/admin/');
-define('HTTP_CATALOG', 'http://localhost:8080/');
+define('HTTP_SERVER', 'http://217.125.140.200:4001/admin/');
+define('HTTP_CATALOG', 'http://217.125.140.200:4001/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost:8080/admin/');
+define('HTTPS_SERVER', 'http://217.125.140.200:4001/admin/');
 
-define('HTTPS_CATALOG', 'http://localhost:8080/');
+define('HTTPS_CATALOG', 'http://217.125.140.200:4001/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/market-dev/admin/');
@@ -26,7 +26,7 @@ define('DIR_CATALOG', '/var/www/market-dev/catalog/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'market');
-define('DB_PASSWORD', 'villa');
+define('DB_PASSWORD', 'G8lM4rket');
 define('DB_DATABASE', 'market_dev');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

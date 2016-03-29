@@ -12,7 +12,7 @@
 		<?php endif; ?>
 
       <?php echo $customer_id; ?>
-  <?php echo $customer_name; ?>
+      <?php echo $customer_name; ?>
 
 
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>

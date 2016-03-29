@@ -8,7 +8,7 @@ $_['text_return']        = 'Informaci&oacute;n de devoluci&oacute;n';
 $_['text_return_detail'] = 'Detalles de la devoluci&oacute;n';
 $_['text_description']   = 'Por favor, complete el siguiente formulario para solicitar un n&uacute;mero de RMA.';
 $_['text_order']         = 'Informaci&oacute;n de Pedido';
-$_['text_product']       = 'Informaci&oacute;n & amp del producto; Motivo de Retorno';
+$_['text_product']       = 'Información del producto y Motivo de Retorno';
 $_['text_message']       = '<p>Gracias por enviar su solicitud de devoluci&oacute;n. Su solicitud ha sido enviado al departamento correspondiente para su procesamiento. </ P> <p> Se le notificar&aacute; por correo electr&oacute;nico sobre el estado de su solicitud. </p>';
 $_['text_return_id']     = 'Devoluci&oacute;n ID:';
 $_['text_order_id']      = 'Pedido ID:';
@@ -47,7 +47,7 @@ $_['entry_model']        = 'C&oacute;digo';
 $_['entry_quantity']     = 'Cantidad';
 $_['entry_reason']       = 'Raz&oacute;n de devoluci&oacute;n';
 $_['entry_opened']       = 'El Producto ha sido abierto';
-$_['entry_fault_detail'] = 'Defectuoso u otros detalles';
+$_['entry_fault_detail'] = 'Detalles de la devolución';
 $_['entry_captcha']      = 'Introduzca el C&oacute;digo de la caja de abajo';
 
 // Error

@@ -41,7 +41,6 @@ final class MySQLi {
 			trigger_error('Error: ' . $this->link->error  . '<br />Error No: ' . $this->link->errno . '<br />' . $sql);
 		}
 	}
-
 	public function escape($value) {
 		return $this->link->real_escape_string($value);
 	}

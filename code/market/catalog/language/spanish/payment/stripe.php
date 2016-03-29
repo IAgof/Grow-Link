@@ -12,7 +12,7 @@
 
 // Text
 $_['text_title'] =      'Stripe';
-$_['button_text_es'] =      'Confirmar';
+$_['button_text_'] =      'Confirmar';
 $_['text_card_details']				= 'Card Details';
 $_['text_use_your_stored_card']		= 'Use your stored card:';
 $_['text_ending_in']				= 'ending in';

@@ -295,7 +295,7 @@ $_['ms_account_register_seller_success_approval'] = '<p>Bienvenido a %s!</p> <p>
 
 $_['ms_seller'] = 'Tienda';
 $_['ms_seller_forseller'] = 'Para Tienda';
-$_['ms_account_dashboard'] = 'Menú principal';
+$_['ms_account_dashboard'] = 'Menú principal de Tienda';
 $_['ms_account_seller_account'] = 'Cuenta de Tienda';
 $_['ms_account_customer_account'] = 'Cuenta de cliente';
 $_['ms_account_sellerinfo'] = 'Perfil de Tienda';
