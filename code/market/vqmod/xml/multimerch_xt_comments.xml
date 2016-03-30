@@ -18,7 +18,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<file name="system/library/msproduct.php">
 		<operation>
 			<search position="after"><![CDATA[
@@ -65,7 +65,7 @@
 				<?php } ?>
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
 				<div class="tab-content">
@@ -79,7 +79,7 @@
 				<?php } ?>
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="before"><![CDATA[
 				$('.date').datetimepicker({
@@ -92,7 +92,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<file name="catalog/controller/product/product.php">
 		<operation>
 			<search position="after"><![CDATA[
@@ -112,7 +112,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- display comments on seller profile page -->
 	<file name="catalog/controller/seller/catalog-seller.php">
 		<operation>
@@ -154,7 +154,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- display comments in seller dashboard -->
 	<file name="catalog/controller/seller/account-dashboard.php">
 		<operation>
@@ -163,7 +163,7 @@
 			]]></search>
 			<add><![CDATA[
 				$this->data = array_merge($this->load->language('module/multimerch_comments'), $this->data);
-			
+
 				$comments = $this->MsLoader->MsComments->getSellerProductComments(
 					array(
 						'seller_id' => $seller_id,
@@ -176,7 +176,7 @@
 						'limit' => 5
 					)
 				);
-		
+
 				foreach ($comments as $result) {
 					$product = $this->MsLoader->MsProduct->getProduct($result['product_id']);
 					if (!$this->config->get('msconf_hide_customer_email')) {
@@ -213,7 +213,7 @@
 							<td class="date"><?php echo $ms_date; ?></a></td>
 						</tr>
 					</thead>
-		
+
 					<tbody>
 						<?php if (isset($comments) && $comments) { ?>
 						<?php foreach ($comments as $comment) { ?>

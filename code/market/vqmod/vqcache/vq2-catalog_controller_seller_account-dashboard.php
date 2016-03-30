@@ -162,7 +162,7 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
 		
 
 				$this->data = array_merge($this->load->language('module/multimerch_comments'), $this->data);
-			
+
 				$comments = $this->MsLoader->MsComments->getSellerProductComments(
 					array(
 						'seller_id' => $seller_id,
@@ -175,7 +175,7 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
 						'limit' => 5
 					)
 				);
-		
+
 				foreach ($comments as $result) {
 					$product = $this->MsLoader->MsProduct->getProduct($result['product_id']);
 					if (!$this->config->get('msconf_hide_customer_email')) {

@@ -58,6 +58,19 @@
 -->
 		<p><span><?php echo $ms_account_dashboard_total_sales; ?>:</span> <span><?php echo $seller['total_sales']; ?></span></p>
 		 <p><span><?php echo $ms_account_dashboard_sales_month; ?>:</span> <span><?php echo $seller['sales_month']; ?></span></p>
+
+				<!DOCTYPE HTML>
+				<html>
+				    <head>
+		    		</head>
+				    <body>
+							Darse de baja como tienda
+
+
+				    </body>
+				</html>
+					</ul>
+			
 	</div>
 
 <!--	<div class="stats col-md-2">
@@ -66,6 +79,19 @@
 		<p><span><?php echo $ms_account_dashboard_total_sales; ?>:</span> <span><?php echo $seller['total_sales']; ?></span></p>
 		<p><span><?php echo $ms_account_dashboard_total_earnings; ?>:</span> <span><?php echo $seller['total_earnings']; ?></span></p>
 		<p><span><?php echo $ms_account_dashboard_sales_month; ?>:</span> <span><?php echo $seller['sales_month']; ?></span></p>
+
+				<!DOCTYPE HTML>
+				<html>
+				    <head>
+		    		</head>
+				    <body>
+							Darse de baja como tienda
+
+
+				    </body>
+				</html>
+					</ul>
+			
 		<p><span><?php echo $ms_account_dashboard_earnings_month; ?>:</span> <span><?php echo $seller['earnings_month']; ?></span></p>
 
 				<h3><?php echo $ms_account_badges; ?></h3>
@@ -197,4 +223,17 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+
+				<!DOCTYPE HTML>
+				<html>
+				    <head>
+		    		</head>
+				    <body>
+							<a href="https://qfreshco.typeform.com/to/gSUpJy" target="_blank"> <img style="float: none; width: 100%; height: auto;" img="" src="../../../image/catalog/iot.png"></a>
+
+
+				    </body>
+				</html>
+					</ul>
+			
 <?php echo $footer; ?>

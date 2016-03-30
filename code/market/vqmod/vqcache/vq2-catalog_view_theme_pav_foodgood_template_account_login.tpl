@@ -12,11 +12,12 @@
   <div class="row"><?php if( $SPAN[0] ): ?>
 			<aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
 				<?php echo $column_left; ?>
-			</aside>	
-		<?php endif; ?> 
-  
+			</aside>
+		<?php endif; ?>
+
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
-<!--      <div class="row">
+<!--
+      <div class="row">
         <div class="col-sm-6">
           <div class="well">
             <h2><?php echo $text_new_customer; ?></h2>
@@ -33,7 +34,8 @@
                 </div>
 			
         </div>
--->        <div class="col-sm-6">
+-->
+        <div class="col-sm-6">
           <div class="well">
             <h2><?php echo $text_returning_customer; ?></h2>
             <p><strong><?php echo $text_i_am_returning_customer; ?></strong></p>
@@ -57,12 +59,11 @@
         </div>
       </div>
       <?php echo $content_bottom; ?></div>
-   </section> 
+   </section>
 <?php if( $SPAN[2] ): ?>
-	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">	
+	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
 		<?php echo $column_right; ?>
 	</aside>
 <?php endif; ?></div>
 </div>
 <?php echo $footer; ?>
-

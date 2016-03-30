@@ -1,3 +1,4 @@
+
 <?php echo $header; ?>
 <div class="container ms-account-product-form" xmlns="http://www.w3.org/1999/html">
   <ul class="breadcrumb">
@@ -93,12 +94,11 @@
 							<p class="error" id="error_product_description_<?php echo $langId; ?>"></p>
 						</div>
 					</div>
-
+<!--
                     <?php if (in_array('metaDescription', $this->config->get('msconf_product_included_fields'))) { ?>
 					<div class="form-group">
 						<label class="col-sm-2 control-label"><?php echo $ms_account_product_meta_description; ?></label>
 						<div class="col-sm-10">
-							<!-- todo strip tags if rte disabled -->
 							<textarea class="form-control"  name="languages[<?php echo $langId; ?>][product_meta_description]"><?php echo strip_tags(htmlspecialchars_decode($product['languages'][$langId]['meta_description'])); ?></textarea>
 							<p class="ms-note"><?php echo $ms_account_product_meta_description_note; ?></p>
 							<p class="error" id="error_product_meta_description_<?php echo $langId; ?>"></p>
@@ -110,7 +110,6 @@
 					<div class="form-group">
 						<label class="col-sm-2 control-label"><?php echo $ms_account_product_meta_keyword; ?></label>
 						<div class="col-sm-10">
-							<!-- todo strip tags if rte disabled -->
 							<textarea class="form-control"  name="languages[<?php echo $langId; ?>][product_meta_keyword]"><?php echo strip_tags(htmlspecialchars_decode($product['languages'][$langId]['meta_keyword'])); ?></textarea>
 							<p class="ms-note"><?php echo $ms_account_product_meta_keyword_note; ?></p>
 							<p class="error" id="error_product_meta_keyword_<?php echo $langId; ?>"></p>
@@ -126,7 +125,7 @@
 							<p class="error" id="error_product_tags_<?php echo $langId; ?>"></p>
 						</div>
 					</div>
-
+-->
 
 					<?php if (isset($multilang_attributes) && !empty($multilang_attributes)) { ?>
 					<?php foreach ($multilang_attributes as &$attr) { ?>
@@ -228,7 +227,7 @@
 				</div>
 				<?php } ?>
 
-				<div class="form-group" <?php if (!$enable_quantities) { ?>style="display: none"<?php } ?>>
+				<div class="form-group required" <?php if (!$enable_quantities) { ?>style="display: none"<?php } ?>>
 					<label class="col-sm-2 control-label"><?php echo $ms_account_product_quantity; ?></label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="product_quantity" value="<?php echo $product['quantity']; ?>" />

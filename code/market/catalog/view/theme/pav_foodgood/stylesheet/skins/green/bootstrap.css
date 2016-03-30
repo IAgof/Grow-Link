@@ -369,6 +369,7 @@ img {
 .img-responsive {
   display: inline-block;
   max-width: 100%;
+  min-width: 100%;
   background-color: transparent;
 
 }
@@ -422,8 +423,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
+/*  font-family: "Raleway", sans-serif;
+*/  font-weight: 100;
   line-height: 0;
   color: inherit;
 }
@@ -1731,6 +1732,7 @@ pre code {
 }
 table {
   max-width: 100%;
+  min-width: 50%;
   background-color: transparent;
 }
 
@@ -2414,14 +2416,14 @@ select[multiple].input-lg,
 
 .btn-default {
   color: #FFFFFF;
-  background-color: #000000;
-  border-color: #000000;
-  border: 1px solid #000000;
+  background-color: transparent;
+  border-color: transparent;
+  border: 1px solid transparent;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-  color: #FFFFFF;
-  background-color: #000000;
-  border-color: #000000;
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 .open .btn-default.dropdown-toggle {
   color: #FFFFFF;

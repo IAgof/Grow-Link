@@ -1,8 +1,9 @@
+<!--
 <div class="option">
 	<input type="hidden" name="product_option[<?php echo $option_index; ?>][option_id]" value="<?php echo $option['option_id']; ?>"></td>
 	<input type="hidden" name="product_option[<?php echo $option_index; ?>][required]" value="<?php echo isset($option['required']) ? (int)$option['required'] : 1; ?>"></td>
 	<div class="o-heading"><span class="option_required <?php echo isset($option['required']) && !$option['required'] ? "bw" : ""; ?>" title="<?php echo $ms_options_required; ?>"></span><?php echo $option['name']; ?><a class="ms-button-delete option_delete" title="<?php echo $ms_delete; ?>"></a></div>
-	
+
 	<?php if (!empty($values)) { ?>
 	<div class="o-content">
 		<div class="option_values mmCtr">
@@ -19,7 +20,7 @@
 				<input class="option_quantity form-control inline" type="text" placeholder="<?php echo $ms_options_quantity; ?>" name="product_option[<?php echo $option_index; ?>][product_option_value][0][quantity]" value="" size="5"></td>
 				<a class="ms-button-delete option_value_delete" title="<?php echo $ms_delete; ?>"></a>
 			</div>
-			
+
 			<?php if (!empty($product_option_values)) { ?>
 			<?php $i = 1; ?>
 			<?php foreach ($product_option_values as $value) {?>
@@ -35,12 +36,12 @@
 					</span>
 					<input class="option_quantity form-control inline" type="text" placeholder="<?php echo $ms_options_quantity; ?>" name="product_option[<?php echo $option_index; ?>][product_option_value][<?php echo $i; ?>][quantity]" value="<?php echo $value['quantity']; ?>" size="5"></td>
 					<a class="ms-button-delete option_value_delete" title="<?php echo $ms_delete; ?>"></a>
-				</div>			
+				</div>
 			<?php $i++; ?>
 			<?php } ?>
 			<?php } ?>
 		</div>
-	
+
 		<select class="select_option_value form-control" id="select_option_value<?php echo $option['option_id']; ?>">
 			<option value="0" disabled="disabled" selected="selected"><?php echo $ms_options_add_value; ?></option>
 			<?php foreach($values as $value) { ?>
@@ -56,3 +57,4 @@
 		$(this).closest('.option').find('.select_option_value option[value="'+ $(this).val() + '"]').attr('disabled', true );
 	});
 </script>
+-->

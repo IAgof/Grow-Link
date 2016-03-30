@@ -855,11 +855,11 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 							$payment_id = $this->MsLoader->MsPayment->createPayment(array(
 								'seller_id' => $this->customer->getId(),
 								'product_id' => $product_id,
-								'payment_type' => MsPayment::TYPE_LISTING,
+/*								'payment_type' => MsPayment::TYPE_LISTING,
 								'payment_status' => MsPayment::STATUS_UNPAID,
 								'payment_method' => MsPayment::METHOD_PAYPAL,
 								'amount' => $fee,
-								'currency_id' => $this->currency->getId($this->config->get('config_currency')),
+*/								'currency_id' => $this->currency->getId($this->config->get('config_currency')),
 								'currency_code' => $this->currency->getCode($this->config->get('config_currency')),
 								'description' => sprintf($this->language->get('ms_transaction_listing'), $data['languages'][$default]['product_name'], $this->currency->format(-$fee, $this->config->get('config_currency')))
 							));
@@ -893,13 +893,13 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			$json['redirect'] = $this->url->link('seller/account-product', '', 'SSL');
 		}
 
-		/*
+
 		$output = ob_get_clean();
 		if ($output) {
 			$this->log->write('MMERCH PRODUCT FORM: ' . $output);
 			if (!$this->session->data['success']) $json['fail'] = 1;
 		}
-		*/
+		
 		$this->response->setOutput(json_encode($json));
 	}
 

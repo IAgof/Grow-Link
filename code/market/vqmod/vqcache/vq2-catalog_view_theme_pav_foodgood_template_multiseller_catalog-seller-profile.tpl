@@ -18,13 +18,13 @@
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <div class="row">
 		<!-- left column -->
-  
+
 		<div class="<?php echo $class; ?> seller-data">
       <div class="info-box">
         <a class="avatar-box thumbnail" href="<?php echo $seller['href']; ?>"><img src="<?php echo $seller['thumb']; ?>" /></a>
         <div>
         <ul class="list-unstyled">
-          <li><h3><?php echo $seller['nickname']; ?></h3></li>
+          <li><h2><?php echo $seller['nickname']; ?></h2></li>
           <?php if (isset($seller['country']) && $seller['country']) { ?><li><?php echo $ms_catalog_seller_profile_country; ?> <?php echo $seller['country']; ?></li><?php } ?>
           <?php if (isset($seller['company']) && $seller['company']) { ?><li><?php echo $ms_catalog_seller_profile_company; ?> <?php echo $seller['company']; ?></li><?php } ?>
           <?php if ($seller['website']) { ?><li><?php echo $ms_catalog_seller_profile_website; ?> <?php echo $seller['website']; ?></li><?php } ?>
@@ -50,7 +50,7 @@
 			<div class="row">
 			  <?php foreach ($seller['products'] as $product) { ?>
 			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="product-thumb transition">
+				<div class="product-thumb">
 				  <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
 				  <div class="caption">
 					<h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
@@ -84,14 +84,6 @@
 			
 		</div>
 
-		<!-- right column -->
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-sm-4'; ?>
-        <?php } ?>
         <div class="<?php echo $class; ?>">
 
 

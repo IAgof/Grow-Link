@@ -6,7 +6,7 @@
 	<id>MultiMerch Core Seller Menu</id>
 	<author>http://multimerch.com/</author>
 
-	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-stats.tpl">
+	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-stats11.tpl">
 		<operation>
 			<search position="before"><![CDATA[
 				<?php echo $footer; ?>

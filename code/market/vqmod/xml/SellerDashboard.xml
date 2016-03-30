@@ -6,7 +6,28 @@
 	<id>MultiMerch Core Seller Menu</id>
 	<author>http://multimerch.com/</author>
 
-	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-dashboard11.tpl">
+	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-dashboard.tpl">
+		<operation>
+			<search position="after"><![CDATA[
+				<?php echo $seller['sales_month']; ?>
+			]]></search>
+			<add><![CDATA[
+				<!DOCTYPE HTML>
+				<html>
+				    <head>
+		    		</head>
+				    <body>
+							Darse de baja como tienda
+
+
+				    </body>
+				</html>
+					</ul>
+			]]></add>
+		</operation>
+
+
+
 		<operation>
 			<search position="before"><![CDATA[
 				<?php echo $footer; ?>
@@ -15,196 +36,11 @@
 				<!DOCTYPE HTML>
 				<html>
 				    <head>
-
-
-
-
-							  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-				        <title>Tráfico mensual</title>
-
-				        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-				        <script src="http://code.highcharts.com/highcharts.js"></script>
-				        <script type="text/javascript">
-
-									function httpGetAsync(theUrl , callback)
-									{
-										var xmlHttp = new XMLHttpRequest();
-										xmlHttp.onreadystatechange = function() {
-												if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-														callback(xmlHttp.responseText);
-										}
-										xmlHttp.open("GET", theUrl, true); // true for asynchronous
-										xmlHttp.send(null);
-									}
-
-
-
-				$(function () {
-				    $('#linea').highcharts({
-				        chart: {
-				            type: 'line',  // tipo de gráfica
-				            borderWidth: 0 // ancho del borde de la gráfica
-				        },
-				        title: {
-				            text: 'Temperatura Media', // título
-				            x: -20
-				        },
-				        subtitle: {
-				            text: '', // subtítulo
-				            x: -20
-				        },
-				        xAxis: {
-								categories: ['2016-1-7-17', '2016-1-8-7', '2016-1-8-8', '2016-1-8-9', '2016-1-8-10', '2016-1-8-11', '2016-1-8-12', '2016-1-8-13', '2016-1-8-14', '2016-1-8-15', '2016-1-8-16', '2016-1-8-17', '2016-1-8-18', '2016-1-8-19', '2016-1-8-20', '2016-1-8-21', '2016-1-8-22', '2016-1-8-23', '2016-1-9-0'] // categorías
-				        },
-				        yAxis: {
-				            title: {
-				                text: 'Temperatura' // nombre del eje de Y
-				            },
-				            plotLines: [{
-				                color: '#808080'
-				            }]
-				        },
-				        tooltip: {
-				            valueSuffix: ' ºC' // el sufijo de la información presente en el "tooltip"
-				        },
-				        legend: { // configuración de la leyenda
-				            layout: 'horizontal',
-				            align: 'center',
-				            verticalAlign: 'bottom',
-				            borderWidth: 1
-				        },
-				        series: [{ // configuración de las series
-				            name: 'Sensor zona 1',
-				            data: [0.0, 9.8127272727272743, 12.063333333333331, 12.69, 13.810000000000002, 13.579999999999998, 13.783333333333333, 13.973333333333334, 12.58, 11.990000000000002, 11.25, 10.565000000000003, 10.129999999999999, 10.049999999999999, 10.666666666666666, 9.8350000000000009, 9.9199999999999999, 11.023333333333332, 9.6899999999999995]
-				        }, {
-				            name: 'Sensor zona 2',
-				            data: [35, 40, 41, 39, 52, 48, 55, 57, 60, 48, 53, 47, 35, 40, 41, 39, 52, 48, 55, 57, 60, 48, 53, 47, 48, 55, 57, 60, 48, 53, 47]
-				        }, {
-				            name: 'Sensor zona 3',
-				            data: [23, 25, 32, 31, 39, 44, 38, 42, 51, 43, 52, 55, 23, 25, 32, 31, 39, 44, 38, 42, 51, 43, 52, 55, , 39, 44, 38, 42, 51, 43, 52]
-				        }]
-				    });
-
-				    $('#pie').highcharts({
-				            chart: {
-				                type: 'pie',
-				                borderWidth: 0
-				            },
-				            title: {
-				                text: 'Cantidad de usuarios por motor de búsqueda',
-				            },
-				            subtitle: {
-				                text: 'Año 2013',
-				            },
-				            tooltip: {
-				                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-				            },
-				            series: [{
-				                name: 'Usuarios',
-				                data: [
-				                    {
-				                        name: 'Google.com',
-				                        y: 71.0,
-				                        sliced: true,
-				                        selected: true
-				                    },
-				                    ['Yahoo.com',       14.0],
-				                    ['Bing.com',     15.0]
-				                ]
-				            }]
-				        });
-
-				        $(document).ready(function() {
-				            Highcharts.setOptions({
-				                global: {
-				                    useUTC: false
-				                }
-				            });
-
-				            var chart;
-				            $('#tiempoReal').highcharts({
-				                chart: {
-				                    type: 'spline',
-				                    animation: Highcharts.svg,
-				                    marginRight: 10,
-				                    events: {
-				                        load: function() {
-
-				                            // set up the updating of the chart each second
-				                            var google = this.series[0];
-				                            setInterval(function() {
-				                                var x = (new Date()).getTime(), // current time
-				                                    y = Math.floor((Math.random() * 1000000) + 1);
-				                            }, 2000);
-				                        }
-				                    }
-				                },
-				                title: {
-				                    text: 'Usuarios activos en Google.com'
-				                },
-				                subtitle:{
-				                    text: 'Tiempo Real'
-				                },
-				                xAxis: {
-				                    type: 'datetime',
-				                    tickPixelInterval: 150
-				                },
-				                yAxis: {
-				                    title: {
-				                        text: 'Usuarios Activos'
-				                    },
-				                    plotLines: [{
-				                        value: 0,
-				                        width: 1,
-				                        color: '#808080'
-				                    }]
-				                },
-				                tooltip: {
-				                    formatter: function() {
-				                            return '<b>'+ this.series.name +'</b><br/>'+
-				                            Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
-				                            Highcharts.numberFormat(this.y, 2);
-				                    }
-				                },
-				                legend: {
-				                    enabled: false
-				                },
-				                exporting: {
-				                    enabled: false
-				                },
-				                series: [{
-				                    name: 'Google.com',
-				                    data: (function() {
-				                        // generate an array of random data
-				                        var data = [],
-				                            time = (new Date()).getTime(),
-				                            i;
-
-				                        for (i = -19; i <= 0; i++) {
-				                            data.push({
-				                                x: time + i * 1000,
-				                                y: Math.floor((Math.random() * 1000000) + 1)
-				                            });
-				                        }
-				                        return data;
-				                    })()
-				                }]
-				            });
-				        });
-				    });
-
-				        </script>
-				    </head>
+		    		</head>
 				    <body>
-				        <!-- div que contendrá la gráfica lienal -->
-				        <div id="linea" style="width: 50%; height: 350px; margin: 0 auto;float:left;"></div>
-				        <!-- div que contendrá la gráfica circular -->
-				        <div id="pie" style="width: 50%; height: 350px; margin: 0 auto;float:left;"></div>
+							<a href="https://qfreshco.typeform.com/to/gSUpJy" target="_blank"> <img style="float: none; width: 100%; height: auto;" img="" src="../../../image/catalog/iot.png"></a>
 
-				        <div style="border-top:1px solid #CDCDCD;margin:10px;padding:0;clear:both;"></div>
 
-				        <!-- div que contendrá la gráfica a tiempo real -->
-				        <div id="tiempoReal" style="height: 400px; margin: 0 auto;"></div>
 				    </body>
 				</html>
 					</ul>

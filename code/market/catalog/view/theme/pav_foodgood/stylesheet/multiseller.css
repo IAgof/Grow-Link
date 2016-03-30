@@ -445,7 +445,7 @@ input.option_quantity {
 }
 
 .ms-catalog-seller-profile .info-box h3 {
-    margin: 0;
+    margin: 20px;
 }
 
 .ms-catalog-seller-profile .info-box>div {
@@ -459,7 +459,8 @@ input.option_quantity {
 }
 
 .ms-catalog-seller-profile .product-thumb .button-group button {
-    width: 100%
+    width: 100%;
+    background-color: #435850;
 }
 
 /* seller list */
@@ -688,11 +689,11 @@ ul.ms-sellermenu.graphical li a {
 
 .ms-account-dashboard h2,
 .ms-account-transaction h2 {
-/*	text-align: center;
-*/	clear: both;
-	margin: 10px;
+	text-align: center;
+	clear: both;
+/*	margin: 10px;
   margin-bottom: 10px;
-}
+*/}
 
 .ms-account-dashboard .overview .nickname {
 	font-weight: bold;

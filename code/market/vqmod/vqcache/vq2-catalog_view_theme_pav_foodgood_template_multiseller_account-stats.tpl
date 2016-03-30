@@ -143,84 +143,6 @@
 
 	  <div class="buttons clearfix">
 		<div class="pull-left"><a href="<?php echo $link_back; ?>" class="btn btn-default"><?php echo $button_back; ?></a></div>
-	  </div>
-	  <?php echo $content_bottom; ?></div>
-	<?php echo $column_right; ?></div>
-</div>
-
-<script>
-	$(function() {
-		$('#table-summary-1').dataTable( {
-			"aoColumns": [
-				{ "sClass": "text-left" },
-				{ "sClass": "text-left" },
-				{ "sClass": "text-left" },
-				{ "sClass": "text-left" }
-			],
-			"bPaginate": false,
-			"bInfo": false,
-			"bSort": false,
-			"bServerSide": false
-		});
-
-		$('#table-by-products').dataTable( {
-			"sAjaxSource": $('base').attr('href') + "index.php?route=seller/account-stats/getByProductData",
-			"aoColumns": [
-				{ "mData": "product_id" },
-				{ "mData": "product_html", "bSortable": false, "sClass": "text-left" },
-				{ "mData": "sold" },
-				{ "mData": "total_formatted" }
-			]
-
-		});
-
-		window.table_year = $('#table-by-year').dataTable( {
-			"sAjaxSource": $('base').attr('href') + "index.php?route=seller/account-stats/getByYearData",
-			"aoColumns": [
-				{ "mData": "date_added", "sClass": "text-left" },
-				{ "mData": "order_num", "sClass": "text-left" },
-				{ "mData": "total_revenue", "sClass": "text-left" },
-				{ "mData": "average_revenue", "sClass": "text-left" }
-			],
-			"bPaginate": false,
-			"bInfo": false,
-			"bSort": false,
-			"bServerSide": true
-		});
-
-		year = $("#year_select").val();
-		window.table_year_total = $('#table-by-year-total').dataTable( {
-			"sAjaxSource": $('base').attr('href') + "index.php?route=seller/account-stats/getTotalByYear&year=" + year,
-			"aoColumns": [
-				{ "mData": "total_text", "sClass": "text-left" },
-				{ "mData": "order_num", "sClass": "text-left" },
-				{ "mData": "total_revenue", "sClass": "text-left" },
-				{ "mData": "average_revenue", "sClass": "text-left" }
-			],
-			"bPaginate": false,
-			"bInfo": false,
-			"bSort": false,
-			"bServerSide": true
-		});
-
-	});
-
-	$("#year_select").on("change", function(){
-		year = $(this).val();
-		window.table_year.fnSettings().sAjaxSource = "index.php?route=seller/account-stats/getByYearData&year=" + year;
-		window.table_year.fnClearTable();
-
-		window.table_year_total.fnSettings().sAjaxSource = "index.php?route=seller/account-stats/getTotalByYear&year=" + year;
-		window.table_year_total.fnClearTable();
-
-		$.getJSON("index.php?route=seller/account-stats/getSalesByYear&year=" + year, function(data){
-			$("#sales_num").text(data.sales);
-		});
-
-	});
-
-
-</script>
 
 				<!DOCTYPE HTML>
 				<html>
@@ -250,8 +172,8 @@ console.log('seller');
 
 					$(function () {
 
-//						    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
-								$.getJSON('http://217.125.140.200:4004/_carlos_albertocarlos_carlos_albertocarlos/2014-01-01/2016-06-06/mota2/Temperature/media', function (data) {
+						    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+//								$.getJSON('http://217.125.140.200:4004/_carlos_albertocarlos_carlos_albertocarlos/2014-01-01/2016-06-06/mota2/Temperature/media', function (data) {
 
 								console.log('entra    ' + data);
 						        $('#container').highcharts({
@@ -391,4 +313,82 @@ console.log('seller');
 				</html>
 					</ul>
 			
+	  </div>
+	  <?php echo $content_bottom; ?></div>
+	<?php echo $column_right; ?></div>
+</div>
+
+<script>
+	$(function() {
+		$('#table-summary-1').dataTable( {
+			"aoColumns": [
+				{ "sClass": "text-left" },
+				{ "sClass": "text-left" },
+				{ "sClass": "text-left" },
+				{ "sClass": "text-left" }
+			],
+			"bPaginate": false,
+			"bInfo": false,
+			"bSort": false,
+			"bServerSide": false
+		});
+
+		$('#table-by-products').dataTable( {
+			"sAjaxSource": $('base').attr('href') + "index.php?route=seller/account-stats/getByProductData",
+			"aoColumns": [
+				{ "mData": "product_id" },
+				{ "mData": "product_html", "bSortable": false, "sClass": "text-left" },
+				{ "mData": "sold" },
+				{ "mData": "total_formatted" }
+			]
+
+		});
+
+		window.table_year = $('#table-by-year').dataTable( {
+			"sAjaxSource": $('base').attr('href') + "index.php?route=seller/account-stats/getByYearData",
+			"aoColumns": [
+				{ "mData": "date_added", "sClass": "text-left" },
+				{ "mData": "order_num", "sClass": "text-left" },
+				{ "mData": "total_revenue", "sClass": "text-left" },
+				{ "mData": "average_revenue", "sClass": "text-left" }
+			],
+			"bPaginate": false,
+			"bInfo": false,
+			"bSort": false,
+			"bServerSide": true
+		});
+
+		year = $("#year_select").val();
+		window.table_year_total = $('#table-by-year-total').dataTable( {
+			"sAjaxSource": $('base').attr('href') + "index.php?route=seller/account-stats/getTotalByYear&year=" + year,
+			"aoColumns": [
+				{ "mData": "total_text", "sClass": "text-left" },
+				{ "mData": "order_num", "sClass": "text-left" },
+				{ "mData": "total_revenue", "sClass": "text-left" },
+				{ "mData": "average_revenue", "sClass": "text-left" }
+			],
+			"bPaginate": false,
+			"bInfo": false,
+			"bSort": false,
+			"bServerSide": true
+		});
+
+	});
+
+	$("#year_select").on("change", function(){
+		year = $(this).val();
+		window.table_year.fnSettings().sAjaxSource = "index.php?route=seller/account-stats/getByYearData&year=" + year;
+		window.table_year.fnClearTable();
+
+		window.table_year_total.fnSettings().sAjaxSource = "index.php?route=seller/account-stats/getTotalByYear&year=" + year;
+		window.table_year_total.fnClearTable();
+
+		$.getJSON("index.php?route=seller/account-stats/getSalesByYear&year=" + year, function(data){
+			$("#sales_num").text(data.sales);
+		});
+
+	});
+
+
+</script>
 <?php echo $footer; ?>

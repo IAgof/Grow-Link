@@ -1646,7 +1646,7 @@ body[class*="-home"] .header-top-v4 {
 
 .products-row {
   position: relative;
-  padding: 0 22% 0;
+  padding: 0 17% 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1833,6 +1833,11 @@ body[class*="-home"] .header-top-v4 {
   overflow: hidden;
   cursor: hand;
   cursor: pointer;
+}
+.product-thumb {
+  
+  padding: 25px;
+
 }
 .product-block .image-gallery .arrow {
   border-bottom: 5px solid transparent;

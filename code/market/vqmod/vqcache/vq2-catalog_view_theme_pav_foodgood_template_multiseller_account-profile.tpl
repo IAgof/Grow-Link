@@ -26,7 +26,8 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="ms-product <?php echo $class; ?> ms-account-profile"><?php echo $content_top; ?>
-    <h1><?php echo $ms_account_sellerinfo_heading; ?></h1>
+<!--      <?php echo $seller['seller_id']; ?>
+-->    <h1><?php echo $ms_account_sellerinfo_heading; ?></h1>
 
 	<form id="ms-sellerinfo" class="ms-form form-horizontal">
 		<input type="hidden" name="action" id="ms_action" />

@@ -11,9 +11,9 @@
 			</aside>
 		<?php endif; ?>
 
-      <?php echo $customer_id; ?>
+<!--      <?php echo $customer_id; ?>
       <?php echo $customer_name; ?>
-
+-->
 
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?></h1>
