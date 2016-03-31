@@ -82,6 +82,7 @@
 
 	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-product-form.tpl">
 		<!-- Add shipping tab -->
+<!--
 		<operation>
 			<search position="after"><![CDATA[
 				<li class="active"><a href="#tab-general" data-toggle="tab"><?php echo $ms_account_product_tab_general; ?></a></li>
@@ -92,7 +93,8 @@
 				<?php } ?>
 			]]></add>
 		</operation>
-
+-->
+<!--
 		<operation>
 			<search position="before"><![CDATA[
 				<!-- specials tab -->
@@ -103,7 +105,8 @@
 				<?php } ?>
 			]]></add>
 		</operation>
-
+-->
+<!--
 		<operation>
 			<search position="before"><![CDATA[
 				var msGlobals = {
@@ -116,7 +119,7 @@
 				<?php } ?>
 			]]></add>
 		</operation>
-
+-->
 		<!-- Make downloads required -->
         <!--
 		<operation>

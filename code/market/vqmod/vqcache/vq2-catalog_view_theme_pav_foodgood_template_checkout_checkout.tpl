@@ -62,7 +62,7 @@
           </div>
         </div>
         <?php } ?>
-        <div class="panel panel-default">
+<!--        <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title"><?php echo $text_checkout_payment_method; ?></h4>
           </div>
@@ -70,7 +70,7 @@
             <div class="panel-body"></div>
           </div>
         </div>
-        <div class="panel panel-default">
+-->        <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title"><?php echo $text_checkout_confirm; ?></h4>
           </div>

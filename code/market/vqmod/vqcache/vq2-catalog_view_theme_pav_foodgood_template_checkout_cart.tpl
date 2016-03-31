@@ -20,12 +20,12 @@
   <div class="row"><?php if( $SPAN[0] ): ?>
 			<aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
 				<?php echo $column_left; ?>
-			</aside>	
-		<?php endif; ?> 
-  
+			</aside>
+		<?php endif; ?>
+
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?>
-        <?php if ($weight) { ?>
+<!--      <h1><?php echo $heading_title; ?>
+-->         <?php if ($weight) { ?>
         &nbsp;(<?php echo $weight; ?>)
         <?php } ?>
       </h1>
@@ -36,8 +36,8 @@
               <tr>
                 <td class="text-center"><?php echo $column_image; ?></td>
                 <td class="text-center"><?php echo $column_name; ?></td>
-                <td class="text-center"><?php echo $column_model; ?></td>
-                <td class="text-center"><?php echo $column_quantity; ?></td>
+<!--                <td class="text-center"><?php echo $column_model; ?></td>
+-->                <td class="text-center"><?php echo $column_quantity; ?></td>
                 <td class="text-center"><?php echo $column_price; ?></td>
                 <td class="text-center"><?php echo $column_total; ?></td>
               </tr>
@@ -75,8 +75,8 @@
                   <br />
                   <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
                   <?php } ?></td>
-                <td class="text-center"><?php echo $product['model']; ?></td>
-                <td class="text-center"><div class="input-group btn-block" style="max-width: 200px;">
+<!--                <td class="text-center"><?php echo $product['model']; ?></td>
+-->                <td class="text-center"><div class="input-group btn-block" style="max-width: 200px;">
                     	<input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control" />
                     <span class="input-group-btn">
                     <button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
@@ -103,17 +103,7 @@
           </table>
         </div>
       </form>
-      <?php if ($coupon || $voucher || $reward || $shipping) { ?>
-<!--      <h2><?php echo $text_next; ?></h2>
-      <p><?php echo $text_next_choice; ?></p>
--->      <div class="panel-group" id="accordion">
-<!--	<?php echo $coupon; ?>
-<!--	<?php echo $voucher; ?>
-<!--	<?php echo $reward; ?>
-<!--	
--->      </div>
-      <?php } ?>
-      <br />
+
       <div class="row">
         <div class="col-sm-4 col-sm-offset-8">
           <table class="table table-bordered">
@@ -131,11 +121,11 @@
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="btn btn-primary"><?php echo $button_checkout; ?></a></div>
       </div>
       <?php echo $content_bottom; ?></div>
-   </section> 
+   </section>
 <?php if( $SPAN[2] ): ?>
-	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">	
+	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
 		<?php echo $column_right; ?>
 	</aside>
 <?php endif; ?></div>
 </div>
-<?php echo $footer; ?> 
+<?php echo $footer; ?>

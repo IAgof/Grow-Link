@@ -121,7 +121,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 				$json['errors']['seller[avatar]'] = $this->language->get('ms_error_file_upload_error');
 			}
 		}
-
+/*
 		if ($this->config->get('msconf_enable_seller_banner')) {
 			if (isset($data['seller']['banner_name']) && !empty($data['seller']['banner_name'])) {
 				if ($this->config->get('msconf_banners_for_sellers') == 0 && !$this->MsLoader->MsFile->checkFileAgainstSession($data['seller']['banner_name'])) {
@@ -129,8 +129,9 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 				}
 			}
 		}
-
+*/
 		// strip disallowed tags in description
+/*
 		if ($this->config->get('msconf_enable_rte')) {
 			if ($this->config->get('msconf_rte_whitelist') != '') {
 				$allowed_tags = explode(",", $this->config->get('msconf_rte_whitelist'));
@@ -143,7 +144,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 		} else {
 			$data['seller']['description'] = htmlspecialchars(nl2br($data['seller']['description']), ENT_COMPAT, 'UTF-8');
 		}
-
+*/
 		// uncomment to enable RTE for message field
 		/*
 		if(isset($data['reviewer_message'])) {
@@ -182,11 +183,11 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 				$data['seller']['approved'] = 0;
 				// create new seller
 				switch ($this->config->get('msconf_seller_validation')) {
-					/*
+
 					case MsSeller::MS_SELLER_VALIDATION_ACTIVATION:
 						$data['seller_status'] = MsSeller::STATUS_TOBEACTIVATED;
 						break;
-					*/
+
 
 					case MsSeller::MS_SELLER_VALIDATION_APPROVAL:
 						$mails[] = array(
@@ -195,8 +196,8 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 						$mails[] = array(
 							'type' => MsMail::AMT_SELLER_ACCOUNT_AWAITING_MODERATION,
 							'data' => array(
-								'message' => $data['seller']['reviewer_message'],
-								'seller_name' => $data['seller']['nickname'],
+/*								'message' => $data['seller']['reviewer_message'],
+*/								'seller_name' => $data['seller']['nickname'],
 								'customer_name' => $this->customer->getFirstname() . ' ' . $this->customer->getLastname(),
 								'customer_email' => $this->MsLoader->MsSeller->getSellerEmail($this->customer->getId())
 							)
@@ -205,7 +206,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 						if ($this->config->get('msconf_allow_inactive_seller_products')) {
 							$json['redirect'] = $this->url->link('account/account');
 						} else {
-							$json['redirect'] = $this->url->link('seller/account-profile');
+							$json['redirect'] = $this->url->link('seller/account-dashboard');
 						}
 						break;
 

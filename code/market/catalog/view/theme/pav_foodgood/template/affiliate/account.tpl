@@ -8,9 +8,9 @@
   <div class="row"><?php if( $SPAN[0] ): ?>
 			<aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
 				<?php echo $column_left; ?>
-			</aside>	
-		<?php endif; ?> 
-  
+			</aside>
+		<?php endif; ?>
+
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
       <h2><?php echo $text_my_account; ?></h2>
       <ul class="list-unstyled">
@@ -27,11 +27,11 @@
         <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
       </ul>
       <?php echo $content_bottom; ?></div>
-   </section> 
+   </section>
 <?php if( $SPAN[2] ): ?>
-	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">	
+	<aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
 		<?php echo $column_right; ?>
 	</aside>
-<?php endif; ?></div>
+<?php endif; ?></div> 
 </div>
 <?php echo $footer; ?>

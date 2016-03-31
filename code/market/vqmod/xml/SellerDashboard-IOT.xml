@@ -8,9 +8,8 @@
 
 	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-stats.tpl">
 		<operation>
-			<search position="after"><![CDATA[
-
-				<div class="pull-left">
+			<search position="before"><![CDATA[
+				<?php echo $footer; ?>
 			]]></search>
 			<add><![CDATA[
 				<!DOCTYPE HTML>
@@ -41,8 +40,8 @@ console.log('seller');
 
 					$(function () {
 
-						    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
-//								$.getJSON('http://217.125.140.200:4004/_carlos_albertocarlos_carlos_albertocarlos/2014-01-01/2016-06-06/mota2/Temperature/media', function (data) {
+//						    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+								$.getJSON('http://217.125.140.200:4004/_carlos_albertocarlos_carlos_albertocarlos/2014-01-01/2016-06-06/mota2/Temperature/media', function (data) {
 
 								console.log('entra    ' + data);
 						        $('#container').highcharts({

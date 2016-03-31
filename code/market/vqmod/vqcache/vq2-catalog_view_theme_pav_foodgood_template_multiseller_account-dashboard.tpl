@@ -129,12 +129,6 @@
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-cart-96.png" />
 			<span><?php echo $ms_account_dashboard_nav_orders; ?></span>
 		</a>
-
-		<a href="<?php echo $this->url->link('account/msconversation', '', 'SSL'); ?>">
-			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-envelope.png" />
-			<span><?php echo $ms_account_messages; ?></span>
-		</a>
-	
 <!--
 		<a href="<?php echo $this->url->link('seller/account-transaction', '', 'SSL'); ?>">
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-book-96.png" />
@@ -156,11 +150,12 @@
 		</a>
 		<?php } ?>
 -->
+    <?php if ($seller['ms.nickname'] == "Sensor Test"  ) { ?>
 		<a href="<?php echo $this->url->link('seller/account-stats', '', 'SSL'); ?>">
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-stats.png" />
 			<span><?php echo $ms_account_stats; ?></span>
 		</a>
-
+    <?php } ?>
 	</div>
     </div>
 
@@ -208,9 +203,7 @@
 			<?php } ?>
 		<?php } else { ?>
 			<tr>
-				
-				<td class="center" colspan="8"><?php echo $ms_account_orders_noorders; ?></td>
-			
+				<td class="center" colspan="7"><?php echo $ms_account_orders_noorders; ?></td>
 			</tr>
 		<?php } ?>
 		</tbody>

@@ -843,7 +843,7 @@ body[class*="-home"] .header-top-v4 {
   display: block;
 }
 #topbar .btn-group .dropdown-menu {
-  margin-top: 0;
+  margin-top: -20px;
   left: -500px;
   padding: 0px 0px;
   min-width: 180px;
@@ -897,7 +897,7 @@ body[class*="-home"] .header-top-v4 {
 .main-menu .logo-store {
   margin: -25px 15px;
 /*  float: right;
-*/  position: absolute; /*relative;*/
+  position: absolute; /*relative;*/
 /*  display: inline-block;
   max-weight: 50px;
 */
@@ -1835,7 +1835,7 @@ body[class*="-home"] .header-top-v4 {
   cursor: pointer;
 }
 .product-thumb {
-  
+
   padding: 25px;
 
 }

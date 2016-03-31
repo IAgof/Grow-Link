@@ -2,11 +2,11 @@
 // HTTP
 
 
-define('HTTP_SERVER', 'http://217.125.140.200:4001/');
+define('HTTP_SERVER', 'http://localhost:8080/');
 
 // HTTPS
 
-define('HTTPS_SERVER', 'http://217.125.140.200:4001/');
+define('HTTPS_SERVER', 'http://localhost:8080/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/market-dev/catalog/');
@@ -25,7 +25,7 @@ define('DIR_LOGS', '/var/www/market-dev/system/logs/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'market');
-define('DB_PASSWORD', 'G8lM4rket');
+define('DB_PASSWORD', 'villa');
 define('DB_DATABASE', 'market_dev');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

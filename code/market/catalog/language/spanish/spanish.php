@@ -23,6 +23,7 @@ $_['text_loading']          = 'Cargando...';
 $_['button_address_add']    = 'A&ntilde;adir Direcci&oacute;';
 $_['button_back']           = 'Retroceder';
 $_['button_continue']       = 'Continuar';
+$_['button_new_account']       = 'Registrar Cuenta';
 $_['button_cart']           = 'A&ntilde;adir al Carro';
 $_['button_cancel']         = 'Cancelar';
 $_['button_compare']        = 'Compara este Producto';
