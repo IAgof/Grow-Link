@@ -64,7 +64,8 @@
 				{ "mData": "product_earnings" },
 				{ "mData": "product_status" },
 				{ "mData": "date_created" },
-				{ "mData": "actions", "bSortable": false, "sClass": "text-right" }
+/*				{ "mData": "list_until" },
+*/				{ "mData": "actions", "bSortable": false, "sClass": "text-right" }
 			]
 		});
 

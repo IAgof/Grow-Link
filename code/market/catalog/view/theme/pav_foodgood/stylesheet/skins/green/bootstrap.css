@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 /*  font-family: "Raleway", sans-serif;
 */  font-weight: 100;
-  line-height: 0;
+  line-height: 1;
   color: inherit;
 }
 h1 small,
@@ -2571,9 +2571,9 @@ select[multiple].input-lg,
 
 .btn-danger {
   color: #FFFFFF;
-  background-color: #EA3A3C;
-  border-color: #EA3A3C;
-  border: 1px solid #EA3A3C;
+  background-color: #e5b92e;
+  border-color: #e5b92e;
+  border: 1px solid #e5b92e;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
   color: #FFFFFF;

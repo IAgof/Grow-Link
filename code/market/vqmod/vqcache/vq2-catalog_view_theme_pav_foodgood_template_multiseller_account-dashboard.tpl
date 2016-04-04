@@ -64,7 +64,7 @@
 				    <head>
 		    		</head>
 				    <body>
-							Darse de baja como tienda
+							Deshabilitar tienda
 
 
 				    </body>
@@ -85,7 +85,7 @@
 				    <head>
 		    		</head>
 				    <body>
-							Darse de baja como tienda
+							Deshabilitar tienda
 
 
 				    </body>
@@ -129,6 +129,12 @@
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-cart-96.png" />
 			<span><?php echo $ms_account_dashboard_nav_orders; ?></span>
 		</a>
+
+		<a href="<?php echo $this->url->link('account/msconversation', '', 'SSL'); ?>">
+			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-envelope.png" />
+			<span><?php echo $ms_account_messages; ?></span>
+		</a>
+	
 <!--
 		<a href="<?php echo $this->url->link('seller/account-transaction', '', 'SSL'); ?>">
 			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-book-96.png" />
@@ -150,12 +156,13 @@
 		</a>
 		<?php } ?>
 -->
-    <?php if ($seller['ms.nickname'] == "Sensor Test"  ) { ?>
-		<a href="<?php echo $this->url->link('seller/account-stats', '', 'SSL'); ?>">
-			<img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-stats.png" />
-			<span><?php echo $ms_account_stats; ?></span>
-		</a>
-    <?php } ?>
+<?php if ($seller['ms.nickname'] == "Sensor Test"  ) { ?>
+<a href="<?php echo $this->url->link('seller/account-stats', '', 'SSL'); ?>">
+  <img src="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/image/ms-stats.png" />
+  <span><?php echo $ms_account_stats; ?></span>
+</a>
+<?php } ?>
+		
 	</div>
     </div>
 
@@ -203,7 +210,9 @@
 			<?php } ?>
 		<?php } else { ?>
 			<tr>
-				<td class="center" colspan="7"><?php echo $ms_account_orders_noorders; ?></td>
+				
+				<td class="center" colspan="8"><?php echo $ms_account_orders_noorders; ?></td>
+			
 			</tr>
 		<?php } ?>
 		</tbody>
@@ -222,7 +231,7 @@
 				    <head>
 		    		</head>
 				    <body>
-							<a href="https://qfreshco.typeform.com/to/gSUpJy" target="_blank"> <img style="float: none; width: 100%; height: auto;" img="" src="../../../image/catalog/iot.png"></a>
+							<a href="https://qfreshco.typeform.com/to/gSUpJy" target="_blank"> <img style="float: none; width: 100%; margin: 20px 0 20px; height: auto;" img="" src="../../../image/catalog/header_agrotech.png"></a>
 
 
 				    </body>

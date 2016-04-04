@@ -232,8 +232,8 @@
 												<div class="tab-pane" id="tab-review">
 
 														<div id="review"></div>
-<!--														<p> <a href="#review-form"  class="popup-with-form btn btn-sm btn-danger" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
--->
+														<p> <a href="#review-form"  class="popup-with-form btn btn-sm btn-danger" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
+
 													 <div class="hide"> <div id="review-form" class="panel review-form-width"><div class="panel-body">
 														<form class="form-horizontal" id="form-review">
 

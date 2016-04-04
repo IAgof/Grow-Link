@@ -83,6 +83,50 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
 		$order_statuses = $this->model_localisation_order_status->getOrderStatuses();
 
     	foreach ($orders as $order) {
+
+				$total = 0.0;
+				$products = $this->MsLoader->MsOrderData->getOrderProducts(array('order_id' => $order['order_id'], 'seller_id' => $seller_id));
+				$sellerShipping = $this->MsLoader->MsShipping->getOrderSellerShipping($order['order_id'], $seller_id, 0);
+
+				$shippings = array();
+				$atLeastOneShippable = false;
+				if (empty($sellerShipping)) {
+					foreach ($products as $key => $product) {
+					    $products[$key]['options']	=  $this->model_account_order->getOrderOptions($order['order_id'], $product['order_product_id']);
+						// Shippable
+						if ($this->MsLoader->MsShipping->getOrderProductShippable($order['order_id'], $product['product_id'])) {
+							$atLeastOneShippable = true;
+							$productShipping = $this->MsLoader->MsShipping->getOrderProductShipping($order['order_id'], $product['product_id']);
+							$shippings[] = array(
+								'shipping_cost' => $productShipping['shipping_cost'],
+								'name' => $productShipping['shipping_method_name']
+								//'name' => $this->MsLoader->MsShippingMethod->getShippingMethodDescriptions($productShipping['product_shipping_method_id'])[$language_id]['name'],
+							);
+							$total += $productShipping['shipping_cost'];
+						// Not shippable
+						} else {
+							$shippings[] = array(
+								'shipping_cost' => "0",
+								'name' => "--"
+							);
+						}
+					}
+				}
+				else {
+					$shippings[] = array(
+						'shipping_cost' => $sellerShipping['shipping_cost'],
+						'name' => $sellerShipping['shipping_method_name']
+						//'name' => $this->MsLoader->MsShippingMethod->getShippingMethodDescriptions($sellerShipping['seller_shipping_method_id'])[$language_id]['name'],
+					);
+					$total += $sellerShipping['shipping_cost'];
+				}
+
+				$shipped = 0;
+				$orderShipping = $this->MsLoader->MsShipping->getOrderShippingTracking($order['order_id'], $seller_id);
+				if ($orderShipping) {
+					$shipped = $orderShipping['shipped']; // Is shipped already
+				}
+			
 			$suborder = $this->MsLoader->MsOrderData->getSuborders(array(
 				'order_id' => $order['order_id'],
 				'seller_id' => $this->customer->getId(),
@@ -104,9 +148,15 @@ class ControllerSellerAccountDashboard extends ControllerSellerAccount {
     			'order_id' => $order['order_id'],
     			'customer' => "{$order['firstname']} {$order['lastname']} ({$order['email']})",
 				'status' => $status_name,
+    			
     			'products' => $products,
+				'shippings' => $shippings,
+				'shippable' => $atLeastOneShippable,
+			
     			'date_created' => date($this->language->get('date_format_short'), strtotime($order['date_added'])),
-   				'total' => $this->currency->format($this->MsLoader->MsOrderData->getOrderTotal($order['order_id'], array('seller_id' => $seller_id)), $this->config->get('config_currency'))
+   				
+    			'total' => $this->currency->format($total + $this->MsLoader->MsOrderData->getOrderTotal($order['order_id'], array('seller_id' => $seller_id)), $this->config->get('config_currency'))
+			
    			);
    		}
 		

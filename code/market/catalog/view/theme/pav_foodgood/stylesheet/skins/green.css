@@ -1812,12 +1812,12 @@ body[class*="-home"] .header-top-v4 {
 }
 .product-block .name a {
   color: #000000;
-  font-size: 2m;
+  font-size: 35px;
   font-family: 'Yanone Kaffeesatz', serif;
-  text-decoration: none;
+/*  text-decoration: none;
   display: inline-block;
   font-weight: bold;
-}
+*/}
 .product-block .name a:hover {
   color: #e5b92e;/*#A9D532;*/
 }

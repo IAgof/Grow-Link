@@ -83,8 +83,8 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 				}
 
 				$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-edit' title='" . $this->language->get('ms_edit') . "'></a>";
-/*				$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'] . "&clone=1", 'SSL') ."' class='ms-button ms-button-clone' title='" . $this->language->get('ms_clone') . "'></a>";
-*/				$actions .= "<a href='" . $this->url->link('seller/account-product/delete', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-delete' title='" . $this->language->get('ms_delete') . "'></a>";
+				$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'] . "&clone=1", 'SSL') ."' class='ms-button ms-button-clone' title='" . $this->language->get('ms_clone') . "'></a>";
+				$actions .= "<a href='" . $this->url->link('seller/account-product/delete', 'product_id=' . $product['product_id'], 'SSL') ."' class='ms-button ms-button-delete' title='" . $this->language->get('ms_delete') . "'></a>";
 			} else {
 				if ($this->config->get('msconf_allow_relisting')) {
 					$actions .= "<a href='" . $this->url->link('seller/account-product/update', 'product_id=' . $product['product_id'] . "&relist=1", 'SSL') ."' class='ms-button ms-button-relist' title='" . $this->language->get('ms_relist') . "'></a>";
@@ -325,13 +325,13 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 					$data['languages'][$language_id]['product_name'] = $data['languages'][$default]['product_name'];
 				}
 
-				if (!empty($language['product_description']) && ($description_length < 5 || $description_length > 4000)) {
+				if (!empty($language['product_description']) && ($description_length < 25 || $description_length > 4000)) {
 					$json['errors']['product_description_' . $language_id] = sprintf($this->language->get('ms_error_product_description_length'), 25, 4000);
 				} else if (empty($language['product_description'])) {
 					$data['languages'][$language_id]['product_description'] = $data['languages'][$default]['product_description'];
 				}
 			}
-/*
+
 			if (in_array('metaDescription', $this->config->get('msconf_product_included_fields'))) {
 				$data['languages'][$language_id]['product_meta_description'] = $data['languages'][$default]['product_meta_description'];
 			}
@@ -344,9 +344,8 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else if (empty($language['product_tags']) && $i != 0) {
 				$data['languages'][$language_id]['product_tags'] = $data['languages'][$default]['product_tags'];
 			}
-*/
+
 			// strip disallowed tags in description
-/*
 			if ($this->config->get('msconf_enable_rte')) {
 				if ($this->config->get('msconf_rte_whitelist') != '') {
 					$allowed_tags = explode(",", $this->config->get('msconf_rte_whitelist'));
@@ -359,7 +358,7 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 			} else {
 				$data['languages'][$language_id]['product_description'] = htmlspecialchars(nl2br($data['languages'][$language_id]['product_description']), ENT_COMPAT, 'UTF-8');
 			}
-*/
+
 			// multilang attributes
 			if (isset($language['product_attributes'])) {
 				$product_attributes = $language['product_attributes'];
@@ -705,11 +704,10 @@ class ControllerSellerAccountProduct extends ControllerSellerAccount {
 						$data['enabled'] = 0;
 						$data['product_status'] = MsProduct::STATUS_INACTIVE;
 						$data['product_approved'] = 0;
-						
 						if (isset($data['product_id']) && !empty($data['product_id'])) {
 							$request_type = MsRequestProduct::TYPE_PRODUCT_UPDATE;
 						} else {
-							$request_type = MsRequestProduct::TYPE_PRODUCT_CREATE;
+							//$request_type = MsRequestProduct::TYPE_PRODUCT_CREATE;
 						}
 
 						if (!isset($data['product_id']) || empty($data['product_id'])) {

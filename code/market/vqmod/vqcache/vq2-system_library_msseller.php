@@ -170,13 +170,7 @@ final class MsSeller extends Model {
 
 		$sql = "UPDATE " . DB_PREFIX . "ms_seller
 				SET description = '" . $this->db->escape($data['description']) . "',
-					company = '" . $this->db->escape($data['company']) . "',
 					nickname = '" . $this->db->escape($data['nickname']) . "',
-					country_id = " . (int)$data['country'] . ",
-					zone_id = " . (int)$data['zone'] . ","
-					. (isset($data['status']) ? "seller_status=  " .  (int)$data['status'] . "," : '')
-					. (isset($data['approved']) ? "seller_approved=  " .  (int)$data['approved'] . "," : '')
-					. "paypal = '" . $this->db->escape($data['paypal']) . "',
 					banner = '" . $this->db->escape($banner) . "',
 					avatar = '" . $this->db->escape($avatar) . "'
 				WHERE seller_id = " . (int)$seller_id;
@@ -277,11 +271,7 @@ final class MsSeller extends Model {
 
 		$sql = "UPDATE " . DB_PREFIX . "ms_seller
 				SET description = '" . $this->db->escape($data['description']) . "',
-					company = '" . $this->db->escape($data['company']) . "',
-					country_id = " . (int)$data['country'] . ",
-					paypal = '" . $this->db->escape($data['paypal']) . "',
 					seller_status = '" .  (int)$data['status'] .  "',
-					zone_id = " . (int)$data['zone'] . ",
 					seller_approved = '" .  (int)$data['approved'] .  "',
 					product_validation = '" .  (int)$data['product_validation'] .  "',
 					commission_id = " . (!is_null($commission_id) ? (int)$commission_id : 'NULL' ) . ",

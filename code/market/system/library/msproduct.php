@@ -235,7 +235,6 @@ class MsProduct extends Model {
 						meta_description = '". $this->db->escape($meta_description) ."',
 						meta_keyword = '". $this->db->escape($meta_keyword) ."',
 						meta_title = '". $this->db->escape($meta_title) ."',
-						tag = '" . $this->db->escape($language['product_tags']) . "',
 						language_id = " . (int)$language_id;
 			$this->db->query($sql);
 

@@ -28,10 +28,8 @@
 		<input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>" />
 		<input type="hidden" name="action" id="ms_action" />
 		<input type="hidden" name="list_until" value="<?php echo isset($list_until) ? $list_until : '' ?>" />
-<!--
-		<ul id="general-tabs" class="nav nav-tabs">
+<!--		<ul id="general-tabs" class="nav nav-tabs">
 			<li class="active"><a href="#tab-general" data-toggle="tab"><?php echo $ms_account_product_tab_general; ?></a></li>
-
 
 		<?php $data_tab_fields = array('model', 'sku', 'upc', 'ean', 'jan', 'isbn', 'mpn', 'manufacturer', 'taxClass', 'subtract', 'stockStatus', 'dateAvailable'); $intersection_fields = array_intersect($data_tab_fields, $this->config->get('msconf_product_included_fields'));
      		if (!empty($intersection_fields)) { ?>
@@ -51,17 +49,17 @@
 		</ul>
 -->
 		<div class="tab-content ms-product">
-<!--
+
      	<div id="tab-general" class="tab-pane active">
      		<?php if (count($languages) > 1) { ?>
 			<?php $first = key($languages); ?>
-			<ul class="nav nav-tabs" id="language-tabs">
+<!--			<ul class="nav nav-tabs" id="language-tabs">
 				<?php foreach ($languages as $k => $language) { ?>
 				<li <?php if ($k == $first) { ?> class="active" <?php } ?>><a data-toggle="tab" href="#language<?php echo $language['language_id']; ?>"><img src="image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a></li>
 				<?php } ?>
 			</ul>
-			<?php } ?>
--->
+-->			<?php } ?>
+
 			<div class="tab-content">
 			<?php
 			reset($languages); $first = key($languages);
