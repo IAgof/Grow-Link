@@ -1,0 +1,28 @@
+---------- Date: 2016-05-25 14:22:29 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=checkout/cart
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-25 14:24:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+

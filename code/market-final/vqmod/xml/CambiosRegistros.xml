@@ -1,0 +1,24 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Qfresh.co Header</font>]]></name>
+   <code>Visiona-ip</code>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Victor Nuñez</font>]]></author>
+
+<file path="catalog/view/theme/*/template/account/edit.tpl">
+        <operation>
+            <search><![CDATA[
+                <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
+			]]></search>
+            <add position="replace"><![CDATA[
+         ]]></add>
+       </operation>
+       <operation>
+           <search><![CDATA[
+             <input type="text" name="fax" value="<?php echo $fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
+     ]]></search>
+           <add position="replace"><![CDATA[
+        ]]></add>
+      </operation>
+
+</file>
+</modification>

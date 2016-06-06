@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!DOCTYPE modification [
+]>
+<modification>
+	<id>MultiMerch Complete menu</id>
+	<author>http://multimerch.com/</author>
+        <!-- multimerch admin menus -->
+	<file name="admin/controller/common/menu.php">
+		<operation>
+			<search position="after"><![CDATA[
+			public function index() {
+			]]></search>
+			<add><![CDATA[
+			$data = array_merge(isset($data) ? $data : array(), $this->load->language('multimerch/multimerch'), $this->load->language('module/multimerch_badges'), $this->load->language('module/multimerch_social_links'));
+			]]></add>
+		</operation>
+	</file>	
+	<file name="admin/view/template/common/menu.tpl">
+		<operation>
+			<search position="after"><![CDATA[
+			<li><a href="<?php echo $this->url->link('module/multiseller', 'token=' . $this->session->data['token'], 'SSL'); ?>"><?php echo $ms_menu_settings; ?></a></li>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->config->get('mxtconf_installed')) { ?>
+				<li><a href="<?php echo $this->url->link('multiseller/badge', 'token=' . $this->session->data['token'], 'SSL'); ?>"><?php echo $ms_menu_badge; ?></a></li>
+				<li><a href="<?php echo $this->url->link('multiseller/social_link', 'token=' . $this->session->data['token'], 'SSL'); ?>"><?php echo $ms_menu_social_links; ?></a></li>
+                <li><a href="<?php echo $this->url->link('module/multimerch', 'token=' . $this->session->data['token'], 'SSL'); ?>"><?php echo $mxt_settings; ?></a></li>
+            <?php } else { ?>
+                <li><a href="<?php echo $this->url->link('extension/module/install', 'token=' . $this->session->data['token'].'&extension=multimerch', 'SSL'); ?>"><?php echo $mxt_install; ?></a></li>
+            <?php } ?>
+			]]></add>
+		</operation>
+	</file>
+</modification>

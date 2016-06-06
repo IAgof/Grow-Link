@@ -1,0 +1,24 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Qfresh.co Header</font>]]></name>
+   <code>Visiona-ip</code>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Victor Nuñez</font>]]></author>
+
+<file path="catalog/view/theme/*/template/common/header.tpl">
+        <operation>
+            <search><![CDATA[
+		  <?php echo $currency; ?>
+			]]></search>
+            <add position="replace"><![CDATA[
+         ]]></add>
+       </operation>
+       <operation>
+           <search><![CDATA[
+     <?php echo $language; ?>
+     ]]></search>
+           <add position="replace"><![CDATA[
+        ]]></add>
+      </operation>
+
+</file>
+</modification>

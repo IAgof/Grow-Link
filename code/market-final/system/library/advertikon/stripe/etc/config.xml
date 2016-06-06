@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<!--
+/**
+* Advertikon Stripe Config
+*
+* @author Advertikon
+* @package Stripe
+* @version 2.2.0.4
+*/
+-->
+
+<config>
+	<title>Pay with Payment Cards with Stripe</title>
+	<save_card_data>0</save_card_data>
+	<cvc_check>1</cvc_check>
+	<zip_check>1</zip_check>
+	<address_check>1</address_check>
+	<charge_description>{storeName}. Order #{orderId} for {customerName}</charge_description>
+	<customer_description>{storeName}. {customerName}</customer_description>
+	<geo_zone>0</geo_zone>
+	<show_card_image>1</show_card_image>
+</config>

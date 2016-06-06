@@ -1,0 +1,216 @@
+---------- Date: 2016-04-29 10:56:27 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core.xml
+   id        : MultiMerch Digital Multivendor Marketplace Core
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/account/login.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->response->redirect($this->url->link('account/account', '', 'SSL'));
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:35:15 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div class="list-group">
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): </div>
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <!-- mm account sidebar menu start -->
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <!-- mm account sidebar menu end -->
+
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_xt_messaging.xml
+   id        : MultiMerch Private Messaging System
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <a href="<?php echo $logout; ?>" class="list-group-item"><?php echo $text_logout; ?></a>
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_xt_shipping_sellermenu.xml
+   id        : MultiMerch Shipping Edition - Menus
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <a class="list-group-item" href= "<?php echo $this->url->link('seller/account-product', '', 'SSL'); ?>"><?php echo $ms_account_products; ?></a>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:49:17 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=checkout/cart
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:49:58 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=information/contact
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:50:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=information/contact
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:57:22 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/category&path=60
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:58:14 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 12:58:42 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/compare
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 13:29:34 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&token=UtJN9NEizEdQaRfIf6HuiG5i5zZm8hNC&order_id=8
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core_admin.xml
+   id        : MultiMerch Core Admin Mods
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : admin/view/template/sale/order_info.tpl(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <td colspan="4" class="text-right"><?php echo $total['title']; ?>:</td>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 14:04:58 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&path=60_66&product_id=54
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 14:07:19 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&path=60_66&product_id=54
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_c_hooks.xml
+   id        : 
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 14:09:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core.xml
+   id        : MultiMerch Digital Multivendor Marketplace Core
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/account/login.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->response->redirect($this->url->link('account/account', '', 'SSL'));
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-04-29 14:23:54 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&token=UtJN9NEizEdQaRfIf6HuiG5i5zZm8hNC&order_id=8
+MOD DETAILS:
+   modFile   : /var/www/market/vqmod/xml/multimerch_core_admin.xml
+   id        : MultiMerch Core Admin Mods
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : admin/view/template/sale/order_info.tpl(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <td colspan="4" class="text-right"><?php echo $total['title']; ?>:</td>
+----------------------------------------------------------------------
+
+

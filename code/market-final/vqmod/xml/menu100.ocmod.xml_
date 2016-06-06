@@ -1,0 +1,38 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Menu 100% theme Default</font>]]></name>
+   <code>ManuellaMenu100</code>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Leandro R.P.P.O</font>]]></author>
+    <link><![CDATA[http://www.swad.com.br]]></link>
+<!--
+more extensions: http://www.opencart.com/index.php?route=extension/extension&filter_username=leandrorppo
+Redistribution in any form without written permission is prohibited
+http://www.facebook.com/leandrorppo
+ -->
+<file path="catalog/view/theme/*/template/common/header.tpl">
+        <operation>
+            <search position="replace" index="2"><![CDATA[
+			<div class="container">
+			]]></search>
+            <add><![CDATA[
+           <div class="container-full" style="margin:0;padding:0;">
+	       ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+			<nav id="menu" class="navbar">
+			]]></search>
+            <add position="before"><![CDATA[
+            <div class="container-full" style="margin:0;padding:0;>
+	       ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+			</nav>
+			]]></search>
+            <add position="after"><![CDATA[
+            </div>
+	       ]]></add>
+        </operation>
+</file>
+</modification>

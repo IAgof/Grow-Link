@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<!--
+/**
+* Advertikon Config
+*
+* @author Advertikon
+* @package Advertikon
+* @version 2.2.0.4
+*/
+-->
+
+<config>
+
+	<sort_order>0</sort_order>
+	<status>0</status>
+	<debug>0</debug>
+	<log_file>payment_advertikon_stripe.log</log_file>
+	<use_oclog>1</use_oclog>
+	<test_mode>1</test_mode>
+	<uninstall_clear_settings>1</uninstall_clear_settings>
+	<uninstall_clear_db>1</uninstall_clear_db>
+
+	<system_setting>
+		<sort_order>*</sort_order>
+		<status>*</status>
+	</system_setting>
+
+</config>
