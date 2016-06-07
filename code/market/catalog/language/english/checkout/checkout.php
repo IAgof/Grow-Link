@@ -4,9 +4,9 @@ $_['heading_title']                  = 'Confirmar';
 
 // Text
 $_['text_cart']                      = 'Carrito';
-$_['text_checkout_option']           = 'Paso 1: Opciones de pedido';
-$_['text_checkout_account']          = 'Paso 2: Cuenta &amp; Detalles de facturación';
-$_['text_checkout_payment_address']  = 'Paso 2: Detalles de facturación';
+$_['text_checkout_option']           = 'Paso 1: Usuario';
+$_['text_checkout_account']          = 'Paso 2: Nueva cuenta de usuario';
+$_['text_checkout_payment_address']  = 'Paso 2: Dirección de envío';
 $_['text_checkout_shipping_address'] = 'Paso 3: Detalles de envío';
 $_['text_checkout_shipping_method']  = 'Paso 4: Método de envío';
 $_['text_checkout_payment_method']   = 'Paso 5: Método de pago';
@@ -18,7 +18,7 @@ $_['text_checkout']                  = 'Opciones:';
 $_['text_i_am_returning_customer']   = 'Ya soy cliente';
 $_['text_register']                  = 'Registrar cuenta';
 $_['text_guest']                     = 'Invitado';
-$_['text_register_account']          = 'Haciéndote una cuetna podrás disfrutas de todas las comodidades que ofrecemos';
+$_['text_register_account']          = 'Haciéndote una cuenta podrás disfrutas de todas las comodidades que ofrecemos';
 $_['text_forgotten']                 = 'He olvidado mi contraseña';
 $_['text_your_details']              = 'Detalle spersonales';
 $_['text_your_address']              = 'Tu dirección';

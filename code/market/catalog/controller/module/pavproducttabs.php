@@ -101,7 +101,7 @@ class ControllerModulePavproducttabs extends Controller {
 		if(!empty($products)){
 			$limit = (isset($option['limit']) && !empty($option['limit']))?$option['limit']: 5;
 			$products = array_slice($products, 0, (int)$limit);
-			
+
 			foreach ($products as $product_id) {
 				$product_info = $this->model_catalog_product->getProduct($product_id);
 				if($product_info ) {
@@ -156,6 +156,7 @@ class ControllerModulePavproducttabs extends Controller {
 				'reviews'    => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
 				'href'    	 => $this->url->link('product/product', 'product_id=' . $result['product_id']),
 				'thumb2'     => isset($thumb2)?$thumb2:'',
+
 			);
 		}
 		return $products;

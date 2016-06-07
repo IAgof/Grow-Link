@@ -1,4 +1,5 @@
 <form class="form-horizontal">
+
   <?php if ($addresses) { ?>
   <div class="radio">
     <label>
@@ -30,6 +31,7 @@
         <input type="text" name="firstname" value="" placeholder="<?php echo $entry_firstname; ?>" id="input-shipping-firstname" class="form-control" />
       </div>
     </div>
+
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-shipping-lastname"><?php echo $entry_lastname; ?></label>
       <div class="col-sm-10">

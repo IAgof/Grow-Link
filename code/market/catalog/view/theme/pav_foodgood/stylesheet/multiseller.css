@@ -82,7 +82,7 @@ table.list tbody td, table.list thead td  {
 
 .ms-product .progress div.ui-progressbar {
 	margin: 10px 0;
-	height: 20px;	
+	height: 20px;
 }
 
 .ms-product .progress div.ui-progressbar div.label {
@@ -128,12 +128,12 @@ table.list tbody td, table.list thead td  {
 
 .ms-product .scrollbox div.odd.disabled {
 	background: #EDEDED;
-	color: #848484; 
+	color: #848484;
 }
 
 .ms-product .scrollbox div.even.disabled {
 	background: #F8F8F8;
-	color: #848484; 
+	color: #848484;
 }
 
 .ms-product tr > td {
@@ -227,7 +227,7 @@ table.list tbody td, table.list thead td  {
 	right: 8px;
 	background-size: 16px 16px;
 	height: 16px;
-	width: 16px;	
+	width: 16px;
 }
 
 .o-heading .option_required {
@@ -295,7 +295,7 @@ input.option_quantity {
 	font-weight: bold;
 	background: url('../image/button.png') top left repeat-x;
 	text-align: center;
-	
+
 	-webkit-border-radius: 7px 7px 7px 7px;
 	-moz-border-radius: 7px 7px 7px 7px;
 	-khtml-border-radius: 7px 7px 7px 7px;
@@ -445,7 +445,7 @@ input.option_quantity {
 }
 
 .ms-catalog-seller-profile .info-box h3 {
-    margin: 0;
+    margin: 20px;
 }
 
 .ms-catalog-seller-profile .info-box>div {
@@ -459,7 +459,8 @@ input.option_quantity {
 }
 
 .ms-catalog-seller-profile .product-thumb .button-group button {
-    width: 100%
+    width: 100%;
+    background-color: #435850;
 }
 
 /* seller list */
@@ -576,12 +577,12 @@ div.ms-jquery-dialog.ui-widget-content,
 
 .ms-sellercontact-image img {
 	padding: 3px;
-	border: 1px solid #E7E7E7;		
+	border: 1px solid #E7E7E7;
 }
 
 .ms-sellercontact-image a {
 	text-decoration: none;
-	outline: none;		
+	outline: none;
 }
 
 .ms-sellercontact-dialog h3,
@@ -690,8 +691,9 @@ ul.ms-sellermenu.graphical li a {
 .ms-account-transaction h2 {
 	text-align: center;
 	clear: both;
-	margin: 10px;
-}
+/*	margin: 10px;
+  margin-bottom: 10px;
+*/}
 
 .ms-account-dashboard .overview .nickname {
 	font-weight: bold;
@@ -727,7 +729,7 @@ ul.ms-sellermenu.graphical li a {
 
 /*
  *
- * datatables 
+ * datatables
  *
  */
 
@@ -816,7 +818,7 @@ table.list thead td.right {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
-	margin: 0 2px;	
+	margin: 0 2px;
 }
 
 .dataTables_wrapper .paging_full_numbers a.paginate_active {

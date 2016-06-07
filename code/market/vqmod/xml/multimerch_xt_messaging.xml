@@ -6,7 +6,7 @@
 <modification>
 	<id>MultiMerch Private Messaging System</id>
 	<author>http://multimerch.com/</author>
-	
+
 	<!-- enable messaging -->
 	<file name="catalog/controller/seller/catalog-seller.php">
 		<operation>
@@ -65,7 +65,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- Conversations link for non-sellers in the "My Account" Area -->
 	<file name="catalog/view/theme/&themeFolder;/template/account/account.tpl">
 		<operation>
@@ -122,7 +122,7 @@
 			]]></add>
 		</operation>
 	</file>
-	
+
 	<!-- seller account SIDEBAR area links -->
 	<file name="catalog/view/theme/&themeFolder;/template/module/account.tpl">
 		<operation>
@@ -135,11 +135,11 @@
 				<?php } ?>
 			]]></add>
 		</operation>
-		
+
 		<operation>
 			<search position="after"><![CDATA[
-				<a class="list-group-item" href= "<?php echo $this->url->link('seller/account-transaction', '', 'SSL'); ?>"><?php echo $ms_account_transactions; ?></a>
-			]]></search>
+					<a class="list-group-item" href= "<?php echo $this->url->link('seller/account-transaction', '', 'SSL'); ?>"><?php echo $ms_account_transactions; ?></a>
+				]]></search>
 			<add><![CDATA[
 				<?php if ($this->config->get('mmess_conf_enable')) { ?>
 				    <a href="<?php echo $this->url->link('account/msconversation', '', 'SSL'); ?>" class="list-group-item"><?php echo $ms_account_messages; ?></a>

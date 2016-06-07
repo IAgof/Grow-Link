@@ -2,7 +2,7 @@
 
 class ControllerSellerAccountStats extends ControllerSellerAccount {
 	public function index() {
-		$this->data['link_back'] = $this->url->link('account/account', '', 'SSL');
+		$this->data['link_back'] = $this->url->link('seller/account-dashboard', '', 'SSL');
 
 		$this->document->setTitle($this->language->get('ms_account_stats_heading'));
 

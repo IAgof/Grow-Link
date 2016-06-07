@@ -19,10 +19,10 @@ class ControllerAccountRegister extends Controller {
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$customer_id = $this->model_account_customer->addCustomer($this->request->post);
-			
+
 			// Clear any previous login attempts for unregistered accounts.
 			$this->model_account_customer->deleteLoginAttempts($this->request->post['email']);
-			
+
 			$this->customer->login($this->request->post['email'], $this->request->post['password']);
 
 			unset($this->session->data['guest']);
@@ -113,7 +113,7 @@ class ControllerAccountRegister extends Controller {
 		} else {
 			$data['error_email'] = '';
 		}
-
+/*
 		if (isset($this->error['telephone'])) {
 			$data['error_telephone'] = $this->error['telephone'];
 		} else {
@@ -155,7 +155,7 @@ class ControllerAccountRegister extends Controller {
 		} else {
 			$data['error_custom_field'] = array();
 		}
-
+*/
 		if (isset($this->error['password'])) {
 			$data['error_password'] = $this->error['password'];
 		} else {
@@ -283,13 +283,13 @@ class ControllerAccountRegister extends Controller {
 			} else {
 				$account_custom_field = array();
 			}
-			
+
 			if (isset($this->request->post['custom_field']['address'])) {
 				$address_custom_field = $this->request->post['custom_field']['address'];
 			} else {
 				$address_custom_field = array();
-			}			
-			
+			}
+
 			$data['register_custom_field'] = $account_custom_field + $address_custom_field;
 		} else {
 			$data['register_custom_field'] = array();
@@ -364,7 +364,7 @@ class ControllerAccountRegister extends Controller {
 			$this->error['warning'] = $this->language->get('error_exists');
 		}
 
-		if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+/*		if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
 			$this->error['telephone'] = $this->language->get('error_telephone');
 		}
 
@@ -392,7 +392,7 @@ class ControllerAccountRegister extends Controller {
 			$this->error['zone'] = $this->language->get('error_zone');
 		}
 
-		// Customer Group
+*/		// Customer Group
 		if (isset($this->request->post['customer_group_id']) && is_array($this->config->get('config_customer_group_display')) && in_array($this->request->post['customer_group_id'], $this->config->get('config_customer_group_display'))) {
 			$customer_group_id = $this->request->post['customer_group_id'];
 		} else {

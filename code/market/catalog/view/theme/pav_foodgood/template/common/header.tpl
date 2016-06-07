@@ -1,4 +1,4 @@
-<?php 
+<?php
 /******************************************************
  * @package Pav Opencart Theme Framework for Opencart 1.5.x
  * @version 1.1
@@ -6,7 +6,7 @@
  * @copyright Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
  * @license   GNU General Public License version 2
 *******************************************************/
-$config = $this->registry->get('config'); 
+$config = $this->registry->get('config');
 $themeName =  $config->get('config_template');
 $themeConfig = (array)$config->get('themecontrol');
 
@@ -21,8 +21,8 @@ $helper->addScript( 'catalog/view/javascript/bootstrap/js/bootstrap.min.js' );
 $helper->addScript( 'catalog/view/javascript/common.js' );
 $helper->addScript( 'catalog/view/theme/'.$themeName.'/javascript/common.js' );
 if( isset($themeConfig['catalog_mode']) && $themeConfig['catalog_mode'] ){
-  $cart = null;   
-} 
+  $cart = null;
+}
 $logoType = $helper->getConfig('logo_type','logo-theme');
 $headerlayout = $helper->getConfig('header_layout');
 $template_layout = $helper->getConfig('template_layout');
@@ -39,7 +39,7 @@ if( $helper->getConfig('enable_paneltool') ){
   }
 
 
- 
+
   $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/paneltool.css' );
   $helper->addScript( 'catalog/view/javascript/jquery/colorpicker/js/colorpicker.js' );
   $helper->addCss( 'catalog/view/javascript/jquery/colorpicker/css/colorpicker.css' );
@@ -48,7 +48,7 @@ if( $helper->getConfig('enable_paneltool') ){
 $helper->addScriptList( $scripts );
 
 $ctheme=$helper->getConfig('customize_theme');
-if( file_exists(DIR_TEMPLATE.$themeName.'/stylesheet/customize/'.$ctheme.'.css') ) {  
+if( file_exists(DIR_TEMPLATE.$themeName.'/stylesheet/customize/'.$ctheme.'.css') ) {
   $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/customize/'.$ctheme.'.css'  );
 }
 
@@ -56,11 +56,11 @@ if($direction == "rtl"){
    $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/rtl/stylesheet-rtl.css'  );
 }
 
-$helper->addCss( 'catalog/view/javascript/font-awesome/css/font-awesome.min.css' ); 
+$helper->addCss( 'catalog/view/javascript/font-awesome/css/font-awesome.min.css' );
 $helper->addCss('catalog/view/javascript/jquery/magnific/magnific-popup.css');
-// -$helper->addCss( '//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700' ); 
- 
-$helper->addCssList( $styles ); 
+// -$helper->addCss( '//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700' );
+
+$helper->addCssList( $styles );
 $logoType = $helper->getConfig('logo_type','logo-theme');
 $stickymenu = isset($themeConfig['stickymenu'])?$themeConfig['stickymenu']:'main-menu-fixed';
 
@@ -113,13 +113,14 @@ $stickymenu = isset($themeConfig['stickymenu'])?$themeConfig['stickymenu']:'main
 
 
 <!-- header -->
-<?php 
+<?php
   if( file_exists($helper->getLayoutPath('common/header/'.$headerlayout.'.tpl')) ) {
     require( $helper->getLayoutPath('common/header/'.$headerlayout.'.tpl') );
   }else {
-    require( ThemeControlHelper::getLayoutPath( 'common/header/default.tpl' ) );  
-  } 
-?> 
+    require( ThemeControlHelper::getLayoutPath( 'common/header/default.tpl' ) );
+  }
+?>
+
 <!-- /header -->
 
 <!-- sys-notification -->
@@ -161,4 +162,3 @@ $blockcls = '';
 $ospans = array();
 require( ThemeControlHelper::getLayoutPath( 'common/block-cols.tpl' ) );
 ?>
- 

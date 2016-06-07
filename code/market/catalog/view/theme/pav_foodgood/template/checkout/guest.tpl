@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-sm-6">
     <fieldset id="account">
-      <legend><?php echo $text_your_details; ?></legend>
-      <div class="form-group" style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;">
+<!--      <legend><?php echo $text_your_details; ?></legend>
+-->      <div class="form-group" style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;">
         <label class="control-label"><?php echo $entry_customer_group; ?></label>
         <?php foreach ($customer_groups as $customer_group) { ?>
         <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
@@ -24,15 +24,15 @@
         <label class="control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
         <input type="text" name="firstname" value="<?php echo $firstname; ?>" placeholder="<?php echo $entry_firstname; ?>" id="input-payment-firstname" class="form-control" />
       </div>
-      <div class="form-group required">
+<!--      <div class="form-group required">
         <label class="control-label" for="input-payment-lastname"><?php echo $entry_lastname; ?></label>
         <input type="text" name="lastname" value="<?php echo $lastname; ?>" placeholder="<?php echo $entry_lastname; ?>" id="input-payment-lastname" class="form-control" />
       </div>
-      <div class="form-group required">
+-->      <div class="form-group required">
         <label class="control-label" for="input-payment-email"><?php echo $entry_email; ?></label>
         <input type="text" name="email" value="<?php echo $email; ?>" placeholder="<?php echo $entry_email; ?>" id="input-payment-email" class="form-control" />
       </div>
-      <div class="form-group required">
+<!--      <div class="form-group required">
         <label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
         <input type="text" name="telephone" value="<?php echo $telephone; ?>" placeholder="<?php echo $entry_telephone; ?>" id="input-payment-telephone" class="form-control" />
       </div>
@@ -40,12 +40,14 @@
         <label class="control-label" for="input-payment-fax"><?php echo $entry_fax; ?></label>
         <input type="text" name="fax" value="<?php echo $fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-payment-fax" class="form-control" />
       </div>
+-->   
+
       <?php foreach ($custom_fields as $custom_field) { ?>
       <?php if ($custom_field['location'] == 'account') { ?>
       <?php if ($custom_field['type'] == 'select') { ?>
       <div id="payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
-        <label class="control-label" for="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>"><?php echo $custom_field['name']; ?></label>
-        <select name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" id="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control">
+<!--        <label class="control-label" for="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>"><?php echo $custom_field['name']; ?></label>
+-->        <select name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" id="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control">
           <option value=""><?php echo $text_select; ?></option>
           <?php foreach ($custom_field['custom_field_value'] as $custom_field_value) { ?>
           <?php if (isset($guest_custom_field[$custom_field['custom_field_id']]) && $custom_field_value['custom_field_value_id'] == $guest_custom_field[$custom_field['custom_field_id']]) { ?>
@@ -150,26 +152,29 @@
       <?php } ?>
       <?php } ?>
     </fieldset>
-  </div>
+<!--  </div>
   <div class="col-sm-6">
-    <fieldset id="address">
-      <legend><?php echo $text_your_address; ?></legend>
+-->    <fieldset id="address">
+<!--      <legend><?php echo $text_your_address; ?></legend>
       <div class="form-group">
         <label class="control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
         <input type="text" name="company" value="<?php echo $company; ?>" placeholder="<?php echo $entry_company; ?>" id="input-payment-company" class="form-control" />
       </div>
-      <div class="form-group required">
+-->      <div class="form-group required">
         <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
         <input type="text" name="address_1" value="<?php echo $address_1; ?>" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
       </div>
+<!--
       <div class="form-group">
         <label class="control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
         <input type="text" name="address_2" value="<?php echo $address_2; ?>" placeholder="<?php echo $entry_address_2; ?>" id="input-payment-address-2" class="form-control" />
       </div>
+
       <div class="form-group required">
         <label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
         <input type="text" name="city" value="<?php echo $city; ?>" placeholder="<?php echo $entry_city; ?>" id="input-payment-city" class="form-control" />
       </div>
+-->
       <div class="form-group required">
         <label class="control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
         <input type="text" name="postcode" value="<?php echo $postcode; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
@@ -187,11 +192,13 @@
           <?php } ?>
         </select>
       </div>
+<!--
       <div class="form-group required">
         <label class="control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
         <select name="zone_id" id="input-payment-zone" class="form-control">
         </select>
       </div>
+-->      
       <?php foreach ($custom_fields as $custom_field) { ?>
       <?php if ($custom_field['location'] == 'address') { ?>
       <?php if ($custom_field['type'] == 'select') { ?>
@@ -303,6 +310,7 @@
       <?php } ?>
     </fieldset>
   </div>
+
 </div>
 <?php if ($shipping_required) { ?>
 <div class="checkbox">
@@ -326,7 +334,6 @@ $('#account .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
 		$('#account .form-group').eq($(this).attr('data-sort')).before(this);
 	}
-
 	if ($(this).attr('data-sort') > $('#account .form-group').length) {
 		$('#account .form-group:last').after(this);
 	}

@@ -1,6 +1,7 @@
+<!--
 <table class="ms-shipping">
 	<tr><td colspan="2"><h3><?php echo $ms_product_shipping_dimensions; ?></h3></td></tr>
-	
+
 	<tr>
 		<td><?php echo $ms_product_shipping_length; ?> x <?php echo $ms_product_shipping_width; ?> x <?php echo $ms_product_shipping_height; ?></td>
 		<td>
@@ -8,7 +9,7 @@
 			<p class="error" id="error_shipping_dimensions"></p>
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td><?php echo $ms_product_shipping_length_class; ?></td>
 		<td>
@@ -23,7 +24,7 @@
 			</select>
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td><?php echo $ms_product_shipping_weight; ?><?php if ($shipping_type == MsShipping::SHIPPING_TYPE_COMBINABLE) { ?><span class="required">*</span><?php } ?></td>
 		<td>
@@ -31,7 +32,7 @@
 			<p class="error" id="error_shipping_weight"></p>
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td><?php echo $ms_product_shipping_weight_class; ?></td>
 		<td>
@@ -46,34 +47,31 @@
 			</select>
 		</td>
 	</tr>
-	
-	<!-- Continue only if Fixed Shipping Type selected for seller -->
+
 	<?php if ($shipping_type == MsShipping::SHIPPING_TYPE_FIXED) { ?>
-	
+
 		<tr>
 			<td colspan="2">
 				<h3><span class="required">*</span><?php echo $ms_product_shipping_methods; ?></h3>
 				<p class="error" id="error_shipping_methods"></p>
 			</td>
 		</tr>
-		
-		<!-- Shipping method table -->
+
 		<table id="shipping_method" class="list table table-bordered table-hover">
 			<thead>
 				<tr>
 					<td class="text-left"><?php echo $ms_product_shipping_method_name; ?></td>
 					<td class="text-left"><?php echo $ms_product_shipping_method_comment; ?></td>
 					<td class="text-left"><span class="required">*</span><?php echo $ms_product_shipping_method_cost; ?></td>
-					<!--<td class="text-left"><?php //echo $ms_product_shipping_method_currency; ?></td>-->
-					<td class="text-left"><?php echo $ms_product_shipping_method_geo_zone; ?></td>
+-->					<!--<td class="text-left"><?php //echo $ms_product_shipping_method_currency; ?></td>-->
+<!--				<td class="text-left"><?php echo $ms_product_shipping_method_geo_zone; ?></td>
 					<td class="text-left"></td>
 				</tr>
 			</thead>
 			<tbody>
-			
-			<!-- sample row -->
+
 			<tr class="ffSample">
-			
+
 				<td class="text-left">
 					<select name="ms_shipping_methods[0][shipping_method_id]" class="form-control">
 						<?php foreach ($shipping_methods as $shipping_method) { ?>
@@ -81,15 +79,15 @@
 						<?php } ?>
 					</select>
 				</td>
-				
+
 				<td class="text-left">
 					<input type="text" class="form-control" name="ms_shipping_methods[0][comment]" value="" size="25" />
 				</td>
-			
+
 				<td class="text-left">
 					<?php echo $this->currency->getSymbolLeft($this->config->get('config_currency')); ?> <input type="text" class="form-control input-auto" name="ms_shipping_methods[0][cost]" value="" size="8" /> <?php echo $this->currency->getSymbolRight($this->config->get('config_currency')); ?>
 				</td>
-				
+
 				<td class="text-left">
 					<select name="ms_shipping_methods[0][geo_zone_id]" class="form-control">
 						<?php foreach ($geo_zones as $geo_zone) { ?>
@@ -97,13 +95,12 @@
 						<?php } ?>
 					</select>
 				</td>
-				
+
 				<td class="text-center">
 					<button type="button" class="btn btn-danger ffRemove"><i class="fa fa-trash-o"></i></button>
 				</td>
-			</tr>		        
-			<!-- /sample row -->
-			
+			</tr>
+
 			<?php $row = 1; ?>
 			<?php if (isset($ms_shipping_methods) && is_array($ms_shipping_methods)) { ?>
 			<?php foreach ($ms_shipping_methods as $ms_shipping_method) { ?>
@@ -119,15 +116,15 @@
 						<?php } ?>
 					</select>
 				</td>
-				
+
 				<td class="text-left">
 					<input type="text" class="form-control" name="ms_shipping_methods[<?php echo $row; ?>][comment]" value="<?php echo $ms_shipping_method['comment']; ?>" size="25" />
 				</td>
-				
+
 				<td class="text-left">
 					<?php echo $this->currency->getSymbolLeft($this->config->get('config_currency')); ?> <input type="text" class="form-control  input-auto" name="ms_shipping_methods[<?php echo $row; ?>][cost]" value="<?php echo $ms_shipping_method['cost']; ?>" size="8" /> <?php echo $this->currency->getSymbolRight($this->config->get('config_currency')); ?>
 				</td>
-				
+
 				<td class="text-left">
 					<select name="ms_shipping_methods[<?php echo $row; ?>][geo_zone_id]" class="form-control">
 						<?php foreach ($geo_zones as $geo_zone) { ?>
@@ -139,7 +136,7 @@
 						<?php } ?>
 					</select>
 				</td>
-				
+
 				<td class="text-center">
 					<button type="button" class="btn btn-danger ffRemove"><i class="fa fa-trash-o"></i></button>
 				</td>
@@ -165,3 +162,4 @@
 		$(this).parents('tr').remove();
 	});
 </script>
+-->

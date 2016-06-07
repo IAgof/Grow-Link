@@ -5,9 +5,8 @@
 <modification>
 	<id>MultiMerch Core Product Page Mods</id>
 	<author>http://multimerch.com/</author>
-	
-	<file name="catalog/view/theme/&themeFolder;/template/product/product.tpl">
-        <!-- seller information on product page -->
+	<file name="catalog/view/theme/&themeFolder;/template/product/product1.tpl">
+
 		<operation>
 			<search position="before" offset="1" index="1"><![CDATA[
 		<?php echo $footer; ?>
@@ -64,10 +63,10 @@
 					</ul>
 					</div>
 				</div>
-				<!-- end sellerinfo -->
+
 			</div>
 			<hr />
-			<!-- end seller block -->
+
 			<?php } ?>
 			</div>
 			</div>
@@ -79,20 +78,26 @@
 		</file>
 		<!-- product attribute tab headers -->
 <file name="catalog/view/theme/&themeFolder;/template/product/product_detail_hitech.tpl">
-        <!-- seller information on product page -->
-		<operation>
-			<search position="after"><![CDATA[
-				<li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
-			]]></search>
-			<add><![CDATA[
-				<?php foreach ($ms_product_attributes as $attribute) { ?>
-					<?php if(is_array($attribute['values']) && implode($attribute['values']) != '' && (isset($attribute['tab_display']) && $attribute['tab_display'])) { ?>
-					<li><a data-toggle="tab" href="#tab-attribute-<?php echo $attribute['attribute_id']; ?>"><?php echo $attribute['name'] ?></a></li>
-					<?php } ?>
-				<?php } ?>
-			]]></add>
-		</operation>
 
+	<operation>
+		<search position="before" offset="1" index="1"><![CDATA[
+			<div class="product-name">
+	]]></search>
+		<add><![CDATA[
+			4444
+	]]></add>
+	</operation>
+
+
+	 <!-- seller information on product page -->
+			<operation>
+					<search position="after" error="skip"><![CDATA[
+						<td><?php echo $attribute_group['name']; ?> : <?php echo $attribute['text']; ?></td>
+					]]></search>
+					<add><![CDATA[
+<td><?php echo $attribute_group['name']; ?> : <?php echo $attribute['text']; ?></td>
+]]></add>
+</operation>
 		<!-- product attribute tab contents -->
 		<operation>
 			<search position="before" offset="1"><![CDATA[
@@ -168,40 +173,40 @@
 				} else {
 					$data['seller']['thumb'] = $this->MsLoader->MsFile->resizeImage('ms_no_image.jpg', $this->config->get('msconf_seller_avatar_product_page_image_width'), $this->config->get('msconf_seller_avatar_product_page_image_height'));
 				}
-					
+
 				$country = $this->model_localisation_country->getCountry($seller['ms.country_id']);
-				
+
 				if (!empty($country)) {
 					$data['seller']['country'] = $country['name'];
 				} else {
 					$data['seller']['country'] = NULL;
 				}
-				
+
 				$zone = $this->model_localisation_zone->getZone($seller['ms.zone_id']);
-				
-				if (!empty($zone)) {			
+
+				if (!empty($zone)) {
 					$data['seller']['zone'] = $zone['name'];
 				} else {
 					$data['seller']['zone'] = NULL;
 				}
-				
+
 				if (!empty($seller['ms.company'])) {
 					$data['seller']['company'] = $seller['ms.company'];
 				} else {
 					$data['seller']['company'] = NULL;
 				}
-				
+
 				if (!empty($seller['ms.website'])) {
 					$data['seller']['website'] = $seller['ms.website'];
 				} else {
 					$data['seller']['website'] = NULL;
 				}
-				
+
 				$data['seller']['nickname'] = $seller['ms.nickname'];
 				$data['seller']['seller_id'] = $seller['seller_id'];
-				 
+
 				$data['seller']['href'] = $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']);
-				
+
 				$data['seller']['total_sales'] = $this->MsLoader->MsSeller->getSalesForSeller($seller['seller_id']);
 				$data['seller']['total_products'] = $this->MsLoader->MsProduct->getTotalProducts(array(
 					'seller_id' => $seller['seller_id'],

@@ -28,7 +28,7 @@ website:   	http://www.themepunch.com
 -----------------------------------------------------------------------------*/
 
 	.layerslider-wrapper{
-		margin: 0 auto;
+		margin: 0 0;
 		position: relative;
 	}
 	.rev_slider{
@@ -38,16 +38,18 @@ website:   	http://www.themepunch.com
 		width:940px; 
 	}
 	.bannercontainer {
-		position: relative;margin: 0px auto;
+		
+		position: relative;
+		margin: 0px 0px;/*0px auto;*/
 		overflow:hidden;
 	
 	}
 	.bannercontainer .banner-fullwidth{
 		  width: 100% !important;
-		  max-height: 500px !important;
+		  max-height: 5000px !important;
 	}
 	.bannercontainer .fullwidthbanner{
-	  	max-height: 500px !important;
+	  	max-height: 5000px !important;
 	    overflow: hidden!important;
 	    padding: 0;
 	    position: relative;
@@ -430,7 +432,9 @@ website:   	http://www.themepunch.com
 
 }
 
-.tp-simpleresponsive img	{	max-width:none;}
+.tp-simpleresponsive img	{	
+					max-width: none;
+				}
 
 
 
@@ -709,7 +713,7 @@ website:   	http://www.themepunch.com
 }
 /*  CAPTION SLIDELINK   **/
 .caption.slidelink a div,
-.tp-caption.slidelink a div {	width:10000px; height:10000px;  background:url(../assets/coloredbg.png) repeat;}
+.tp-caption.slidelink a div {	width:2500px; height:504px;  background:url(../assets/coloredbg.png) repeat;}
 
 .tp-loader 	{	background:url(../assets/loader.gif) no-repeat 10px 10px; background-color:#fff;  margin:-22px -22px; top:50%; left:50%; z-index:10000; position:absolute;width:44px;height:44px;
 				border-radius: 3px;

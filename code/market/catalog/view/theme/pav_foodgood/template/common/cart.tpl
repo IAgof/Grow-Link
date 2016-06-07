@@ -1,11 +1,11 @@
 <?php $olang = $this->registry->get('language'); ?>
 <div id="cart" class="quick-cart clearfix hidden-xs">
-  <div class="heading media" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>"> 
+  <div class="heading media" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>">
       <a>
-        <i class="cart-icon fa fa-shopping-cart"></i>
-        <span id="cart-total"><?php echo $text_items; ?></span>
-        <i class="fa fa-angle-down"></i>
-      </a>
+<!--        <i class="cart-icon fa fa-shopping-cart"></i>
+-->        <span id="cart-total"><?php echo $text_items; ?></span>
+<!--        <i class="fa fa-angle-down"></i>
+-->      </a>
   </div>
 
   <ul class="content dropdown-menu pull-right">
@@ -63,4 +63,5 @@
     </li>
     <?php } ?>
   </ul>
+
 </div>

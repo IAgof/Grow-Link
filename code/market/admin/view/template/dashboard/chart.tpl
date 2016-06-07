@@ -8,8 +8,8 @@
         <li><a href="year"><?php echo $text_year; ?></a></li>
       </ul>
     </div>
-    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> <?php echo $heading_title; ?></h3>
-  </div>
+<!--    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> <?php echo $heading_title; ?></h3>
+-->  </div>
   <div class="panel-body">
     <div id="chart-sale" style="width: 100%; height: 260px;"></div>
   </div>

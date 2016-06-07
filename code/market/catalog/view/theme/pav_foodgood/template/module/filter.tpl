@@ -9,7 +9,7 @@
         <div class="checkbox">
           <label>
             <?php if (in_array($filter['filter_id'], $filter_category)) { ?>
-            <input type="checkbox" name="filter[]" value="<?php echo $filter['filter_id']; ?>" checked="checked" />
+            <input type="checkbox" name="filter[]" value="<?php echo $filter['filter_id']; ?>" checked="checked"/>
             <?php echo $filter['name']; ?>
             <?php } else { ?>
             <input type="checkbox" name="filter[]" value="<?php echo $filter['filter_id']; ?>" />

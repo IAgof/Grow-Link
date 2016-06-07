@@ -1,3 +1,4 @@
+<!--
 <?php if (!$msconf_allow_multiple_categories) { ?>
 
 <select name="product_category">
@@ -50,3 +51,4 @@
 
 <p class="ms-note"><?php echo $ms_account_product_category_note; ?></p>
 <p class="error" id="error_product_category"></p>
+-->

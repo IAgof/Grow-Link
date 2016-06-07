@@ -26,7 +26,8 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="ms-product <?php echo $class; ?> ms-account-profile"><?php echo $content_top; ?>
-    <h1><?php echo $ms_account_sellerinfo_heading; ?></h1>
+<!--      <?php echo $seller['seller_id']; ?>
+-->    <h1><?php echo $ms_account_sellerinfo_heading; ?></h1>
 
 	<form id="ms-sellerinfo" class="ms-form form-horizontal">
 		<input type="hidden" name="action" id="ms_action" />
@@ -39,7 +40,7 @@
 			<?php if (!$this->config->get('msconf_change_seller_nickname') && !empty($seller['ms.nickname'])) { ?>
 				<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_nickname; ?></label>
 				<div class="col-sm-10">
-					<b><?php echo $seller['ms.nickname']; ?></b>
+AAAA					<b><?php echo $seller['ms.nickname']; ?></b>
 				</div>
 			<?php } else { ?>
 				<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_nickname; ?></label>
@@ -50,7 +51,7 @@
 			<?php } ?>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group required">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_description; ?></label>
 			<div class="col-sm-10">
 				<!-- todo strip tags if rte disabled -->
@@ -59,6 +60,7 @@
 			</div>
 		</div>
 
+<!--
 		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_company; ?></label>
 			<div class="col-sm-10">
@@ -66,8 +68,9 @@
 				<p class="ms-note"><?php echo $ms_account_sellerinfo_company_note; ?></p>
 			</div>
 		</div>
-
-		<div class="form-group">
+-->
+<!--
+		<div class="form-group required">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_country; ?></label>
 			<div class="col-sm-10">
 				<select name="seller[country]" class="form-control">
@@ -80,22 +83,22 @@
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group required">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_zone; ?></label>
 			<div class="col-sm-10">
 				<select name="seller[zone]" class="form-control"></select>
 				<p class="ms-note"><?php echo $ms_account_sellerinfo_zone_note; ?></p>
 			</div>
 		</div>
-
-		<div class="form-group">
+-->
+<!--		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_paypal; ?></label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control"  name="seller[paypal]" value="<?php echo $seller['ms.paypal']; ?>" />
 				<p class="ms-note"><?php echo $ms_account_sellerinfo_paypal_note; ?></p>
 			</div>
 		</div>
-
+-->
 		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_avatar; ?></label>
 			<div class="col-sm-10">
@@ -156,7 +159,7 @@
 			</div>
 		</div>
 		<?php } ?>
-
+<!--
 		<?php if ((!isset($seller['seller_id']) || $seller['ms.seller_status'] == MsSeller::STATUS_INCOMPLETE) && $seller_validation != MsSeller::MS_SELLER_VALIDATION_NONE) { ?>
 		<div class="form-group">
 			<label class="col-sm-2 control-label"><?php echo $ms_account_sellerinfo_reviewer_message; ?></label>
@@ -166,6 +169,9 @@
 			</div>
 		</div>
 		<?php } ?>
+-->
+
+
 	</form>
 
 		<?php if (isset($group_commissions) && $group_commissions[MsCommission::RATE_SIGNUP]['flat'] > 0) { ?>

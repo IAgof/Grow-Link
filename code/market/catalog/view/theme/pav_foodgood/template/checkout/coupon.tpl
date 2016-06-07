@@ -41,4 +41,5 @@ $('#button-coupon').on('click', function() {
 //--></script>
     </div>
   </div>
+
 </div>

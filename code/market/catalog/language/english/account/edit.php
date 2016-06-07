@@ -10,9 +10,9 @@ $_['text_success']       = 'Éxito! Tu cuenta ha sido actualizada.';
 
 // Entry
 $_['entry_firstname']    = 'Nombre';
-$_['entry_lastname']     = 'Last Name';
+$_['entry_lastname']     = 'Apellidos';
 $_['entry_email']        = 'E-Mail';
-$_['entry_telephone']    = 'Telephone';
+$_['entry_telephone']    = 'Teléfono';
 $_['entry_fax']          = 'Fax';
 
 // Error

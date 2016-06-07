@@ -1,0 +1,316 @@
+---------- Date: 2016-05-10 07:38:56 ~ IP : 138.4.47.33 ----------
+REQUEST URI : /index.php?route=seller/account-order
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_shipping_sellerarea.xml
+   id        : MultiMerch Shipping Edition - Seller Areas
+   version   : 
+   vqmver    : 
+   author    : 
+
+File Name    : catalog/controller/seller/account-order.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): 'view_order' => '<a href="' . $this->url->link('seller/account-order/viewOrder', 'order_id=' . $order['order_id']) . '" class="ms-button ms-button-view" title="' . $this->language->get('ms_view_modify') . '"></a>'
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 07:40:35 ~ IP : 138.4.47.33 ----------
+REQUEST URI : /index.php?route=checkout/confirm
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_ordercomments.xml
+   id        : MultiMerch Core Order Comments per Seller
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/checkout/confirm.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $data['comment'] = $this->session->data['comment'];
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:14:35 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:15:36 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:16:08 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:16:22 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:20:27 ~ IP : 138.4.47.33 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:20:33 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:21:28 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:22:04 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-stats
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:22:45 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=account/account
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/SellerDashboard-IOT-porcent.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats8528.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/multiseller/account-stats11.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch__core_productpage_hitech.xml
+   id        : MultiMerch Core Product Page Mods
+   version   : 
+   vqmver    : 
+   author    : 
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product11.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/pav_foodgood/template/product/product1.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_core_onepagereg.xml
+   id        : MultiMerch Core One Page Registration
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-05-10 10:22:46 ~ IP : 217.125.140.200 ----------
+REQUEST URI : /index.php?route=seller/account-dashboard
+MOD DETAILS:
+   modFile   : /var/www/market-dev/vqmod/xml/multimerch_xt_comments.xml
+   id        : MultiMerch Comments
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/pav_foodgood/template/multiseller/account-dashboard.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="buttons">
+
+----------------------------------------------------------------------
+
+

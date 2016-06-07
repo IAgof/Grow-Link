@@ -14,7 +14,7 @@
         <div class="accordion-heading pull-right">
           <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse_<?php echo $key ;?>"> + </span>
         </div>
-        
+
         <ul id="collapse_<?php echo $key ;?>" class="collapse accordion-body <?php if($category['category_id'] == $category_id) echo "in"; ?>">
           <?php foreach ($category['children'] as $child) { ?>
           <li>
@@ -45,4 +45,3 @@
     });
     });
 </script>
-

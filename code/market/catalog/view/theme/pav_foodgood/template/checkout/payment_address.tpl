@@ -1,6 +1,7 @@
 <form class="form-horizontal">
   <?php if ($addresses) { ?>
   <div class="radio">
+<!--
     <label>
       <input type="radio" name="payment_address" value="existing" checked="checked" />
       <?php echo $text_address_existing; ?></label>
@@ -16,6 +17,8 @@
       <?php } ?>
     </select>
   </div>
+-->
+<!--
   <div class="radio">
     <label>
       <input type="radio" name="payment_address" value="new" />
@@ -23,31 +26,36 @@
   </div>
   <?php } ?>
   <br />
-  <div id="payment-new" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
+-->
+<!--  <div id="payment-new" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
+-->
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
       <div class="col-sm-10">
-        <input type="text" name="firstname" value="" placeholder="<?php echo $entry_firstname; ?>" id="input-payment-firstname" class="form-control" />
+        <input type="text" name="firstname" value="<?php echo $address['firstname']; ?>" placeholder="<?php echo $entry_firstname; ?>" id="input-payment-firstname" class="form-control" />
       </div>
     </div>
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-lastname"><?php echo $entry_lastname; ?></label>
       <div class="col-sm-10">
-        <input type="text" name="lastname" value="" placeholder="<?php echo $entry_lastname; ?>" id="input-payment-lastname" class="form-control" />
+        <input type="text" name="lastname" value="<?php echo $address['lastname']; ?>" placeholder="<?php echo $entry_lastname; ?>" id="input-payment-lastname" class="form-control" />
       </div>
     </div>
+<!--
     <div class="form-group">
       <label class="col-sm-2 control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
       <div class="col-sm-10">
         <input type="text" name="company" value="" placeholder="<?php echo $entry_company; ?>" id="input-payment-company" class="form-control" />
       </div>
     </div>
+-->
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
       <div class="col-sm-10">
-        <input type="text" name="address_1" value="" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
+        <input type="text" name="address_1" value="<?php echo $address['address_1']; ?>" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
       </div>
     </div>
+<!--
     <div class="form-group">
       <label class="col-sm-2 control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
       <div class="col-sm-10">
@@ -60,12 +68,14 @@
         <input type="text" name="city" value="" placeholder="<?php echo $entry_city; ?>" id="input-payment-city" class="form-control" />
       </div>
     </div>
+-->
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
       <div class="col-sm-10">
-        <input type="text" name="postcode" value="" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
+        <input type="text" name="postcode" value=" <?php echo $address['postcode']; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
       </div>
     </div>
+<!--
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
       <div class="col-sm-10">
@@ -81,6 +91,8 @@
         </select>
       </div>
     </div>
+-->
+<!--
     <div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
       <div class="col-sm-10">
@@ -88,6 +100,7 @@
         </select>
       </div>
     </div>
+-->
     <?php foreach ($custom_fields as $custom_field) { ?>
     <?php if ($custom_field['location'] == 'address') { ?>
     <?php if ($custom_field['type'] == 'select') { ?>

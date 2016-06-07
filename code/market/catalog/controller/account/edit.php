@@ -71,6 +71,9 @@ class ControllerAccountEdit extends Controller {
 		$data['button_back'] = $this->language->get('button_back');
 		$data['button_upload'] = $this->language->get('button_upload');
 
+		$data['customer_id'] = $this->customer->getId();
+		$data['customer_name'] = $this->customer->getFirstName() . ' ' . $this->customer->getLastName();
+
 		if (isset($this->error['warning'])) {
 			$data['error_warning'] = $this->error['warning'];
 		} else {
@@ -198,11 +201,11 @@ class ControllerAccountEdit extends Controller {
 		if (($this->customer->getEmail() != $this->request->post['email']) && $this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
 			$this->error['warning'] = $this->language->get('error_exists');
 		}
-
+/*
 		if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
 			$this->error['telephone'] = $this->language->get('error_telephone');
 		}
-
+*/
 		// Custom field validation
 		$this->load->model('account/custom_field');
 

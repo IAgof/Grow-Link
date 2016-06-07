@@ -1,3 +1,4 @@
+
 <?php echo $header; ?>
 <div class="container ms-account-product-form" xmlns="http://www.w3.org/1999/html">
   <ul class="breadcrumb">
@@ -20,45 +21,44 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-    <h1><?php echo $heading; ?></h1>
+<!--    <h1><?php echo $heading; ?></h1>
+-->
 
 	<form id="ms-new-product" class="form-horizontal" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>" />
 		<input type="hidden" name="action" id="ms_action" />
 		<input type="hidden" name="list_until" value="<?php echo isset($list_until) ? $list_until : '' ?>" />
-
-		<ul id="general-tabs" class="nav nav-tabs">
+<!--		<ul id="general-tabs" class="nav nav-tabs">
 			<li class="active"><a href="#tab-general" data-toggle="tab"><?php echo $ms_account_product_tab_general; ?></a></li>
 
-			<?php
-			$data_tab_fields = array('model', 'sku', 'upc', 'ean', 'jan', 'isbn', 'mpn', 'manufacturer', 'taxClass', 'subtract', 'stockStatus', 'dateAvailable');
-			$intersection_fields = array_intersect($data_tab_fields, $this->config->get('msconf_product_included_fields'));
+		<?php $data_tab_fields = array('model', 'sku', 'upc', 'ean', 'jan', 'isbn', 'mpn', 'manufacturer', 'taxClass', 'subtract', 'stockStatus', 'dateAvailable'); $intersection_fields = array_intersect($data_tab_fields, $this->config->get('msconf_product_included_fields'));
      		if (!empty($intersection_fields)) { ?>
-     		<li><a href="#tab-data" data-toggle="tab"><?php echo $ms_account_product_tab_data; ?></a></li>
+     			<li><a href="#tab-data" data-toggle="tab"><?php echo $ms_account_product_tab_data; ?></a></li>
      		<?php } ?>
 
 			<li><a href="#tab-options" data-toggle="tab"><?php echo $ms_account_product_tab_options; ?></a></li>
 
-			<?php if ($this->config->get('msconf_allow_specials')) { ?>
-     		<li><a href="#tab-specials" data-toggle="tab"><?php echo $ms_account_product_tab_specials; ?></a></li>
+
+		<?php if ($this->config->get('msconf_allow_specials')) { ?>
+     			<li><a href="#tab-specials" data-toggle="tab"><?php echo $ms_account_product_tab_specials; ?></a></li>
      		<?php } ?>
 
      		<?php if ($this->config->get('msconf_allow_discounts')) { ?>
      		<li><a href="#tab-discounts" data-toggle="tab"><?php echo $ms_account_product_tab_discounts; ?></a></li>
      		<?php } ?>
 		</ul>
-
-     	<!-- general tab -->
+-->
 		<div class="tab-content ms-product">
+
      	<div id="tab-general" class="tab-pane active">
      		<?php if (count($languages) > 1) { ?>
 			<?php $first = key($languages); ?>
-			<ul class="nav nav-tabs" id="language-tabs">
+<!--			<ul class="nav nav-tabs" id="language-tabs">
 				<?php foreach ($languages as $k => $language) { ?>
 				<li <?php if ($k == $first) { ?> class="active" <?php } ?>><a data-toggle="tab" href="#language<?php echo $language['language_id']; ?>"><img src="image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a></li>
 				<?php } ?>
 			</ul>
-			<?php } ?>
+-->			<?php } ?>
 
 			<div class="tab-content">
 			<?php
@@ -66,11 +66,12 @@
 			foreach ($languages as $k => $language) {
 				$langId = $language['language_id'];
 				?>
-				
-				<div class="ms-language-div tab-pane <?php if ($k == $first) { echo 'active'; } ?>" id="language<?php echo $langId; ?>">
+
+		   <div class="ms-language-div tab-pane <?php if ($k == $first) { echo 'active'; } ?>" id="language<?php echo $langId; ?>">
                     <fieldset>
-                    <legend><?php echo $ms_account_product_name_description; ?></legend>
-					<div class="form-group <?php if ($k == $first) { echo 'required'; } ?>">
+
+<!--                    <legend><?php echo $ms_account_product_name_description; ?></legend>
+-->					<div class="form-group <?php if ($k == $first) { echo 'required'; } ?>">
 						<label class="col-sm-2 control-label"><?php echo $ms_account_product_name; ?></label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" name="languages[<?php echo $langId; ?>][product_name]" value="<?php echo $product['languages'][$langId]['name']; ?>" />
@@ -88,12 +89,11 @@
 							<p class="error" id="error_product_description_<?php echo $langId; ?>"></p>
 						</div>
 					</div>
-
+<!--
                     <?php if (in_array('metaDescription', $this->config->get('msconf_product_included_fields'))) { ?>
 					<div class="form-group">
 						<label class="col-sm-2 control-label"><?php echo $ms_account_product_meta_description; ?></label>
 						<div class="col-sm-10">
-							<!-- todo strip tags if rte disabled -->
 							<textarea class="form-control"  name="languages[<?php echo $langId; ?>][product_meta_description]"><?php echo strip_tags(htmlspecialchars_decode($product['languages'][$langId]['meta_description'])); ?></textarea>
 							<p class="ms-note"><?php echo $ms_account_product_meta_description_note; ?></p>
 							<p class="error" id="error_product_meta_description_<?php echo $langId; ?>"></p>
@@ -105,7 +105,6 @@
 					<div class="form-group">
 						<label class="col-sm-2 control-label"><?php echo $ms_account_product_meta_keyword; ?></label>
 						<div class="col-sm-10">
-							<!-- todo strip tags if rte disabled -->
 							<textarea class="form-control"  name="languages[<?php echo $langId; ?>][product_meta_keyword]"><?php echo strip_tags(htmlspecialchars_decode($product['languages'][$langId]['meta_keyword'])); ?></textarea>
 							<p class="ms-note"><?php echo $ms_account_product_meta_keyword_note; ?></p>
 							<p class="error" id="error_product_meta_keyword_<?php echo $langId; ?>"></p>
@@ -121,6 +120,7 @@
 							<p class="error" id="error_product_tags_<?php echo $langId; ?>"></p>
 						</div>
 					</div>
+-->
 
 					<?php if (isset($multilang_attributes) && !empty($multilang_attributes)) { ?>
 					<?php foreach ($multilang_attributes as &$attr) { ?>
@@ -148,19 +148,8 @@
 			</div>
 
 			<fieldset>
-            	<legend><?php echo $ms_account_product_price_attributes; ?></legend>
-
-				<div class="form-group required">
-					<label class="col-sm-2 control-label"><?php echo $ms_account_product_price; ?></label>
-					<div class="col-sm-10">
-						<span class="vertical-align: auto"><?php echo $this->currency->getSymbolLeft($this->config->get('config_currency')); ?></span>
-						<input type="text" class="form-control inline" name="product_price" value="<?php echo $product['price']; ?>" <?php if (isset($seller['commissions']) && $seller['commissions'][MsCommission::RATE_LISTING]['percent'] > 0) { ?>class="ms-price-dynamic"<?php } ?> />
-						<span class="vertical-align: auto"><?php echo $this->currency->getSymbolRight($this->config->get('config_currency')); ?></span>
-						<p class="ms-note"><?php echo $ms_account_product_price_note; ?></p>
-						<p class="error" id="error_product_price"></p>
-					</div>
-				</div>
-
+<!--            	<legend><?php echo $ms_account_product_price_attributes; ?></legend>
+-->
 				<div class="form-group required">
 					<label class="col-sm-2 control-label"><?php echo $ms_account_product_category; ?></label>
 					<div class="col-sm-10" id="product_category_block">
@@ -233,7 +222,7 @@
 				</div>
 				<?php } ?>
 
-				<div class="form-group" <?php if (!$enable_quantities) { ?>style="display: none"<?php } ?>>
+				<div class="form-group required" <?php if (!$enable_quantities) { ?>style="display: none"<?php } ?>>
 					<label class="col-sm-2 control-label"><?php echo $ms_account_product_quantity; ?></label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="product_quantity" value="<?php echo $product['quantity']; ?>" />
@@ -241,6 +230,18 @@
 						<p class="error" id="error_product_quantity"></p>
 					</div>
 				</div>
+
+				<div class="form-group required">
+                                        <label class="col-sm-2 control-label"><?php echo $ms_account_product_price; ?></label>
+                                        <div class="col-sm-10">
+                                                <span class="vertical-align: auto"><?php echo $this->currency->getSymbolLeft($this->config->get('config_currency')); ?></span>
+                                                <input type="text" class="form-control inline" name="product_price" value="<?php echo $product['price']; ?>" <?php if (isset($seller['commissions']) && $seller['commissions'][MsCommission::RATE_LISTING]['percent'] > 0) { ?>class="ms-price-dynamic"<?php } ?> />
+                                                <span class="vertical-align: auto"><?php echo $this->currency->getSymbolRight($this->config->get('config_currency')); ?></span>
+
+                                                <p class="ms-note"><?php echo $ms_account_product_price_note; ?></p>
+                                                <p class="error" id="error_product_price"></p>
+                                        </div>
+                                </div>
 
 				<?php if (isset($normal_attributes) && !empty($normal_attributes)) { ?>
 				<?php foreach ($normal_attributes as $attr) { ?>
@@ -280,7 +281,6 @@
 							<br />
 						<?php } ?>
 						<?php } ?>
-
 						<?php if ($attr['attribute_type'] == MsAttribute::TYPE_TEXT) { ?>
 							<input type="text" class="form-control" name="product_attributes[<?php echo $attr['attribute_id']; ?>][value]" value="<?php if (isset($normal_attribute_values[$attr['attribute_id']])) { echo current(reset($normal_attribute_values[$attr['attribute_id']])); } ?>" />
 							<input type="hidden" name="product_attributes[<?php echo $attr['attribute_id']; ?>][value_id]" value="<?php if (isset($normal_attribute_values[$attr['attribute_id']])) { echo key($normal_attribute_values[$attr['attribute_id']]); } ?>" />
@@ -330,13 +330,13 @@
 			</fieldset>
 
 			<fieldset>
-				<legend><?php echo $ms_account_product_files; ?></legend>
-
+<!--				<legend><?php echo $ms_account_product_files; ?></legend>
+-->
 				<div class="form-group <?php if ($msconf_images_limits[0] > 0) { echo 'required'; } ?>">
 					<label class="col-sm-2 control-label"><?php echo $ms_account_product_image; ?></label>
 					<div class="col-sm-10">
-						<!--<input type="file" name="ms-file-addimages" id="ms-file-addimages" />-->
-						<a name="ms-file-addimages" id="ms-file-addimages" class="btn btn-primary"><span><?php echo $ms_button_select_images; ?></span></a>
+<!--						<input type="file" name="ms-file-addimages" id="ms-file-addimages" />
+-->						<a name="ms-file-addimages" id="ms-file-addimages" class="btn btn-primary"><span><?php echo $ms_button_select_images; ?></span></a>
 						<p class="ms-note"><?php echo $ms_account_product_image_note; ?></p>
 						<div class="error" id="error_product_image"></div>
 
@@ -357,11 +357,10 @@
 						</div>
 					</div>
 				</div>
-
+<!--
 				<div class="form-group <?php if ($msconf_downloads_limits[0] > 0) { echo 'required'; } ?>">
 					<label class="col-sm-2 control-label"><?php echo $ms_account_product_download; ?></label>
 					<div class="col-sm-10">
-						<!--<input type="file" name="ms-file-addfiles" id="ms-file-addfiles" />-->
 						<a name="ms-file-addfiles" id="ms-file-addfiles" class="btn btn-primary"><span><?php echo $ms_button_select_files; ?></span></a>
 						<p class="ms-note"><?php echo $ms_account_product_download_note; ?></p>
 						<div class="error" id="error_product_download"></div>
@@ -376,7 +375,6 @@
 								<span class="ms-download-name"><?php echo $download['name']; ?></span>
 								<div class="ms-buttons">
 									<a href="<?php echo $download['href']; ?>" class="ms-button-download" title="<?php echo $ms_download; ?>"></a>
-										<!--<input id="ms-update-<?php echo $download['id']; ?>" name="ms-update-<?php echo $download['id']; ?>" class="ms-file-updatedownload" type="file" multiple="false" />-->
 									<a id="ms-update-<?php echo $download['id']; ?>" name="ms-update-<?php echo $download['id']; ?>" class="ms-file-updatedownload ms-button-update" title="<?php echo $ms_update; ?>"></a>
 									<a class="ms-button-delete" title="<?php echo $ms_delete; ?>"></a>
 								</div>
@@ -387,8 +385,9 @@
 						</div>
 					</div>
 				</div>
+-->
 			</fieldset>
-
+<!--
 			<?php if ($seller['ms.product_validation'] == MsProduct::MS_PRODUCT_VALIDATION_APPROVAL) { ?>
 			<fieldset>
 				<legend><?php echo $ms_account_product_message_reviewer; ?></legend>
@@ -403,6 +402,7 @@
 				</div>
 			</fieldset>
 			<?php } ?>
+-->
 		</div>
 
         <!-- data tab -->
@@ -538,8 +538,8 @@
         </div>
 
 		<!-- options tab -->
-		<div id="tab-options" class="tab-pane"></div>
-
+<!--		<div id="tab-options" class="tab-pane"></div>
+-->
 		<!-- specials tab -->
 		<?php if ($this->config->get('msconf_allow_specials')) { ?>
 		<div id="tab-specials" class="tab-pane">
@@ -625,7 +625,7 @@
 		<div id="tab-discounts" class="tab-pane">
 			<legend><?php echo $ms_account_product_tab_discounts; ?></legend>
 			<p class="error" id="error_quantity_discounts"></p>
-			
+
 			<table class="list table table-bordered table-hover">
 				<thead>
 				<tr>
@@ -637,11 +637,11 @@
 					<td></td>
 				</tr>
 				</thead>
-				
-				<tbody>				
-				
+
+				<tbody>
+
 				<!-- sample row -->
-				<tr class="ffSample">				
+				<tr class="ffSample">
 					<td><input type="text" class="form-control inline" name="product_discounts[0][priority]" value="" size="2" /></td>
 					<td><input type="text" class="form-control inline" name="product_discounts[0][quantity]" value="" size="2" /></td>
 					<td><input type="text" class="form-control inline" name="product_discounts[0][price]" value="" /></td>
@@ -663,7 +663,7 @@
 					</td>
 					<td><a class="ms-button-delete" title="<?php echo $ms_delete; ?>"></a></td>
 				</tr>
-				
+
 				<?php if (isset($product['discounts'])) { ?>
 				<?php $discount_row = 1; ?>
 				<?php foreach ($product['discounts'] as $product_discount) { ?>
@@ -704,7 +704,7 @@
 		<?php } ?>
 		</div>
 	</form>
-		
+
 		<?php if (isset($seller['commissions']) && ($seller['commissions'][MsCommission::RATE_LISTING]['percent'] > 0 || $seller['commissions'][MsCommission::RATE_LISTING]['flat'] > 0)) { ?>
 			<?php if ($seller['commissions'][MsCommission::RATE_LISTING]['percent'] > 0) { ?>
 			<p class="alert alert-warning ms-commission">
@@ -717,10 +717,10 @@
 				<?php echo $ms_commission_payment_type; ?>
 			</p>
 			<?php } ?>
-			
+
 			<?php if(isset($payment_form)) { ?><div class="ms-payment-form"><?php echo $payment_form; ?></div><?php } ?>
 		<?php } ?>
-		
+
 		<?php if (isset($list_until) && $list_until != NULL) { ?>
 			<p class="alert alert-warning">
 				<?php echo sprintf($this->language->get('ms_account_product_listing_until'), date($this->language->get('date_format_short'), strtotime($list_until))); ?>

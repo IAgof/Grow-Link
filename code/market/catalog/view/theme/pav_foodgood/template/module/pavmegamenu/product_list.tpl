@@ -6,7 +6,7 @@
 }?>
 <div class="widget-product-list">
   <div class="widget-inner">
-    
+
       <?php foreach ($products as $product) { ?>
       <div class="product-block w-product clearfix">
         <?php if ($product['thumb']) { ?>
@@ -29,4 +29,5 @@
       </div>
       <?php } ?>
   </div>
+
 </div>

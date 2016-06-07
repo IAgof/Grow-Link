@@ -131,11 +131,13 @@ class ControllerCheckoutPaymentAddress extends Controller {
 				if ((utf8_strlen(trim($this->request->post['address_1'])) < 3) || (utf8_strlen(trim($this->request->post['address_1'])) > 128)) {
 					$json['error']['address_1'] = $this->language->get('error_address_1');
 				}
-
+/*
 				if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 32)) {
 					$json['error']['city'] = $this->language->get('error_city');
 				}
+*/
 
+/*
 				$this->load->model('localisation/country');
 
 				$country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
@@ -147,13 +149,15 @@ class ControllerCheckoutPaymentAddress extends Controller {
 				if ($this->request->post['country_id'] == '') {
 					$json['error']['country'] = $this->language->get('error_country');
 				}
+*/
 
+/*
 				if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {
 					$json['error']['zone'] = $this->language->get('error_zone');
 				}
-
+*/
 				// Custom field validation
-				$this->load->model('account/custom_field');
+/*				$this->load->model('account/custom_field');
 
 				$custom_fields = $this->model_account_custom_field->getCustomFields($this->config->get('config_customer_group_id'));
 
@@ -162,7 +166,7 @@ class ControllerCheckoutPaymentAddress extends Controller {
 						$json['error']['custom_field' . $custom_field['custom_field_id']] = sprintf($this->language->get('error_custom_field'), $custom_field['name']);
 					}
 				}
-
+*/
 				if (!$json) {
 					// Default Payment Address
 					$this->load->model('account/address');

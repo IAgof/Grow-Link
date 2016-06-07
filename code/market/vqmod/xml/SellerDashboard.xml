@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!DOCTYPE modification [
+<!ENTITY themeFolder "default">
+]>
+<modification>
+	<id>MultiMerch Core Seller Menu</id>
+	<author>http://multimerch.com/</author>
+
+	<file name="catalog/view/theme/&themeFolder;/template/multiseller/account-dashboard.tpl">
+
+		<operation>
+			<search position="before"><![CDATA[
+				<?php echo $footer; ?>
+			]]></search>
+			<add><![CDATA[
+				<!DOCTYPE HTML>
+				<html>
+				    <head>
+		    		</head>
+				    <body>
+							<a href="https://qfreshco.typeform.com/to/gSUpJy" target="_blank"> <img style="float: none; width: 100%; margin: 20px 0 20px; height: auto;" img="" src="../../../image/catalog/header_agrotech.png"></a>
+
+
+				    </body>
+				</html>
+					</ul>
+			]]></add>
+		</operation>
+	</file>
+</modification>

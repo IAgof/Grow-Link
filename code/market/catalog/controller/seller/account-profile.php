@@ -87,19 +87,19 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 				}
 			}
 		}
-
+/*
 		if (mb_strlen($data['seller']['company']) > 50 ) {
 			$json['errors']['seller[company]'] = $this->language->get('ms_error_sellerinfo_company_length');
 		}
-
+*/
 		if (mb_strlen($data['seller']['description']) > 1000) {
 			$json['errors']['seller[description]'] = $this->language->get('ms_error_sellerinfo_description_length');
 		}
-
+/*
 		if (($data['seller']['paypal'] != "") && ((utf8_strlen($data['seller']['paypal']) > 128) || !preg_match('/^[^\@]+@.*\.[a-z]{2,6}$/i', $data['seller']['paypal']))) {
 			$json['errors']['seller[paypal]'] = $this->language->get('ms_error_sellerinfo_paypal');
 		}
-
+*/
 		if (isset($data['seller']['avatar_name']) && !empty($data['seller']['avatar_name'])) {
 			if ($this->config->get('msconf_avatars_for_sellers') == 0 && !$this->MsLoader->MsFile->checkFileAgainstSession($data['seller']['avatar_name'])) {
 				$json['errors']['seller[avatar]'] = $this->language->get('ms_error_file_upload_error');
@@ -170,8 +170,8 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 						$mails[] = array(
 							'type' => MsMail::AMT_SELLER_ACCOUNT_AWAITING_MODERATION,
 							'data' => array(
-								'message' => $data['seller']['reviewer_message'],
-								'seller_name' => $data['seller']['nickname'],
+/*								'message' => $data['seller']['reviewer_message'],
+*/								'seller_name' => $data['seller']['nickname'],
 								'customer_name' => $this->customer->getFirstname() . ' ' . $this->customer->getLastname(),
 								'customer_email' => $this->MsLoader->MsSeller->getSellerEmail($this->customer->getId())
 							)
@@ -453,7 +453,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 						'amount' => '',
 						'currency_code' => $this->config->get('config_currency'),
 						'return' => $this->url->link('seller/account-dashboard'),
-						'cancel_return' => $this->url->link('account/account'),
+						'cancel_return' => $this->url->link('seller/account-dashboard'),
 						'notify_url' => $this->url->link('payment/multimerch-paypal/signupIPN'),
 						'custom' => 'custom'
 					);
@@ -471,7 +471,7 @@ class ControllerSellerAccountProfile extends ControllerSellerAccount {
 		}
 
 		$this->data['seller_validation'] = $this->config->get('msconf_seller_validation');
-		$this->data['link_back'] = $this->url->link('account/account', '', 'SSL');
+		$this->data['link_back'] = $this->url->link('seller/account-dashboard', '', 'SSL');
 		$this->document->setTitle($this->language->get('ms_account_sellerinfo_heading'));
 
 		$this->data['breadcrumbs'] = $this->MsLoader->MsHelper->setBreadcrumbs(array(

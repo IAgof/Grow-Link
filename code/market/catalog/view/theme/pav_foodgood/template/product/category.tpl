@@ -1,17 +1,17 @@
-<?php 
+<?php
  $helper =  ThemeControlHelper::getInstance( $this->registry );
 echo $header; ?>
 <div class="container">
-  <?php require( PAVO_THEME_DIR."/template/common/config_layout.tpl" );  ?>  
+  <?php require( PAVO_THEME_DIR."/template/common/config_layout.tpl" );  ?>
   <?php require( PAVO_THEME_DIR."/template/common/breadcrumb.tpl" );  ?>
   <div id="group-content" class="row"><?php if( $SPAN[0] ): ?>
       <aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
         <?php echo $column_left; ?>
-      </aside>  
-    <?php endif; ?> 
-  
+      </aside>
+    <?php endif; ?>
+
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
-      
+
       <?php if ($thumb || $description) { ?>
       <div class="category-info clearfix hidden-xs hidden-sm">
         <?php if ($thumb) { ?>
@@ -24,13 +24,14 @@ echo $header; ?>
           <?php } ?>
       </div>
       <?php } ?>
-      
+
       <?php if( true &&  $categories = $helper->getCategoriesById() ){   ?>
      <div class="subcategories refine-search">
+<!--
        <h2 class="panel-title">
-        <?php echo $text_refine; ?> 
-       </h2> 
- 
+        <?php echo $text_refine; ?>
+       </h2>
+-->
           <?php $col=6; $i=0; $ncol = floor(12/$col); foreach( $categories as $category ){  $i++; ?>
             <?php if($i%$col==1) { ?>
             <div class="clearfix">
@@ -75,11 +76,12 @@ echo $header; ?>
               <?php } ?>
             </div>
             <?php } ?>
-         </div>    
+         </div>
       <?php } ?>
+
       <?php if ($products) { ?>
      </div>
-      <?php require( ThemeControlHelper::getLayoutPath( 'common/product_collection.tpl' ) );  ?> 
+      <?php require( ThemeControlHelper::getLayoutPath( 'common/product_collection.tpl' ) );  ?>
       <?php } ?>
 
         <?php if (!$categories && !$products) { ?>
@@ -89,11 +91,11 @@ echo $header; ?>
         </div>
         <?php } ?>
 
-      
+
       <?php echo $content_bottom; ?>
-   </section> 
+   </section>
 <?php if( $SPAN[2] ): ?>
-  <aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">  
+  <aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
     <?php echo $column_right; ?>
   </aside>
 <?php endif; ?></div>
